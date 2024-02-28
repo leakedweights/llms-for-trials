@@ -1,0 +1,352 @@
+[
+    {
+        "reasoning": "This clinical trial focuses on pediatric cancer patients with conditions such as Ewing's sarcoma, soft tissue sarcoma, neuroblastoma, and brain tumors. It involves testing the efficacy and safety of Plerixafor in combination with standard regimens for mobilization. The inclusion criteria are well-defined, targeting patients requiring high-dose chemotherapy and autologous transplant. The trial excludes patients with leukemia, comorbid conditions, and previous stem cell transplantation. The trial emphasizes patient consent, eligibility criteria, and close monitoring of toxic effects throughout. Considering the specific target population, the drug being tested, and the stringent inclusion/exclusion criteria, the trial has a reasonable likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01288573",
+        "usd_cost": 0.0006555
+    },
+    {
+        "reasoning": "The clinical trial is focused on participants with renal impairment and heart failure, with specific criteria for inclusion and exclusion. The trial involves two parts, Part I for renal insufficiency and Part II for heart failure with renal insufficiency. The inclusion criteria are stringent, requiring specific BMI, no history of certain conditions, and specific heart failure classifications and creatinine clearance levels. The trial also has a comprehensive list of exclusion criteria, including psychiatric disorders, recent medical events, and medication use restrictions. Given the complexity and specificity of the criteria, the trial may face challenges in patient recruitment. The disease risk is high as the trial targets participants with renal impairment and heart failure. Considering the high risk associated with such conditions and the stringent criteria, there is a possibility of difficulties in patient recruitment and retention, leading to potential delays and complications in the trial process. Therefore, the prediction for the outcome of this clinical trial is failure.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT01558674",
+        "usd_cost": 0.0008615000000000001
+    },
+    {
+        "reasoning": "This clinical trial is focused on stage I-III small cell lung cancer, which has a high disease risk and is in need of effective treatment options. The drug being studied, chloroquine, has shown potential as an anti-autophagic radiosensitizing drug. The inclusion and exclusion criteria are well-defined, aiming to enroll patients who meet specific health and disease stage requirements. Considering the importance of patient recruitment, the quality of clinical trial planning, and the relationship between the sponsor and collaborator, there are positive factors that could contribute to the success of this trial.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01575782",
+        "usd_cost": 0.000686
+    },
+    {
+        "reasoning": "Considering the factors of patient registration, speed of clinical trials, relationship type, and communication as key success factors in clinical trials, as well as the specific criteria and characteristics of this phase 1 trial for dasatinib in hematologic malignancies post-autologous stem cell transplant, it is predicted that this trial will be successful.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01609816",
+        "usd_cost": 0.0008179999999999999
+    },
+    {
+        "reasoning": "Based on the nature of the clinical trial focusing on alcohol dependence, the eligibility criteria involving U.S. veterans with specific age, drinking patterns, and exclusion criteria related to alcohol and substance use disorders, the trial faces challenges in patient recruitment. The strict criteria and limitations may lead to difficulty in finding eligible participants, potentially leading to delays and terminations. Additionally, the trial duration is relatively long for a Phase 1 trial, increasing the risk of patient attrition and complications.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01657760",
+        "usd_cost": 0.000781
+    },
+    {
+        "reasoning": "This clinical trial focuses on a drug for cystic fibrosis, a serious and life-threatening genetic disease. The eligibility criteria are well-defined and specific, targeting individuals with the F508del-CFTR mutation. The trial title indicates a safety and pharmacokinetic study, which is a crucial step in drug development. Considering the importance of patient enrollment, the speed of clinical trials, and the quality of trial planning, this trial has a good chance of success. Additionally, partnerships and communication play a significant role in the success of clinical trials, which will be beneficial for this trial. Therefore, I predict the outcome of this clinical trial as success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01746784",
+        "usd_cost": 0.0004845
+    },
+    {
+        "reasoning": "This is a phase 1 clinical trial focusing on patients with advanced, relapsed, or metastatic non-small cell lung cancer (NSCLC). The inclusion criteria are well-defined, specifying the histological confirmation of NSCLC, measurable disease, previous treatment failure, and specific laboratory parameters. The exclusion criteria are clear, excluding patients with certain medical conditions or treatments that could interfere with the trial. The trial involves a combination of gp96-Ig vaccine, theophylline, and oxygen, which suggests a novel and potentially effective treatment approach. Given the stringent criteria and promising treatment combination, there is a reasonable likelihood of success in this phase 1 trial.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01799161",
+        "usd_cost": 0.000595
+    },
+    {
+        "reasoning": "This is a Phase 1 clinical trial targeting infections caused by bacteria. The inclusion criteria specify healthy individuals between 18-65 years old with specific medical evaluations and laboratory tests. The trial drug, GSK1322322, will be evaluated for its effect on cardiac conduction in healthy volunteers. The trial also includes a placebo and moxifloxacin as comparators. The exclusion criteria are detailed and aim to exclude individuals with certain medical conditions and risk factors that could interfere with the study outcomes. Considering the nature of the trial, the specific disease target, and the stringent inclusion and exclusion criteria, the quality of the trial seems well-maintained. Given the focus on healthy volunteers and the detailed criteria, there is a higher likelihood of successful completion of this Phase 1 trial.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01803399",
+        "usd_cost": 0.0011719999999999999
+    },
+    {
+        "reasoning": "The clinical trial focuses on the evaluation of Sativex compared with placebo in recurrent Glioblastoma Multiforme patients. Glioblastoma Multiforme is a high-grade brain tumor with limited treatment options, making it a critical area for research. The inclusion and exclusion criteria are specific, targeting patients with confirmed diagnosis, tumor progression, and specific medical history criteria. The trial design is focused on safety and efficacy measures, indicating a thorough planning process. Given the high unmet medical need in Glioblastoma Multiforme and the specificity of the trial criteria, there is a potential for the trial to provide valuable insights into the efficacy of Sativex in this patient population. However, the challenges of patient recruitment, complexity of the disease, and the stringent exclusion criteria may pose obstacles to timely completion. Considering these factors, the prediction for this clinical trial is **success**.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01812616",
+        "usd_cost": 0.0008925000000000001
+    },
+    {
+        "reasoning": "The clinical trial is focused on investigating the use of high-dose cyclophosphamide for severe refractory Crohn's Disease in patients who have not responded to traditional therapies. The disease severity is specified as moderate to severe, with clear criteria for inclusion and exclusion. The trial targets a specific subset of patients who have failed conventional treatments, indicating a need for alternative approaches. This targeted approach may increase the chances of observing a significant treatment effect. The trial design appears well-structured with defined endpoints and eligibility criteria. Given the high unmet medical need in severe Crohn's Disease and the potential of high-dose cyclophosphamide as an alternative therapy, there is a reasonable basis to predict the trial's success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01836289",
+        "usd_cost": 0.0005560000000000001
+    },
+    {
+        "reasoning": "This is a Phase 1 clinical trial focused on patients with metastatic melanoma. The trial involves the combination of intralesional Bacillus Calmette-Guerin (BCG) followed by Ipilimumab. The eligibility criteria are specific and require patients to have stage III or IV melanoma with at least one metastatic lesion, among other criteria. The trial excludes patients with active cerebral metastases, history of tuberculosis, hypersensitivity to BCG, and autoimmune diseases, among other conditions. The criteria are stringent and aim to ensure the safety and efficacy of the treatment. Considering the nature of the trial, the disease risk, and the eligibility criteria, the trial is predicted to be a success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01838200",
+        "usd_cost": 0.0008445
+    },
+    {
+        "reasoning": "Factors such as patient registration, speed of clinical trials, quality of clinical trials, and communication play crucial roles in the success of clinical trials. The trial focuses on treating relapsed/refractory adult acute myeloid leukemia patients with Metformin and Cytarabine. The inclusion and exclusion criteria are well-defined, emphasizing patient eligibility and safety. Considering these factors, the trial has a structured protocol and addresses an unmet medical need. Therefore, I predict this trial to be a success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01849276",
+        "usd_cost": 0.001085
+    },
+    {
+        "reasoning": "This is a phase 1 clinical trial for pancreatic adenocarcinoma, a challenging disease to treat. The trial involves a combination of gemcitabine, ascorbate, and radiation therapy. The inclusion and exclusion criteria are specific and aim to ensure patient safety and study integrity. The success rate of phase 1 trials is generally low due to the focus on dose escalation and safety rather than efficacy. Considering the complexity of the disease, the novelty of the treatment approach, and the stringent criteria for patient selection, the trial may face challenges in patient recruitment, adherence to the treatment protocol, and potential toxicities. The success of phase 1 trials is often based on safety and tolerability rather than efficacy outcomes. Given these factors, the prediction is a cautious approach towards categorizing this trial as a failure.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01852890",
+        "usd_cost": 0.000652
+    },
+    {
+        "reasoning": "This is a Phase 1 clinical trial for patients with relapsed or refractory multiple myeloma. The eligibility criteria are well-defined, focusing on disease progression and previous treatments. The trial involves a combination therapy of Everolimus, Pomalidomide, and Dexamethasone. The quality of the clinical trial is crucial for moving to the next stages. Given the specificity of the inclusion and exclusion criteria, it is likely that patient registration will be thorough. The relationship between the sponsor and collaborator is important, and the rapid patient recruitment for clinical trials may affect the speed of trial completion. Based on the information provided, the trial seems well-planned and targeted, with a focus on a specific patient population and clear endpoints.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01889420",
+        "usd_cost": 0.0008885000000000001
+    },
+    {
+        "reasoning": "This is a Phase I clinical trial evaluating the combination of Istodax and Doxil for the treatment of relapsed or refractory cutaneous T-cell lymphoma. The disease area is focused and the eligibility criteria are specific, targeting patients with measurable Stage IB-IVB cutaneous T-cell lymphoma. The trial aims to assess dose-finding and preliminary efficacy. Considering the focus on a specific disease, the drug combination, and the clear objectives of the trial, the quality of the trial seems promising. Additionally, patient eligibility criteria are well-defined to ensure a homogeneous study population. The potential success factors of patient registration, trial speed, communication, and relationship type have been considered in the trial planning. Based on these factors, along with the specific nature of the trial and disease area, I predict the trial outcome to be a success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01902225",
+        "usd_cost": 0.001095
+    },
+    {
+        "reasoning": "Based on the quality of clinical trials, patient enrollment is a key factor in success. Insufficient numbers of participants often lead to trial termination. In this case, patient eligibility includes those with relapsed or refractory AML who are unwilling to receive standard induction chemotherapy. The eligibility criteria are specific, including performance status, lab values, and Revlimid assistance program registration. These factors indicate a well-planned trial with stringent inclusion and exclusion criteria, which is a positive indicator of trial quality and planning. Additionally, the use of lenalidomide, an established drug, in the treatment regimen adds to the trial's credibility.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01904643",
+        "usd_cost": 0.0008955
+    },
+    {
+        "reasoning": "This clinical trial is evaluating the safety and efficacy of Romidepsin in combination with antiretroviral therapy in HIV-infected adults with suppressed viral load. The trial has specific inclusion and exclusion criteria to ensure the quality of participants. The trial focuses on patients with HIV infection who meet certain criteria related to their viral load, CD4 cell count, laboratory values, and overall health status. Considering the targeted patient population, the nature of the trial, and the importance of patient registration, speed of clinical trials, relationship type, and communication in trial success, it is predicted that the trial will be successful.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01933594",
+        "usd_cost": 0.002037
+    },
+    {
+        "reasoning": "The clinical trial is in Phase 1, focusing on advanced solid tumors with a novel drug, PQR309. The disease has no proven therapy, indicating a high unmet medical need. The eligibility criteria are specific and comprehensive, ensuring a focused patient population. The trial requires informed consent and a performance score of 0-1, indicating a well-controlled study environment. Considering the high unmet medical need, the specific eligibility criteria, and the novel drug, there is a higher likelihood of success. Additionally, partnerships and communication play a crucial role in trial success, further boosting the chances of a positive outcome.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01940133",
+        "usd_cost": 0.000365
+    },
+    {
+        "reasoning": "This clinical trial is focused on evaluating the pharmacokinetics and safety of carfilzomib in patients with relapsed multiple myeloma and end-stage renal disease. The inclusion criteria are specific and require patients to have received prior treatment for multiple myeloma, have adequate organ and bone marrow function, and meet certain performance status and renal function criteria. The exclusion criteria further narrow down the patient population to exclude those with specific conditions or contraindications. Given the targeted nature of the trial and the stringent criteria, along with the disease complexity and the drug being investigated, the trial is likely to be challenging but has potential for success if patient recruitment and trial quality are effectively managed.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01949532",
+        "usd_cost": 0.0004695
+    },
+    {
+        "reasoning": "This is a phase 1 clinical trial focusing on infections, bacterial, with specific inclusion and exclusion criteria related to healthy adult women. The trial involves the evaluation of an oral contraceptive containing norethindrone and ethinyl estradiol when co-administered with GSK1322322. The criteria are detailed and specific, particularly related to the health status, age, and reproductive potential of female participants. The trial aims to assess pharmacokinetics, pharmacodynamics, and safety. Given the focus on healthy participants and the comprehensive criteria for eligibility, along with the specific objectives of the trial, the likelihood of success is high.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01953809",
+        "usd_cost": 0.0011610000000000001
+    },
+    {
+        "reasoning": "The clinical trial is in Phase 1 and focuses on treating patients with resectable pancreatic carcinoma using metformin hydrochloride. Pancreatic cancer is a difficult-to-treat disease with a high mortality rate. The trial has strict inclusion and exclusion criteria to ensure patient safety and trial quality. The drug being studied, metformin hydrochloride, is already widely used for other conditions and has a known safety profile, which could increase the chances of success. However, the success rate of clinical trials is generally low, and the complex nature of pancreatic cancer could introduce challenges. Considering these factors, there is a moderate likelihood of success for this clinical trial.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01954732",
+        "usd_cost": 0.000477
+    },
+    {
+        "reasoning": "This clinical trial is a Phase 1 trial involving healthy participants with specific inclusion and exclusion criteria. The trial focuses on evaluating the safety and effects of an investigational drug using an endotoxin-induced inflammatory response model. The eligibility criteria are well-defined, targeting healthy individuals within a certain age range and BMI. The exclusion criteria ensure the exclusion of potential confounding factors. Given that the trial is well-structured and targets a specific population, the quality of the clinical trial planning and operation is likely to be high. Additionally, the nature of the trial aligns with the success factors identified, such as patient registration and quality of clinical trials. Considering the clear focus, well-defined criteria, and alignment with success factors, the prediction is that this clinical trial will be a success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01965600",
+        "usd_cost": 0.0004285
+    },
+    {
+        "reasoning": "The clinical trial is focused on pediatric patients with sickle cell anemia, which is a serious condition with limited treatment options. The eligibility criteria are clearly defined, targeting a specific age range and excluding patients with certain medical conditions or recent blood transfusions. The drug being studied, hydroxyurea, is known to be effective in treating sickle cell disease. Considering the importance of patient registration, the trial's success heavily relies on recruiting enough participants. The trial also emphasizes compliance and follow-up, which are crucial for the quality of the study. Based on these factors, the trial is likely to be successful.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01966731",
+        "usd_cost": 0.0004395
+    },
+    {
+        "reasoning": "This is a Phase 1 clinical trial focusing on schizophrenia, a complex psychiatric disorder. The eligibility criteria are detailed and specific, targeting healthy individuals within a certain age range and excluding those with a history of psychiatric conditions, including schizophrenia. The trial drug, SEP-363856, is intended for use in individuals with high or low schizotypy characteristics. Given the stringent eligibility criteria and the nature of the trial drug, which targets a specific population subset, it is likely that patient recruitment may be challenging. The successful completion of this trial depends on rapid patient recruitment, which can be influenced by the ability to reach the targeted population effectively. Additionally, the quality of clinical trials, including adherence to GCP compliance, will be crucial for the success of the trial. Considering these factors, there is a higher likelihood of success in this clinical trial.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01972711",
+        "usd_cost": 0.0012170000000000002
+    },
+    {
+        "reasoning": "The clinical trial is focused on the treatment of head and neck squamous cell carcinoma using Sativex in patients undergoing radiotherapy with a likelihood of developing oral mucositis. The trial is in Phase 1, targeting Stage III or IV HNSCC patients who meet specific inclusion criteria related to age, diagnosis, treatment plan, and health status. The exclusion criteria are well-defined to ensure patient safety and data integrity. The trial is well-planned with clear eligibility criteria and endpoints, indicating a high-quality trial design. Patient enrollment might be challenging due to the specific patient population and treatment requirements. However, the trial's focus on a critical unmet medical need and the partnership with sites experienced in clinical trials could facilitate patient recruitment. The communication between the sponsor and collaborators is emphasized in the success factors, which could positively impact the trial's progress. Considering these factors, the trial has a moderate likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01975688",
+        "usd_cost": 0.0010925
+    },
+    {
+        "reasoning": "This is a Phase 1 clinical trial for patients with advanced solid tumors, evaluating the combination of lurbinectedin and cisplatin. The eligibility criteria are well-defined, including age, performance status, previous treatments, and various health assessments. The trial aims to assess safety, dosage, and potential side effects of the combination therapy. Given the nature of Phase 1 trials and the specificity of the criteria, the success of this trial is uncertain. Therefore, I predict it as a failure.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01980667",
+        "usd_cost": 0.000478
+    },
+    {
+        "reasoning": "This is a Phase 1 clinical trial focusing on the safety, tolerability, pharmacokinetics, and effects of PF-05180999 in healthy adult males with specific inclusion and exclusion criteria related to histamine response. The trial is designed to assess initial safety and dosage parameters of the drug. Based on the nature of the trial, the target population, and the focus on safety and tolerability, the trial has a higher likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01981499",
+        "usd_cost": 0.0002975
+    },
+    {
+        "reasoning": "This clinical trial focuses on the safety and efficacy of ranibizumab for diabetic macular edema, a condition that affects vision in diabetic patients. The trial criteria are well-defined, with specific inclusion and exclusion criteria to ensure the quality of participant selection. Patient recruitment may be challenging due to the requirement of previous bevacizumab injections, but the criteria aim to enroll participants who can commit to the study. Considering the high success rate of clinical trials with partnerships and the importance of communication between sponsors and collaborators, the likelihood of success is elevated. Additionally, the trial is in Phase 1/Phase 2, which typically has higher success rates compared to later phases. Hence, based on the comprehensive criteria and potential for effective patient enrollment and communication, the prediction is success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01982435",
+        "usd_cost": 0.000656
+    },
+    {
+        "reasoning": "This clinical trial is a Phase 1/Phase 2 trial focusing on pain in patients undergoing foot or ankle surgery with popliteal nerve block planned for postoperative analgesia. The trial involves the use of two drugs, clonidine, and ropivacaine. The inclusion and exclusion criteria are focused on ensuring the suitability of the patients for the trial. Considering the factors that influence clinical trial success, such as patient registration, speed of clinical trials, quality of clinical trials, and relationship type, along with the specific criteria of this trial, the success of this trial is predicted to be a success. The trial's focus on pain management, the relevance of the drugs being tested, and the specificity of the inclusion and exclusion criteria enhance the likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01986751",
+        "usd_cost": 0.00045050000000000005
+    },
+    {
+        "reasoning": "The clinical trial is focused on treating hepatocellular carcinoma, a challenging and critical disease. The inclusion criteria are specific and require histologically confirmed HCC, participants with disease progression or intolerance to prior treatments, MET+ status, and other strict requirements. The trial excludes participants with prior anticancer treatments, CNS metastasis, significant gastrointestinal issues, and other conditions that may affect compliance or absorption of the drug. The trial also requires participants to comply with scheduled visits and treatment plans. Given the stringent criteria and the complexity of treating HCC, the success of the trial may be challenging. The success factors of quality, speed, relationship type, and communication are important, but the high-risk nature of HCC and the strict eligibility criteria may pose significant challenges. Therefore, I predict that this clinical trial may result in failure.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01988493",
+        "usd_cost": 0.0008295
+    },
+    {
+        "reasoning": "This clinical trial is focused on estrogen receptor positive breast cancer, which is a prevalent type of cancer. The drug combination being tested (fulvestrant + Akt inhibition) targets a specific subset of patients with advanced aromatase inhibitor-resistant breast cancer. The inclusion and exclusion criteria are well-defined, targeting a specific patient population for the trial. Given that the trial involves a combination therapy and targets patients with specific characteristics, the trial has a higher likelihood of success. The quality of clinical trial planning and operation is crucial, and the trial seems to have adequate planning based on the eligibility criteria provided. The relationship between the sponsor and collaborator is important, and having non-industrial partners can enhance the success rate. Considering these factors, the predicted outcome of this clinical trial is success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01992952",
+        "usd_cost": 0.00049
+    },
+    {
+        "reasoning": "This is a Phase 1 clinical trial focused on evaluating the pharmacokinetics, pharmacodynamics, and safety of Canagliflozin in older children and adolescents with Type 2 Diabetes Mellitus. The trial involves specific inclusion and exclusion criteria related to the diagnosis of Type 2 Diabetes Mellitus, stable regimen requirements, ability to swallow whole tablets, absence of specific medical conditions, and agreement for glucose monitoring. The trial also involves a placebo arm. Given the nature of the trial, the targeted patient population, and the drug being studied, there is a moderate likelihood of success. However, considering the challenges in patient recruitment, the complexities of pediatric trials, and the high risk nature of clinical trials, the prediction is towards failure.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT02000700",
+        "usd_cost": 0.0004125
+    },
+    {
+        "reasoning": "This clinical trial focuses on testing the treatment differences between Canagliflozin and Placebo in insulin secretion in subjects with Type 2 Diabetes Mellitus (T2DM). The trial is in Phase 1, which typically assesses safety and dosage in a small number of healthy individuals. The disease being studied, diabetes mellitus type 2, is a common and well-researched condition. Canagliflozin is a known drug for treating diabetes. The inclusion and exclusion criteria are specific and aim to select a stable diabetic population. Considering the established nature of the disease, the known drug, and the criteria to ensure participant stability, there is a moderate likelihood of success in this Phase 1 trial.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02009488",
+        "usd_cost": 0.000482
+    },
+    {
+        "reasoning": "This clinical trial focuses on patients with chronic lymphocytic leukemia and mantle cell lymphoma who are refractory or have relapsed after prior treatment. The inclusion and exclusion criteria are specific and targeted towards a defined patient population. The combination of ublituximab and ibrutinib as the investigational drugs shows promise in treating B-cell malignancies. Considering the high success rates associated with partnerships, the presence of non-industrial partners, and the importance of communication in clinical trial success, there are positive indicators for the success of this trial. Additionally, the phase of the trial is important, as earlier phases have higher success rates. Therefore, I predict this clinical trial to be a success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02013128",
+        "usd_cost": 0.000383
+    },
+    {
+        "reasoning": "The clinical trial is a Phase I/II study focusing on Japanese patients with relapsed or refractory peripheral T-cell lymphoma. The disease is rare and challenging, which may make patient recruitment difficult. However, the eligibility criteria are specific and well-defined, which can aid in successful patient registration. Considering the insights on patient registration and the importance of rapid recruitment, the trial may face challenges in meeting enrollment targets. However, the study focuses on a specific patient population and has stringent inclusion and exclusion criteria, which can contribute to the quality of the trial. Based on the nature of the disease, the drug being tested (pralatrexate), and the trial design, there is a potential for success if patient recruitment can be efficiently managed and the trial is conducted with high quality and compliance to GCP. Considering the factors influencing trial success, including patient registration, speed of recruitment, trial quality, and the importance of effective communication, the trial has a reasonable chance of success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02013362",
+        "usd_cost": 0.0006284999999999999
+    },
+    {
+        "reasoning": "This Phase 1 clinical trial focuses on patients with stage IIIB or stage IV non-small cell lung carcinoma who have had a response to first-line chemotherapy. The eligibility criteria include specific requirements related to patient age, performance status, organ functions, and necessary registrations. The trial involves lenalidomide maintenance therapy in this patient population. Given the high risk associated with clinical trials and the complex nature of the disease and drug involved, the success of this trial is uncertain. The challenging criteria for patient selection and the investigational nature of lenalidomide maintenance therapy in this context may lead to difficulties in patient recruitment and trial completion.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT02018523",
+        "usd_cost": 0.0009795000000000001
+    },
+    {
+        "reasoning": "This clinical trial focuses on investigating the treatment effect of Glatiramer Acetate on girls with Rett Syndrome. The disease risk is significant as Rett Syndrome is a rare genetic disorder with specific inclusion and exclusion criteria. The drug being studied, Glatiramer Acetate, has shown promise in other conditions but may not have direct relevance to Rett Syndrome. The Phase 1 nature of the trial indicates early-stage testing. Considering the specific criteria required for patient inclusion, the success of patient recruitment is crucial for the trial's progress. However, the complexity of the disease and the limited eligible patient population may pose challenges in patient recruitment. Based on the high-risk nature of clinical trials, the low success rate in drug development projects, and the specific characteristics of this trial, the prediction is leaning towards failure.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT02023424",
+        "usd_cost": 0.0005189999999999999
+    },
+    {
+        "reasoning": "Based on the characteristics of the clinical trial, including the phase, disease, drugs, and inclusion/exclusion criteria, as well as the factors influencing clinical trial success such as patient registration, speed of clinical trials, quality of clinical trials, and communication, I will assess the likelihood of success for this trial.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02030483",
+        "usd_cost": 0.0007314999999999999
+    },
+    {
+        "reasoning": "This clinical trial is focused on children, adolescents, and young adults with genetically confirmed Prader-Willi syndrome. The inclusion and exclusion criteria are well-defined to ensure the selection of suitable participants. The trial is in Phase 1/Phase 2, targeting a rare genetic disorder with a specific drug, DCCR, and a placebo as a comparator. Considering the high risk of failure in clinical trials, especially in rare diseases, and the complexity of Prader-Willi syndrome, the success of this trial may be challenging. However, the specified criteria and focus on a specific patient population may increase the likelihood of success. Therefore, I predict the outcome of this clinical trial as a success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02034071",
+        "usd_cost": 0.00039799999999999997
+    },
+    {
+        "reasoning": "The clinical trial is in Phase 1, which is primarily focused on evaluating the safety of the drug combination (APD-791, aspirin, and clopidogrel) in healthy adults. The disease under consideration is acute coronary syndrome. The drugs involved are commonly used in the treatment of cardiovascular conditions. The inclusion and exclusion criteria are stringent and aim to enroll healthy participants with specific characteristics to ensure safety. Given that the trial is focused on safety and involves commonly used drugs in cardiovascular diseases, the likelihood of success is higher. Additionally, the trial design seems well-thought-out with detailed eligibility criteria.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02034292",
+        "usd_cost": 0.0007675000000000001
+    },
+    {
+        "reasoning": "This clinical trial is a phase 1 trial involving healthy male volunteers with specific inclusion and exclusion criteria. The disease risk is low as the participants are healthy. The drugs being tested include placebo to BI 1026706, pregabalin, BI 1026706, and celecoxib. The trial title indicates the evaluation of the effectiveness of BI 1026706 on laser evoked potentials in UVB-irradiated skin. Based on the criteria and characteristics of the trial, the likelihood of success is moderate. The quality of clinical trials, patient registration, and communication are important factors that can influence the outcome positively. However, the nature of phase 1 trials with healthy volunteers and the complexities of drug development projects suggest a cautious approach. Therefore, I predict the outcome of this clinical trial as a potential success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02037165",
+        "usd_cost": 0.00048650000000000006
+    },
+    {
+        "reasoning": "This clinical trial focuses on a phase 1/phase 2 trial for unresectable adenocarcinoma of the pancreas, which is a challenging disease with high unmet medical need. The trial targets a specific patient population with clear inclusion and exclusion criteria. The combination therapy of AZD1775 and gemcitabine aims to improve outcomes in these patients. The trial design includes dose escalation and radiation therapy, indicating a comprehensive approach to treatment. Considering the high risk associated with pancreatic cancer and the potential benefits of the combination therapy, I predict this trial to be a success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02037230",
+        "usd_cost": 0.0005465
+    },
+    {
+        "reasoning": "This clinical trial focuses on patients with ALK-rearranged advanced non-small cell lung cancer (NSCLC) who have previously been treated with crizotinib. The trial includes specific inclusion and exclusion criteria to ensure the eligibility of the patients. The study aims to evaluate the efficacy and safety of LDK378 in this patient population. Given the targeted nature of the treatment and the clear criteria for patient selection, the trial is likely to have a higher chance of success. Additionally, the involvement of non-industrial partners may positively impact the success rate of the clinical trial. The focus on a specific genetic alteration (ALK rearrangement) and the use of approved diagnostic tests further enhance the quality of the trial.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02040870",
+        "usd_cost": 0.0004335
+    },
+    {
+        "reasoning": "Based on the factors of patient registration, speed of clinical trials, quality of clinical trials, and relationship type and communication, along with the specific details of the clinical trial including the phase, diseases, drugs, and eligibility criteria provided, I will predict the outcome of this clinical trial.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02041481",
+        "usd_cost": 0.0010035
+    },
+    {
+        "reasoning": "This clinical trial focuses on Total Marrow Irradiation with High Dose Melphalan prior to Autologous Transplant for Multiple Myeloma. The trial is in Phase 1 and targets patients with symptomatic myeloma who are at high or intermediate risk of disease progression. The inclusion criteria are specific in terms of disease stage, previous treatment, age, performance status, and organ function. The exclusion criteria exclude patients with specific conditions and those who have undergone certain procedures. Given the nature of the trial, the stringent eligibility criteria, and the complexity of the treatment approach, the success of the trial is uncertain. Phase 1 trials are primarily focused on safety and dosing, and the success rate for Phase 1 trials is generally lower than later phases. Considering the high risk associated with multiple myeloma and the innovative approach of total marrow irradiation, I predict this trial to be a failure.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT02043860",
+        "usd_cost": 0.0005350000000000001
+    },
+    {
+        "reasoning": "Based on the analysis of clinical trials, the factors of patient registration, speed of clinical trials, relationship type, and communication are crucial for trial success. In this specific trial, patient registration is a key factor, and inadequate patient registration has led to termination of trials in the past. The criteria for patient inclusion and exclusion are well-detailed, which indicates a focus on patient recruitment. The trial also involves drugs that have been used in similar diseases before. Considering the emphasis on patient registration and quality criteria, there is a higher likelihood of success in this clinical trial.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02044796",
+        "usd_cost": 0.000817
+    },
+    {
+        "reasoning": "This phase 1 clinical trial is testing the safety of combining zileuton and dasatinib in patients with chronic myelogenous leukemia who have inadequate response or resistance to TKIs. The inclusion criteria are specific, focusing on patients who meet certain health and age requirements. The exclusion criteria are stringent, excluding patients with certain medical conditions and intolerances. Given the nature of the trial and the strict criteria, there is a higher likelihood of success as the trial is targeting a specific patient population with close monitoring. Additionally, the combination of two drugs for CML treatment is a novel approach that may show promising results in this phase 1 trial.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02047149",
+        "usd_cost": 0.0007925
+    },
+    {
+        "reasoning": "The clinical trial is in Phase 1 or Phase 2, focusing on the treatment of major depression. The disease risk is significant, and the trial includes specific and strict inclusion and exclusion criteria to ensure the quality of the trial. The eligibility criteria target individuals with treatment-resistant major depressive disorder, which is a challenging population to treat. Considering the high failure rate of clinical trials and the complexity of treating major depression, the success of this trial is uncertain. Additionally, the trial involves investigating the effects of enhanced glutamate transporter function on antidepressant effects, which may pose challenges in terms of efficacy and safety outcomes. Given these factors and the current understanding of clinical trial success rates, the prediction leans towards failure.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT02049385",
+        "usd_cost": 0.000643
+    },
+    {
+        "reasoning": "This clinical trial is focused on evaluating the safety and pharmacokinetics of MEK162 in healthy subjects with normal hepatic function and subjects with impaired hepatic function. The inclusion and exclusion criteria are detailed and specific, ensuring the selection of appropriate participants. The trial aims to assess the impact of hepatic impairment on the drug's behavior. Considering the strict criteria, the trial is likely well-designed and controlled, which is a key factor for success. The drug being tested, MEK162, targets specific pathways and has the potential for therapeutic benefit. Given the nature of the trial, the disease risk, and the quality of the trial design, I predict the outcome of this clinical trial to be a success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02050815",
+        "usd_cost": 0.0007605000000000001
+    },
+    {
+        "reasoning": "This clinical trial is focused on evaluating SAGE-547 Injection as adjunctive therapy for the treatment of super-refractory status epilepticus. The disease being targeted, super-refractory status epilepticus, is a serious and life-threatening condition with limited treatment options. The drug, SAGE-547, is being investigated as an adjunctive therapy for patients who have not responded to standard treatments. The eligibility criteria are specific and target a well-defined patient population with EEG-confirmed SRSE diagnosis who have failed to respond to first-line and second-line agents. Considering the high unmet medical need in super-refractory status epilepticus and the potential of SAGE-547 as an adjunctive therapy, the trial has a reasonable chance of success if patient recruitment and trial quality are managed effectively.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02052739",
+        "usd_cost": 0.0005155
+    }
+]

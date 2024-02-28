@@ -1,0 +1,72 @@
+[
+    {
+        "reasoning": "The trial is a phase 1/phase 2 study involving pediatric cancer patients with Ewing's sarcoma, soft tissue sarcoma, neuroblastoma, and brain tumors. The inclusion criteria are well-defined, focusing on patients eligible for autologous transplantation and with specific performance and laboratory parameters. The exclusion criteria also eliminate high-risk patients. The trial aims to evaluate the efficacy and safety of Plerixafor in mobilization regimens. Given the targeted patient population and the stringent criteria, the trial is likely to be successful.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01288573",
+        "usd_cost": 0.0006165
+    },
+    {
+        "reasoning": "The study is a phase 1 trial focusing on participants with renal impairment and heart failure. The inclusion and exclusion criteria are quite restrictive, ensuring the safety of the participants and minimizing confounding factors. The drugs being tested are MK-7145, furosemide, and torsemide. Given the specificity of the trial, it is likely to have a successful outcome if the safety and efficacy profiles of the drugs are favorable and meet the trial objectives.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01558674",
+        "usd_cost": 0.0007280000000000001
+    },
+    {
+        "reasoning": "Phase 1 clinical trial for chloroquine in small cell lung cancer with specific inclusion and exclusion criteria provided.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01575782",
+        "usd_cost": 0.0005524999999999999
+    },
+    {
+        "reasoning": "This phase 1 clinical trial aims to investigate the use of dasatinib for modulating the immune system post autologous stem cell transplants in patients with hematologic malignancies, including multiple myeloma, Hodgkin's and non-Hodgkin's lymphoma. The eligibility criteria are strict, ensuring that only suitable patients are included in the trial. Patients must be between 100 to 180 days post ASCT, have a performance status of >= 60%, and meet specific laboratory values such as total bilirubin, hepatic enzymes, serum creatinine, hemoglobin, and absolute neutrophil counts. Exclusion criteria eliminate patients with disease progression pre-day 100 after ASCT, certain medical conditions, and prohibited treatments. The criteria also address reproductive status, previous toxicities to dasatinib, and potential drug interactions.\nThe trial targets a specific patient population post-ASCT where dasatinib may have the potential to modulate the immune response and improve outcomes. The eligibility criteria aim to ensure patient safety and minimize confounding factors that could affect the trial results. Given the focused approach, adherence to strict criteria, and promising potential of dasatinib in modulating the immune system, the trial outcome is likely to be successful.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01609816",
+        "usd_cost": 0.0010985
+    },
+    {
+        "reasoning": "Phase 1 clinical trial for citalopram effects on craving and dopamine receptor availability in alcoholics with specific inclusion and exclusion criteria provided.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01657760",
+        "usd_cost": 0.0006864999999999999
+    },
+    {
+        "reasoning": "This phase 1 clinical trial aims to study the safety and pharmacokinetics of N6022 in subjects with cystic fibrosis who are homozygous for the F508del-CFTR gene mutation. The inclusion criteria ensure that participants have specific disease-related characteristics and health parameters to assess the drug's safety and efficacy. The exclusion criteria aim to prevent potential confounding factors. Given the focus on safety and pharmacokinetics in this phase 1 trial and the strict eligibility criteria, it is likely to succeed if the drug shows promising results without significant safety concerns.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01746784",
+        "usd_cost": 0.000462
+    },
+    {
+        "reasoning": "The trial is a phase 1 clinical trial for patients with advanced, relapsed, or metastatic non-small cell lung cancer. The inclusion criteria are specific, requiring patients to have failed at least one line of palliative therapy and meet various health parameters. The use of theophylline in combination with a vaccine and oxygen is a novel approach. Considering the advanced stage of the disease, the stringent inclusion criteria, and the novelty of the treatment, the prediction leans towards failure.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT01799161",
+        "usd_cost": 0.000544
+    },
+    {
+        "reasoning": "Phase 1 clinical trial evaluating the effect of GSK1322322 on cardiac conduction in healthy volunteers with specific inclusion and exclusion criteria related to cardiac health, liver function, and drug sensitivities.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01803399",
+        "usd_cost": 0.001001
+    },
+    {
+        "reasoning": "The trial is for patients with grade four Glioblastoma Multiforme who have experienced tumor progression following radiation and first-line chemotherapy with Temozolomide. The trial aims to assess the safety of Sativex compared to placebo in combination with dose-intense Temozolomide. The inclusion and exclusion criteria are carefully defined to ensure patient safety and trial integrity. Overall, the trial design appears well-structured and focused on a specific patient population with clear endpoints. Considering the focus on safety and the targeted population, the trial is likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01812616",
+        "usd_cost": 0.0007995000000000001
+    },
+    {
+        "reasoning": "This trial is investigating the use of high-dose cyclophosphamide for severe refractory Crohn's Disease in patients who have not responded to previous treatments, including anti-TNF agents and immunosuppressant drugs. The inclusion criteria are well-defined with a focus on disease severity and previous treatment failure, ensuring a specific target population for the study. However, the exclusion criteria are also stringent, excluding patients with certain co-morbid conditions, history of allergic reactions to cyclophosphamide, and recent use of specific medications. Given the targeted patient population and the potential effectiveness of high-dose cyclophosphamide in severe cases, the trial is likely to have a successful outcome.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01836289",
+        "usd_cost": 0.00055
+    }
+]

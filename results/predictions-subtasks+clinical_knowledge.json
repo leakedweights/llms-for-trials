@@ -1,0 +1,20 @@
+[
+    {
+        "reasoning": "The clinical trial focuses on pediatric cancer patients with rare and challenging-to-treat diseases such as Ewing's sarcoma/soft tissue sarcoma, neuroblastoma, and brain tumors. The specific eligibility criteria, including age restrictions, disease types, and treatment history, may limit the pool of eligible participants. The trial also involves the investigational drug plerixafor, which adds complexity in terms of safety monitoring and potential adverse events. Patient recruitment may be challenging due to the rarity of the diseases, the need for informed consent from pediatric patients and caregivers, and logistics related to treatment and follow-up. While the trial's focus on addressing an unmet medical need is commendable, the feasibility of enrolling a sufficient number of participants within the specified criteria remains a significant hurdle. Considering the high risk of clinical trial failure and the complexities involved in this trial, the overall likelihood of success is uncertain. It is more likely that the trial will face challenges and may be at risk of failure.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01288573"
+    },
+    {
+        "reasoning": "The clinical trial targets patients with renal insufficiency and heart failure, focusing on a specific subset of patients with complex conditions. The eligibility criteria are stringent, limiting the pool of potential participants. The diseases targeted in the trial, while treatable, require specialized care and close monitoring. Patient recruitment challenges, including patient awareness, geographic reach, competition with other trials, and patient burden, may impact enrollment rates. Considering the prevalence of termination due to insufficient patient registration, the trial's feasibility in recruiting a sufficient number of participants is at risk. The complexity of managing dual conditions and the specificity of the inclusion criteria further complicate patient recruitment. Overall, the trial faces significant challenges in enrolling an adequate number of participants, potentially leading to feasibility concerns and a higher likelihood of failure.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT01558674"
+    },
+    {
+        "reasoning": "The clinical trial focuses on stage I-III small cell lung cancer, a challenging and aggressive cancer subtype with specific eligibility criteria that may limit patient recruitment. The investigational drug, chloroquine, is being tested as an anti-autophagic radiosensitizing agent, reflecting an innovative approach to treatment. However, the potential risks associated with chloroquine, including side effects and interactions, need to be carefully monitored. Considering the complexity of patient eligibility, the limitations in patient pool, and the aggressive nature of SCLC, the feasibility of recruiting a sufficient number of participants may be challenging. However, if recruitment strategies are effectively implemented and patient engagement is encouraged, the trial could yield valuable insights into the potential benefits of chloroquine in combination with radiation therapy for SCLC patients.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT01575782"
+    }
+]

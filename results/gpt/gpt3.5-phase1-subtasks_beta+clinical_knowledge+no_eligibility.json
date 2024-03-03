@@ -1,0 +1,320 @@
+[
+    {
+        "reasoning": "The clinical trial is in Phase 1, focusing on the combination of trametinib and sorafenib for advanced hepatocellular cancer. The trial targets a specific patient population with well-defined inclusion and exclusion criteria. The lead sponsor, H. Lee Moffitt Cancer Center, is a reputable institution with expertise in cancer research. While collaborations with other institutions are not mentioned, the involvement of Moffitt Cancer Center enhances the trial's credibility. The trial description emphasizes safety and tolerability, essential aspects for Phase 1 trials. However, the success of the trial will depend on meeting enrollment goals, adherence to protocol, and demonstrating positive outcomes. Considering the reputable sponsor, focused patient selection criteria, and the potential synergistic effects of the drug combination, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02292173"
+    },
+    {
+        "reasoning": "The trial design is well-structured with a phased approach, allowing for gradual evaluation of safety and efficacy. The targeted disease and patient population are clearly defined, although the inclusion criteria may pose challenges for enrollment. The collaboration with reputable sponsors and institutions, including M.D. Anderson Cancer Center and Seagen Inc., enhances the trial's credibility and potential success. Overall, while enrollment challenges and specific criteria may impact the trial's progress, the strong sponsor and collaborator support, along with the structured design, suggest a higher likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02096042",
+        "fail_reason": "\n    slow accrual.\n  "
+    },
+    {
+        "reasoning": "The clinical trial is led by Stanford University, a highly reputable institution, and has collaboration with the National Cancer Institute (NCI), indicating strong support and expertise. The trial focuses on treating patients with relapsed or refractory acute myeloid leukemia (AML) using a combination of lenalidomide and chemotherapy drugs. The inclusion and exclusion criteria are well-defined, targeting suitable patients while ensuring safety. The trial is in phase 1, aiming to determine the safety and optimal dosing of the treatment. Considering the reputable sponsors, the challenging nature of AML, and the collaboration with NCI, the trial is likely to have a higher chance of success. However, success will depend on factors such as patient enrollment, adherence to protocol, and safety and efficacy outcomes.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01904643",
+        "fail_reason": "\n    accrual factor\n  "
+    },
+    {
+        "reasoning": "The clinical trial is a Phase 1 study targeting individuals with transthyretin cardiomyopathy amyloidosis (ATTR-CM) to investigate the biodistribution of 89Zirconium-labelled GSK2398852. The trial involves specific inclusion and exclusion criteria, focusing on a narrow age range (65 to 80 years) and strict diagnostic requirements. Challenges may arise in recruiting eligible participants within the specified criteria. The trial is sponsored by GlaxoSmithKline, a reputable pharmaceutical company, but lacks listed collaborators. While the trial design appears scientifically sound, the enrollment challenges and potential competition from other trials could impact its success. Considering these factors, the trial is more likely to face challenges and may be at a higher risk of failure.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT03417830",
+        "fail_reason": "\n    change in benefit/risk profile.\n  "
+    },
+    {
+        "reasoning": "The trial design is well-defined with stringent inclusion and exclusion criteria, focusing on healthy individuals and testing a new anticoagulant drug. The lead sponsor, Perosphere Pharmaceuticals Inc, backed by AMAG Pharmaceuticals, is reputable and experienced in conducting clinical trials. However, the trial's single location and potential recruitment challenges may impact enrollment goals. Overall, considering the sponsor's track record and the study's design, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02206100"
+    },
+    {
+        "reasoning": "The clinical trial is investigating a combination of chemotherapy drugs for aggressive lymphoma that has not responded to standard treatment. The trial is in Phase 1, focusing on safety and dosage levels. The patient population is well-defined with specific inclusion and exclusion criteria. The lead sponsor, Dana-Farber Cancer Institute, and collaborators Genzyme and Sanofi are reputable institutions. The trial design is interventional, and the study is being conducted at two locations. While enrollment may be challenging due to the specific patient population, the involvement of reputable sponsors and collaborators increases the likelihood of success. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT03132584",
+        "fail_reason": "\n    slow accrual\n  "
+    },
+    {
+        "reasoning": "The clinical trial is a Phase 1 study focusing on AML and MDS patients post-allogeneic stem cell transplant with residual disease. The inclusion and exclusion criteria are well-defined, targeting a specific patient population. The collaboration between the University of Florida and Celgene Corporation adds credibility to the trial. The study objectives are clear, aiming to determine the maximum tolerated dose and safety profile of lenalidomide. The detailed protocol and specific endpoints enhance the feasibility of the trial. However, the success of the trial may be influenced by the availability of eligible patients meeting the stringent criteria and their willingness to participate. Considering the reputable sponsors, focused study design, and collaboration with industry, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02370888",
+        "fail_reason": "\n    slow accrual\n  "
+    },
+    {
+        "reasoning": "The clinical trial is in Phase 1, focusing on safety and dosing of a combination treatment for metastatic breast cancer. The disease area is relevant, and the drug combination of Crizotinib and Sunitinib shows promise based on their individual efficacy in other cancer types. The inclusion and exclusion criteria are well-defined, targeting appropriate patient populations. The lead sponsor, Mothaffar Rimawi, brings credibility to the trial. However, the lack of listed collaborators outside the industry may limit the trial's reach and potential for success. The trial being conducted at a single location could impact enrollment rates. Overall, while the trial has promising aspects, the limited collaboration and single-site location may pose challenges in patient recruitment and diversity, potentially affecting the trial's success.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT02074878",
+        "fail_reason": "\n    poor accrual so the study was halted on may 16, 2017.\n  "
+    },
+    {
+        "reasoning": "The clinical trial focuses on a specific subset of patients with unresectable or metastatic BRAF V600 mutant melanoma, utilizing a combination of established drugs (dabrafenib and trametinib) along with digoxin. The trial has detailed inclusion and exclusion criteria to ensure patient safety and eligibility. The study description aligns with current personalized medicine goals. The lead sponsor, University of Texas Southwestern Medical Center, is a reputable institution with a strong track record in medical research. While the trial may face challenges in recruiting a sufficient number of eligible participants due to the narrow focus and strict criteria, the expertise of the lead sponsor and the targeted approach increase the likelihood of success. However, enrollment goals are crucial for trial success, and monitoring recruitment progress will be essential. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02915666",
+        "fail_reason": "\n    no subjects consented for enrollment on this study.\n  "
+    },
+    {
+        "reasoning": "The clinical trial focuses on a specific population with type-1 diabetes and stable insulin treatment, which can lead to a more homogeneous study group. The trial compares two forms of glucagon for treating hypoglycemia, which is a relevant and important endpoint. The inclusion and exclusion criteria are well-defined, which can help in ensuring the safety and efficacy outcomes are accurately measured. However, the trial is conducted at only one location, which may pose challenges in meeting enrollment goals. Overall, the trial has a focused approach and clear objective, but the limited location may impact enrollment.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02459938"
+    },
+    {
+        "reasoning": "The clinical trial is a phase 1b trial evaluating a combination therapy for advanced solid tumors and breast cancer, with specific inclusion and exclusion criteria to ensure patient safety and eligibility. The trial has a well-defined study design, clear objectives, and collaborations with reputable institutions and pharmaceutical companies. The lead sponsor, Royal Marsden NHS Foundation Trust, and collaborators like Roche Pharma AG and Pfizer have strong track records in oncology research. The trial's focus on determining the MTD and assessing safety profiles indicates a systematic approach to evaluating the combination therapy. While success in clinical trials is never guaranteed, the robust design, patient selection criteria, and support from reputable sponsors and collaborators increase the likelihood of successful trial outcomes.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02389842"
+    },
+    {
+        "reasoning": "The trial focuses on a specific disease (chronic sinusitis) with a well-defined drug and inclusion/exclusion criteria. The collaboration with a lead sponsor and the interventional study type are positive factors. However, the success heavily depends on meeting enrollment goals and ensuring compliance with strict eligibility criteria. The reputation of the sponsor and collaborating institutions is unknown, which could impact trial success. Overall, the trial has potential but faces challenges in recruitment and adherence to criteria.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT02967731"
+    },
+    {
+        "reasoning": "The clinical trial is focused on a high-need indication, advanced or metastatic non-small cell lung cancer, and evaluates a novel combination of daratumumab and atezolizumab. The trial has inclusion and exclusion criteria that are relevant for patient selection in immunotherapy trials. Additionally, the collaboration between Janssen Research & Development, LLC, and Genentech, Inc., two reputable sponsors in the pharmaceutical industry, adds credibility and resources to the trial. The trial also has a location count of 47, indicating widespread availability of sites for patient recruitment. Considering these factors, including the disease focus, study drugs, patient selection criteria, sponsor reputation, and site availability, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT03023423"
+    },
+    {
+        "reasoning": "The trial is in Phase 1, focusing on safety and dosage determination. The disease area of metastatic pancreatic cancer presents a high unmet medical need. The inclusion and exclusion criteria are well-defined to select appropriate participants. The study drugs, galunisertib and durvalumab, target different pathways, indicating a rational combination approach. The trial objective is clear, aiming to evaluate safety and efficacy. The collaboration between Eli Lilly and Company and AstraZeneca, along with the 11 locations for the trial, suggests strong support and resources. Considering these factors, the trial appears feasible and has a higher likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02734160"
+    },
+    {
+        "reasoning": "The clinical trial is a Phase 1 study focusing on evaluating the pharmacodynamics of abediterol in patients with asthma. The trial is sponsored by AstraZeneca, a reputable pharmaceutical company with expertise in respiratory medications. While the lack of external collaborators may streamline decision-making, collaborations with academic institutions could have provided additional expertise. The inclusion and exclusion criteria are well-defined, aiming to select a homogenous study population. Meeting enrollment goals is crucial for the success of the trial. Considering the nature of the trial, the disease focus, and the sponsor's track record, there is a higher likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02777827"
+    },
+    {
+        "reasoning": "The trial design is robust with a randomized, double-blind, and placebo-controlled approach, which is a strength in clinical trials. However, the strict exclusion criteria for psoriatic patients may pose challenges in enrollment. The affiliation with Allergan, a reputable pharmaceutical company, and the absence of external collaborators suggest strong sponsor credibility. The large number of study locations may facilitate enrollment. Overall, the trial has strengths in design and sponsor reputation but potential challenges in patient recruitment. ",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02555709"
+    },
+    {
+        "reasoning": "The clinical trial focusing on the combination of temozolomide and ascorbic acid for treating recurrent high-grade glioma is well-designed with clear eligibility criteria, a focused treatment approach, and reputable sponsors like the University of Nebraska and the National Cancer Institute. The disease focus on high-grade gliomas and the inclusion of well-known drugs increase the trial's appeal to potential participants. The stringent inclusion and exclusion criteria help ensure the safety and efficacy of the trial. Additionally, the collaboration with the National Cancer Institute adds credibility and expertise to the study. While the single-site study location may limit participant diversity, it simplifies logistics. Overall, the reputable sponsors, clear study objectives, and innovative treatment approach suggest a higher likelihood of trial success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02168270"
+    },
+    {
+        "reasoning": "The clinical trial focuses on a challenging indication, castration-resistant prostate cancer, and involves a novel combination of DCVAC/PCa and ONCOS-102. The inclusion and exclusion criteria are well-defined, but the requirement for patients to have accessible tumor lesions may pose recruitment challenges. The lead sponsor, SOTIO a.s., has a good track record in oncology and immunotherapy, but the absence of collaborators may limit resources and expertise. Considering the potential recruitment difficulties and limited collaborations, the trial may face challenges in meeting enrollment goals and conducting the study effectively. Therefore, the likelihood of trial success is uncertain, leaning towards a higher risk of failure.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT03514836",
+        "fail_reason": "\n    insufficient accrual\n  "
+    },
+    {
+        "reasoning": "The clinical trial focuses on a relevant patient population of high-risk myelodysplastic syndrome (MDS) patients who have failed prior hypomethylating agent treatment. The inclusion and exclusion criteria are well-defined, ensuring the enrollment of appropriate subjects. The study design includes important endpoints such as determining the recommended Phase 2 dose and evaluating clinical activity. The collaboration with GlaxoSmithKline, a reputable pharmaceutical company, and Parexel, a well-known CRO, provides expertise and resources for successful trial conduct. The trial is planned at multiple sites, indicating potential diversity in the patient population and efficient enrollment. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02929498",
+        "fail_reason": "\n    the risk benefit in the study population does not favor continuation of the study\n  "
+    },
+    {
+        "reasoning": "The trial focuses on a relevant disease (multiple myeloma) and investigates a novel drug combination with established treatments. The inclusion and exclusion criteria are well-defined to enroll a specific patient population likely to benefit from the therapy. The study design is a phase 1 trial with clear objectives. The lead sponsor, PharmaMar, has a good track record in oncology. However, the lack of collaborators outside the industry may limit resources and expertise. Meeting enrollment goals is crucial for success, and the trial's success may be impacted by the absence of collaborators.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02100657"
+    },
+    {
+        "reasoning": "The trial is well-designed with clear inclusion and exclusion criteria, a robust study design, and a focus on safety and pharmacokinetics. The sponsor, Stealth BioTherapeutics Inc., has a good reputation in the industry. However, the success of the trial will depend on meeting enrollment goals, adherence to the protocol, and the actual safety and efficacy outcomes of MTP-131 in subjects with congestive heart failure.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02388464"
+    },
+    {
+        "reasoning": "The clinical trial is in Phase 1, focusing on safety and dosage of drugs for schizophrenia, a complex mental health disorder. The inclusion and exclusion criteria are specific, which may pose challenges in meeting enrollment goals. However, the trial design, collaboration with the University of Manchester, and the reputable sponsor, Autifony Therapeutics Limited, enhance the trial's credibility. The trial's focus on pharmacoMRI effects and the potential of the drugs to target symptoms of schizophrenia are promising. Considering the challenges in enrollment and the early phase of the trial, there is a higher likelihood of facing obstacles and potential delays, leading to a prediction of trial failure.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT02935725"
+    },
+    {
+        "reasoning": "The trial is well-designed with clear inclusion and exclusion criteria targeting subjects with specific characteristics related to gout and renal impairment. The focus on pharmacokinetic and pharmacodynamic properties of RDEA3170 in male subjects with varying levels of renal impairment is relevant and addresses an important clinical need. The trial's Phase 1 nature allows for initial safety and dosage assessments. The lead sponsor, Ardea Biosciences, Inc., brings pharmaceutical expertise to the trial. While the absence of collaborators outside the industry may limit the trial's reach, the reputable sponsor and well-defined study design contribute to the trial's feasibility. However, challenges in meeting enrollment goals and potential recruitment issues should be monitored closely to ensure timely completion.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02219516"
+    },
+    {
+        "reasoning": "The trial is focused on investigating the safety and tolerability of the drug AG-519 in healthy subjects for the treatment of anemia and pyruvate kinase deficiency. The study design includes multiple parts to assess different aspects of the drug's pharmacokinetics and effects in various populations. The inclusion and exclusion criteria are stringent to ensure participant safety and data reliability. The lead sponsor, Agios Pharmaceuticals, Inc., is a reputable company with a track record of successful drug development. While the trial is conducted at one location, the lack of specific collaborators outside the industry may limit the trial's reach and diversity of participants. However, the expertise of the sponsor and the well-defined study design are positive factors. Enrollment goals are crucial for the success of the trial, and meeting these targets may be challenging given the strict criteria. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02630927",
+        "fail_reason": "\n    agios is no longer developing its second pyruvate kinase-r (pkr) activator, ag-519, and\n    withdrew its investigational new drug (ind) application in december 2016\n  "
+    },
+    {
+        "reasoning": "The trial focuses on a specific population of Japanese patients with T1DM, which may limit enrollment potential. The inclusion and exclusion criteria are stringent, potentially impacting recruitment. The small sample size of 30 patients and the single-location study design may pose challenges in generalizability. However, the study is well-designed with a reputable sponsor, AstraZeneca, leading the trial. While the lack of listed collaborators may limit external expertise, AstraZeneca's track record suggests a higher likelihood of success. Overall, the trial faces enrollment and generalizability challenges but benefits from a strong sponsor and study design.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT02582840"
+    },
+    {
+        "reasoning": "The clinical trial evaluating ASN002 in subjects with atopic dermatitis has several positive indicators for success. The trial addresses a relevant unmet medical need in atopic dermatitis, has a well-defined study design with specific inclusion and exclusion criteria, and is sponsored by Asana BioSciences, a reputable organization with experience in dermatology research. The trial is interventional, conducted at multiple locations, and focuses on assessing the safety, tolerability, and preliminary efficacy of ASN002. While the lack of listed collaborators may be a limitation, the strong lead sponsor and detailed study design are positive factors. Meeting enrollment goals and obtaining promising safety and efficacy data will be critical for success. Considering these factors, I predict that the clinical trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT03139981"
+    },
+    {
+        "reasoning": "The clinical trial focuses on treating relapsed or refractory pediatric and young adult solid tumors using a combination of Doxil and MR-HIFU Hyperthermia. The trial is in Phase 1, indicating a focus on safety and dosage. The inclusion and exclusion criteria are well-defined, targeting a specific patient population with unmet medical needs. The lead sponsor, Theodore Laetsch, is a pediatric oncologist with expertise in solid tumors. However, the trial is being conducted at a single location, which may limit patient recruitment. The stringent eligibility criteria and the novel approach of combining MR-HIFU with Doxil may pose challenges in enrollment and safety monitoring. Considering these factors, the trial may face difficulties in meeting enrollment goals and ensuring patient safety, potentially leading to a higher likelihood of failure.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT02557854",
+        "fail_reason": "\n    lack of enrollment\n  "
+    },
+    {
+        "reasoning": "The trial is sponsored by Boehringer Ingelheim, a reputable pharmaceutical company with expertise in respiratory medicine. The trial design is well-structured with specific inclusion and exclusion criteria. However, the absence of external collaborators may limit access to additional expertise and resources. Enrollment may be challenging due to the strict eligibility criteria and single location. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT03135899"
+    },
+    {
+        "reasoning": "The clinical trial is focused on evaluating the safety and efficacy of the combination of Entospletinib and Vincristine in adult participants with relapsed or refractory B-cell Non-Hodgkin Lymphoma. The trial has well-defined inclusion and exclusion criteria, a reputable lead sponsor in Gilead Sciences, and a structured study design. The absence of collaborators may not significantly impact the trial's success, given the strong reputation of the lead sponsor. The trial's success will depend on meeting enrollment goals, participant compliance, and effective management of potential challenges. Overall, considering the focus on safety evaluation, the reputable sponsor, and the structured study design, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02568683"
+    },
+    {
+        "reasoning": "The clinical trial is focused on a specific patient population with a high unmet medical need, targeting liver metastases from colorectal cancer. The use of Decitabine via hepatic arterial infusion, along with clear primary and secondary objectives, demonstrates a well-thought-out approach. The collaboration with a reputable academic medical center and a pharmaceutical company adds credibility and resources to the trial. The inclusion and exclusion criteria are well-defined, ensuring the enrollment of suitable patients. Considering these factors, the trial appears to be feasible and has a higher likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02316028"
+    },
+    {
+        "reasoning": "The trial has a well-defined study design, specific disease targets, clear eligibility criteria, reputable sponsors and collaborators, and ethical considerations in place. However, challenges such as meeting enrollment goals and managing the complexities of drug combinations need to be carefully addressed. Overall, the trial appears feasible but success is not guaranteed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02630368"
+    },
+    {
+        "reasoning": "The trial is well-designed with clear objectives, specific inclusion and exclusion criteria, and a structured study plan. The lead sponsor, G1 Therapeutics, Inc., has a good track record in oncology research. However, the lack of collaborating institutions may raise concerns about external validation and support. The trial's focus on addressing unmet needs in extensive-stage small cell lung cancer and the planned enrollment of 90 patients indicate a reasonable scale for a phase 1/phase 2 trial. Overall, while the trial has strong elements, the absence of collaborators and potential limitations in external validation may impact its success. ",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT02499770"
+    },
+    {
+        "reasoning": "The clinical trial of PCI-32765 in Combination With Carfilzomib in Relapse/Refractory Mantle Cell Lymphoma is in Phase 1 and focuses on a challenging disease with limited treatment options. The trial involves a novel investigational drug combination of ibrutinib and carfilzomib, which shows promise in treating MCL. The inclusion and exclusion criteria are well-defined to select appropriate patients, and the trial aims to enroll up to 35 participants at a reputable institution, M.D. Anderson Cancer Center, with collaborations from Pharmacyclics LLC. and Amgen. The sponsors and institutions involved have a strong track record in cancer research and drug development. Considering these factors, including the focus on patient safety, collaboration with industry partners, and the reputable sponsors and institutions, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02269085",
+        "fail_reason": "\n    slow accrual\n  "
+    },
+    {
+        "reasoning": "The clinical trial is focused on evaluating the pharmacokinetics and safety of lower doses of ceritinib in ALK-positive metastatic NSCLC patients. The trial has a clear objective, well-defined inclusion and exclusion criteria, and is sponsored by Novartis Pharmaceuticals, a reputable company with expertise in oncology research. The trial is being conducted at 73 locations, indicating a widespread effort to recruit participants. The absence of listed collaborators may not be a significant drawback given Novartis' capabilities. Overall, the trial appears to be well-structured and has the potential to provide valuable insights into the use of ceritinib in this patient population. Considering the strong sponsor, clear focus, and multicenter approach, the trial is more likely to succeed in meeting its objectives and generating meaningful data.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02299505"
+    },
+    {
+        "reasoning": "The clinical trial investigating the feasibility of chemoradiation, trastuzumab, and pertuzumab in resectable HER2+ esophageal carcinoma is based on a rational scientific rationale, targeting a significant clinical problem with poor outcomes. The patient selection criteria are well-defined, focusing on HER2 positivity and resectable tumors. The trial design includes a feasibility study before a full-scale prospective trial, indicating a cautious approach. The collaboration with reputable sponsors like Academisch Medisch Centrum - Universiteit van Amsterdam (AMC-UvA) and Roche Pharma AG adds credibility to the trial. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02120911"
+    },
+    {
+        "reasoning": "The clinical trial is well-designed with clear objectives, specific inclusion/exclusion criteria targeting a defined patient population, and a sound rationale based on the potential benefits of sildenafil on endometrial thickness and IVF/ICSI outcomes. The collaboration between reputable institutions, Royan Institute and Tehran University of Medical Sciences, further enhances the credibility of the study. However, the success of the trial may depend on factors such as patient enrollment, adherence to protocol, and monitoring of outcomes. Meeting enrollment goals, especially with the specific inclusion criteria, will be crucial for the trial's success. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT03192709"
+    },
+    {
+        "reasoning": "The clinical trial focuses on a population with high unmet medical need, uses innovative imaging techniques, and has specific and relevant eligibility criteria. The collaboration between Stanford University and the National Cancer Institute adds credibility to the study. However, the trial is conducted at a single location, which may impact enrollment. Efforts to expand recruitment sites and ensure timely enrollment are crucial for success. Considering the strong scientific rationale, reputable sponsors, and potential impact on patient care, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02429804",
+        "fail_reason": "\n    accrual factor\n  "
+    },
+    {
+        "reasoning": "The Phase 1 Crohn's Pediatric Sub-study of MSC AFP trial focuses on a specific patient population (pediatric patients with Crohn's perianal fistulas) and has well-defined inclusion and exclusion criteria. The study design includes the use of autologous mesenchymal stromal cell transfer, which aligns with the objective of evaluating safety and efficacy. The lead sponsor, Dr. William A. Faubion, is reputable, and the trial is conducted at a single institution. These factors suggest a higher likelihood of successful enrollment and positive outcomes. The trial's focus on addressing an unmet medical need and the inclusion of standard adjuvant therapy further support its feasibility. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT03014219",
+        "fail_reason": "\n    fda approval was not obtained until adult trial completes accrual\n  "
+    },
+    {
+        "reasoning": "The clinical trial is a phase 1 interventional study focused on assessing the safety and tolerability of XC-8 in individuals with asthma. The study design involves sequential dosing of cohorts with increasing doses of the product, which allows for a careful evaluation of safety outcomes. The patient population criteria are specific and stringent, ensuring that participants are within a certain age range, BMI, and health status. The inclusion and exclusion criteria are well-defined to minimize confounding factors. However, the lack of collaborators and the relatively unknown lead sponsor, EURRUS Biotech GmbH, raise concerns about the trial's credibility and external validation. The enrollment goals are crucial for the success of the trial, and the absence of listed collaborators may impact recruitment rates. Considering these factors, the trial may face challenges in recruitment and credibility, which could affect its overall success. Therefore, the prediction for this clinical trial is more likely to be a failure.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT02882217"
+    },
+    {
+        "reasoning": "The trial design includes both phase I and phase II components with clear primary endpoints, suitable patient population criteria, and collaboration with reputable sponsors and institutions. The enrollment goals are achievable, and the exclusion criteria are standard for oncology trials. The involvement of industry collaborators and sponsors with a good track record enhances the trial's chances of success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02963610",
+        "fail_reason": "\n    per recommendation of the pi; slow accrual\n  "
+    },
+    {
+        "reasoning": "The clinical trial TAU-2014-1: Mibefradil and Hypofractionated Re-Irradiation Therapy in Recurrent GBM is a Phase 1 trial focusing on patients with glioblastoma multiforme (GBM). The trial has well-defined inclusion and exclusion criteria, detailed study description, and reputable sponsors and collaborators, including Jazz Pharmaceuticals and Yale University. The trial aims to assess the safety and determine the maximum tolerated dose of mibefradil dihydrochloride in combination with hypofractionated radiation therapy in subjects with recurrent GBM. The collaboration with a renowned academic institution like Yale University and the expertise of the lead sponsor Jazz Pharmaceuticals enhance the trial's credibility and resources. The trial design appears robust, with specific requirements for patient selection, performance status, and laboratory parameters. However, the success of the trial will depend on meeting enrollment goals, adherence to protocols, and the generation of meaningful data. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02202993"
+    },
+    {
+        "reasoning": "The trial is in Phase 1 with a focus on healthy participants, which may facilitate recruitment. The inclusion and exclusion criteria are reasonable for a healthy population. The study aims to evaluate a pharmacokinetic interaction, which adds scientific value. The lead sponsor, Janssen Research & Development, LLC, is reputable. While there are no listed collaborators, the strong sponsorship may compensate for this. Overall, the trial appears feasible with clear objectives and manageable criteria.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02945020"
+    },
+    {
+        "reasoning": "The trial is in Phase 1, focusing on Alzheimer's disease, with specific inclusion and exclusion criteria. The involvement of both academic and industry collaborators suggests a well-rounded approach. However, the success of the trial will depend on factors such as patient recruitment, adherence to protocol, and the efficacy of S-equol in treating Alzheimer's disease.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02142777"
+    },
+    {
+        "reasoning": "The clinical trial is in Phase 1, focusing on testing the safety of a combination treatment for recurrent or second primary squamous cell head and neck cancer. The inclusion and exclusion criteria are well-defined, targeting a specific patient population. The trial involves a reputable lead sponsor, the University of Cincinnati, which enhances the credibility of the study. While there are no collaborators outside industry listed, the academic institution's expertise and resources can compensate for this. The success of the trial may depend on efficient patient recruitment and meeting enrollment goals. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02110992",
+        "fail_reason": "\n    slow accrual\n  "
+    },
+    {
+        "reasoning": "The clinical trial is well-designed with a clear focus on assessing the itch-relieving effect of Botox in healthy subjects. The inclusion and exclusion criteria are stringent, aiming to ensure the participants meet specific health criteria. The collaboration between Temple University and Allergan, reputable sponsors with expertise in research and development, enhances the trial's credibility. However, the success of the trial heavily relies on meeting the enrollment goals, especially given the strict criteria for participant eligibility. Effective recruitment strategies and communication will be crucial for the trial's success. Considering these factors, I predict that the clinical trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02639052"
+    },
+    {
+        "reasoning": "The trial is focused on treating triple negative breast neoplasms, a subtype of breast cancer with high unmet medical need. The drug combination of pembrolizumab with established chemotherapy agents shows a rational treatment strategy. The inclusion and exclusion criteria are well-defined, targeting a specific patient population. The lead sponsor, Merck Sharp & Dohme LLC, has a good track record in drug development. However, the absence of listed collaborators and locations may pose challenges in recruitment and trial reach. Despite these limitations, the reputable sponsor and the potential involvement of academic institutions suggest a certain level of credibility and expertise. Overall, the trial shows promise in addressing an unmet medical need, but the lack of collaborators and locations could impact enrollment goals and trial success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02622074"
+    },
+    {
+        "reasoning": "The clinical trial is in the early phase 1, focusing on safety and dosage testing for a potential smoking cessation aid. The disease being studied, tobacco use disorder, is a significant public health concern, indicating the relevance of the research. The inclusion and exclusion criteria are well-defined, targeting a specific population likely to benefit from the intervention. The study title and description clearly outline the objective of assessing levomilnacipran's efficacy in increasing smoking cessation rates. The lead sponsor, University of Minnesota, is a reputable institution with expertise in research. While the lack of external collaborators may limit additional resources and perspectives, the sponsor's track record and reputation are positive indicators. The study type is interventional, indicating a focused approach to testing the drug's efficacy. However, the single location for the study may impact the diversity of the participant pool. Successful enrollment will be crucial for the trial's success. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02265367"
+    },
+    {
+        "reasoning": "The trial is well-structured with clear objectives, appropriate patient criteria, and a relevant drug intervention. The sponsor, Chia Tai Tianqing Pharmaceutical Group Co., Ltd., is a pharmaceutical company with potential expertise in drug development. However, the lack of listed collaborators and limited information on the coordinating institution may pose challenges in patient recruitment and trial execution. The success of the trial will depend on meeting enrollment goals, protocol adherence, and data quality assurance.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT02622932"
+    },
+    {
+        "reasoning": "The clinical trial is focused on a specific patient population with BRAF V600 mutation-positive unresectable and/or metastatic malignant cutaneous melanoma, addressing resistance to dabrafenib/trametinib therapy. The inclusion and exclusion criteria are well-defined, ensuring the enrollment of appropriate patients. The trial objectives are clear and relevant to the unmet medical need in resistant melanoma patients. Collaboration with the Jules Bordet Institute, a reputable cancer center, and sponsorship by Aprea Therapeutics, a biopharmaceutical company with a focus on oncology, indicate strong support and expertise. The enrollment goal of up to 31 evaluable patients is achievable. Considering these factors, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT03391050",
+        "fail_reason": "\n    target patient population - difficult to find patientes\n  "
+    },
+    {
+        "reasoning": "The clinical trial is focused on evaluating the safety and efficacy of intravenous copper chloride and oral disulfiram in men with metastatic castration-resistant prostate cancer (CRPC), including those with neuroendocrine prostate cancer (NEPC). The study design is well-defined, with specific inclusion and exclusion criteria targeting a relevant patient population. The lead sponsor, Dr. Daniel George, and collaborating organizations like The V Foundation for Cancer Research and Cantex Pharmaceuticals are reputable and have a strong track record in cancer research. The trial's purpose, study type, and location suggest a focused approach to evaluating the combination treatment. However, the complex treatment regimen and specific eligibility criteria may pose challenges in patient recruitment and adherence. Overall, considering the reputable sponsors and collaborators, the targeted study design, and potential challenges in patient enrollment and compliance, the trial is more likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02963051",
+        "fail_reason": "\n    study stopped due to lack of efficacy.\n  "
+    }
+]

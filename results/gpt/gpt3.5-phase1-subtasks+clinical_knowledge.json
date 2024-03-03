@@ -1,0 +1,352 @@
+[
+    {
+        "reasoning": "This is a phase 1/phase 2 clinical trial involving pediatric cancer patients with Ewing's sarcoma, soft tissue sarcoma, neuroblastoma, and brain tumors. The trial aims to evaluate the dose-ranging and efficacy/safety of Plerixafor in combination with standard regimens for mobilization compared to standard regimens alone. The eligibility criteria are well-defined, and the drug Plerixafor has shown potential in stem cell mobilization. Given the targeted patient population and the rationale behind the trial design, there is a reasonable likelihood of success in demonstrating the efficacy and safety of Plerixafor in this setting.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01288573",
+        "usd_cost": 0.000642
+    },
+    {
+        "reasoning": "The trial is testing a new drug, MK-7145, in participants with renal insufficiency and heart failure. The eligibility criteria are strict, including specific requirements for renal function and heart failure severity. The trial excludes participants with a history of various health conditions and medication use that could interfere with the study. Given the complexity of the patient population and the stringent criteria, there is a higher likelihood of challenges in participant recruitment and retention. Additionally, the narrow focus on a specific subset of patients may limit the generalizability of the results. Overall, the trial is at high risk of failure.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT01558674",
+        "usd_cost": 0.0007700000000000001
+    },
+    {
+        "reasoning": "This phase 1 clinical trial is testing the use of chloroquine as an anti-autophagic radiosensitizing drug in stage I-III small cell lung cancer. The eligibility criteria are strict, ensuring that only patients with specific characteristics are included in the trial to minimize confounding factors. Chloroquine's mechanism of action as an anti-autophagic agent may enhance the sensitivity of cancer cells to radiation therapy, potentially improving treatment outcomes. However, the limited sample size in phase 1 trials, along with the complexity of combining chloroquine with radiotherapy, may pose challenges in determining the optimal dosage and safety profile. Overall, considering the promising rationale behind the trial and the careful selection of patients, the trial has a moderate likelihood of success in establishing the safety and possible efficacy of chloroquine in this setting.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01575782",
+        "usd_cost": 0.0007624999999999999
+    },
+    {
+        "reasoning": "The clinical trial is evaluating the use of Dasatinib for modulating the immune system after autologous stem cell transplants in patients with multiple myeloma, non-Hodgkin's, or Hodgkin lymphoma. The inclusion criteria are strict to ensure patient safety and efficacy of the drug. Patients must be between 100 to 180 days post-ASCT, with specific laboratory values and performance status requirements. Exclusion criteria are in place to avoid potential risks and interactions with Dasatinib. Overall, the trial focuses on patient safety and drug effectiveness in a specific population, making the success of the trial more probable.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01609816",
+        "usd_cost": 0.0009094999999999999
+    },
+    {
+        "reasoning": "This clinical trial focuses on studying the effects of citalopram on craving and dopamine receptor availability in individuals with alcohol dependence. The trial has strict inclusion and exclusion criteria to ensure the safety and eligibility of participants. Citalopram is a selective serotonin reuptake inhibitor (SSRI) commonly used to treat depression but has also shown potential in reducing alcohol craving. With the specified criteria and the investigational nature of the trial, it is likely to yield valuable insights into the relationship between citalopram, craving, and dopamine receptors in alcohol dependence.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01657760",
+        "usd_cost": 0.0008064999999999999
+    },
+    {
+        "reasoning": "Phase 1 trial with specific inclusion and exclusion criteria targeting homozygous F508del-CFTR mutation in cystic fibrosis subjects. The trial focuses on safety and pharmacokinetics of N6022. The stringent inclusion criteria ensure a more homogeneous study population. The drug and disease target are well-defined, enhancing the chances of success. However, potential risks may arise from the exclusions related to comorbidities and drug interactions.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01746784",
+        "usd_cost": 0.000429
+    },
+    {
+        "reasoning": "This phase 1 clinical trial is testing a combination of a gp96-Ig vaccine, theophylline, and oxygen for the treatment of advanced, relapsed, or metastatic non-small cell lung cancer. The trial includes patients with confirmed NSCLC who have failed previous palliative therapy. The inclusion criteria are specific in terms of disease stage, measurable disease, treatment history, and performance status. The drug theophylline is being investigated in combination with other agents, which may pose safety concerns and potential interactions. Additionally, the trial excludes patients with certain comorbidities and conditions. Due to the complexity of the combination therapy, the advanced stage of the disease, and the stringent criteria, the likelihood of success in this trial is uncertain.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT01799161",
+        "usd_cost": 0.000622
+    },
+    {
+        "reasoning": "The clinical trial is a phase 1 trial evaluating the effect of GSK1322322 on cardiac conduction in healthy volunteers. The trial is focused on infections, bacterial and the drugs being tested include GSK1322322 and moxifloxacin. The eligibility criteria are strict, excluding individuals with cardiac diseases, liver abnormalities, and history of drug/alcohol abuse among others. Considering the rigorous inclusion and exclusion criteria and the nature of the trial, it is likely to be successful in evaluating the cardiac conduction effects of the drug in healthy individuals.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01803399",
+        "usd_cost": 0.0011075
+    },
+    {
+        "reasoning": "The clinical trial aims to assess the safety of Sativex compared with placebo in recurrent Glioblastoma patients. Glioblastoma is a highly aggressive and difficult-to-treat form of cancer, with limited treatment options. Sativex is a cannabinoid-based medication, and the trial excludes patients who have used cannabis or cannabinoid-based medications within 30 days of study entry. The trial also includes patients who have already failed first-line chemotherapy with Temozolomide. Given the aggressive nature of Glioblastoma, limited treatment options, and the strict exclusion criteria, the trial outcome is likely to be unsuccessful.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01812616",
+        "usd_cost": 0.0008205
+    },
+    {
+        "reasoning": "The trial is testing high-dose cyclophosphamide in patients with severe refractory Crohn's Disease who have failed multiple other treatments including anti-TNF agents and immunosuppressants. Cyclophosphamide is an alkylating agent with immunosuppressive properties that may provide benefit in refractory cases. However, the drug also carries significant risks including bone marrow suppression, infection, and fertility issues. The eligibility criteria are stringent to ensure patient safety and exclude those at high risk for adverse events. If the trial successfully demonstrates efficacy in this challenging patient population, it could be a major advancement in Crohn's Disease treatment. However, the potential for serious adverse events and the complexity of the patient population make the trial outcome uncertain.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT01836289",
+        "usd_cost": 0.0005635
+    },
+    {
+        "reasoning": "This is a Phase I clinical trial focusing on patients with unresectable stage III or stage IV metastatic melanoma. The trial is investigating the use of intralesional Bacillus Calmette-Guerin (BCG) followed by ipilimumab. The inclusion criteria are stringent, requiring a specific performance status, laboratory parameters within normal ranges, and a certain life expectancy. The exclusion criteria eliminate patients with active cerebral metastases, other malignancies, history of tuberculosis, autoimmune diseases, prior immunotherapy, and certain medications. Overall, the trial targets a specific group of patients with metastatic melanoma and aims to evaluate the safety and dosage of the combination therapy. Since it is a Phase I trial with a well-defined patient population and safety objectives, the likelihood of success is moderate to high.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01838200",
+        "usd_cost": 0.0008730000000000001
+    },
+    {
+        "reasoning": "The clinical trial is testing the combination of Metformin and Cytarabine in patients with relapsed/refractory AML. Metformin, a commonly used anti-diabetic drug, may have potential anti-cancer effects through various mechanisms such as AMPK activation and inhibition of mTOR signaling. Cytarabine is a standard chemotherapy drug used in AML treatment. The trial includes patients with relapsed/refractory AML who have specific criteria for inclusion related to disease status, organ function, and performance status. The trial excludes patients with recent chemotherapy, diabetes treated with Metformin, pregnancy, or active infections. Given the rationale for the combination therapy and the eligibility criteria, the trial has a moderate likelihood of success but depends on the specific responses in the patient population.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01849276",
+        "usd_cost": 0.0011795
+    },
+    {
+        "reasoning": "The trial is a phase 1 study for pancreatic adenocarcinoma, testing the combination of Gemcitabine, Ascorbate, and Radiation Therapy. The inclusion criteria are specific, including ECOG performance status, blood counts, and test dose tolerance. Exclusion criteria are well-defined, excluding G6PD deficiency, prior therapies, drug interactions, and intercurrent illnesses. The trial aims to evaluate safety and dosage, making success dependent on tolerability and potential efficacy markers in early-stage patients.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01852890",
+        "usd_cost": 0.000565
+    },
+    {
+        "reasoning": "The phase 1 trial focuses on testing the combination therapy of Everolimus, Pomalidomide, and Dexamethasone in patients with relapsed/refractory multiple myeloma. The eligibility criteria are well-defined, targeting patients with relapsed or progressive multiple myeloma who have received a limited number of prior treatments and have adequate organ function. The exclusion criteria exclude patients with certain comorbidities and recent treatments. Given the specificity of the inclusion and exclusion criteria, the trial has a higher likelihood of success in determining the safety and initial efficacy of the combination therapy in this patient population.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01889420",
+        "usd_cost": 0.000854
+    },
+    {
+        "reasoning": "Phase 1 clinical trials are primarily focused on determining the safety, dosage, and side effects of a new treatment. In this trial, the combination of Istodax\u00ae and Doxil\u00ae is being tested for the treatment of relapsed or refractory cutaneous T-cell lymphoma, which is a challenging indication. The inclusion and exclusion criteria are stringent to ensure patient safety and data integrity. However, the nature of the disease and the potential toxicities associated with the drugs may pose significant risks. Considering the complexity of the condition and the fact that this is a dose-finding study, the outcome may not be definitive in terms of efficacy. Hence, the trial is more likely to be classified as a failure at this early stage.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01902225",
+        "usd_cost": 0.001068
+    },
+    {
+        "reasoning": "The clinical trial is a phase 1 trial for patients with relapsed or refractory acute myeloid leukemia. The drug lenalidomide is being tested in combination with chemotherapy. The eligibility criteria are well-defined and include patients who are refractory to standard induction chemotherapy. Lenalidomide has shown promising results in AML treatment, particularly in combination therapies. The trial also includes strict patient monitoring and compliance measures. Considering the nature of the trial, the disease risk, and the drug's potential efficacy, the trial is likely to be successful.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01904643",
+        "usd_cost": 0.0008745000000000001
+    },
+    {
+        "reasoning": "The study is evaluating the safety and efficacy of Romidepsin in combination with antiretroviral therapy in HIV-infected adults with suppressed viral load. The inclusion criteria are strict, ensuring that the participants have well-controlled HIV with no significant comorbidities. The drug, Romidepsin, is a histone deacetylase inhibitor that has shown promise in HIV treatment. Given the focus on patients with suppressed viral load and the potential benefit of the drug, the trial is likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01933594",
+        "usd_cost": 0.002013
+    },
+    {
+        "reasoning": "This phase 1 clinical trial is investigating the safety, pharmacokinetics, and pharmacodynamics of PQR309 in patients with advanced solid tumors. The inclusion criteria require confirmed diagnosis of advanced solid tumor with no proven effective therapy available, and patients must have evidence of tumor progression. The exclusion criteria exclude patients with certain comorbidities and those on concomitant anticancer therapy. Since the trial is in phase 1 and is primarily focusing on safety and dosage levels, the likelihood of success is uncertain at this stage.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01940133",
+        "usd_cost": 0.00033800000000000003
+    },
+    {
+        "reasoning": "The clinical trial involves testing the pharmacokinetics and safety of carfilzomib in patients with relapsed multiple myeloma and end-stage renal disease. The inclusion criteria are well-defined, focusing on patients with specific disease conditions and adequate organ function. However, the presence of exclusions related to specific myeloma types, heart failure, and viral infections may limit the pool of eligible participants and could impact the trial outcomes. Additionally, the requirement for adequate organ function could pose challenges for patients with end-stage renal disease. Due to the stringent criteria and potential limitations in patient enrollment, the trial outcome may be challenging, leading to a higher likelihood of failure.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01949532",
+        "usd_cost": 0.00046199999999999995
+    },
+    {
+        "reasoning": "This phase 1 clinical trial is studying the pharmacokinetics, pharmacodynamics, and safety of an oral contraceptive containing Norethindrone and Ethinyl Estradiol when co-administered with GSK1322322 in healthy adult women. The trial has strict inclusion and exclusion criteria to ensure the safety of the participants. The study focuses on the combination of the oral contraceptive with GSK1322322, indicating a potential drug-drug interaction study. Given the focus on safety and the rigorous criteria for participant selection, the trial is likely to be successful in providing valuable insights into the interaction between these drugs.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01953809",
+        "usd_cost": 0.0011565
+    },
+    {
+        "reasoning": "This is a phase 1 clinical trial studying the use of metformin hydrochloride in patients with resectable pancreatic cancer. The inclusion criteria are specific, focusing on resectable pancreatic carcinoma and setting limits on various laboratory values. The exclusion criteria are well-defined, including a history of metformin use in the previous 3 months and uncontrolled intercurrent illnesses. Overall, the trial seems well-designed with clear eligibility criteria. However, being a phase 1 trial, the primary goal is to assess the safety and tolerability of metformin in this population rather than efficacy. Given the nature of the trial and the focused patient selection, the trial is likely to succeed in evaluating the safety profile of metformin in these patients.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01954732",
+        "usd_cost": 0.0005025
+    },
+    {
+        "reasoning": "This phase 1 clinical trial involves healthy individuals with specific eligibility criteria to evaluate the safety and effects of an investigational drug. The drug is being tested using an endotoxin-induced inflammatory response model, which implies inducing controlled inflammation in participants. Given the nature of the trial and the stringent inclusion/exclusion criteria related to health status and previous medical conditions, there is a higher likelihood of success in this trial.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01965600",
+        "usd_cost": 0.0003235
+    },
+    {
+        "reasoning": "The trial targets pediatric patients with sickle cell anemia, a genetic disorder with limited treatment options. Hydroxyurea is a well-established medication for sickle cell disease, known to reduce symptoms and improve quality of life. The inclusion criteria are specific, ensuring participants are suitable for the study. Exclusion criteria are in place to mitigate risks. Overall, considering the drug efficacy and the focused patient population, the trial is likely to succeed.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01966731",
+        "usd_cost": 0.000393
+    },
+    {
+        "reasoning": "This phase 1 clinical trial is designed to assess the safety and tolerability of SEP-363856 and amisulpride in male and female volunteers with high or low schizotypy characteristics. The trial includes a thorough screening process to ensure the participants are healthy and meet specific criteria. The trial excludes individuals with a history of psychotic disorders, neurological or psychiatric conditions, significant medical conditions, and other factors that could interfere with the study procedures. The inclusion criteria are stringent, requiring participants to be healthy, normotensive, fluent in English, right-handed, and non-smokers or light smokers. Overall, the trial design appears to prioritize safety and the ability to assess the drug's effects accurately in a controlled environment. Given the rigorous inclusion and exclusion criteria, the trial is likely to proceed without major safety concerns, making a successful outcome more probable.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01972711",
+        "usd_cost": 0.0012200000000000002
+    },
+    {
+        "reasoning": "This is a phase 1 clinical trial studying the pharmacokinetics of Sativex in patients with head and neck squamous cell carcinoma undergoing radiotherapy. The inclusion and exclusion criteria are well-defined, focusing on patients likely to develop oral mucositis. Sativex is a cannabinoid-based medication. Given the specific patient population and the detailed criteria, there is a high likelihood of success in this trial.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01975688",
+        "usd_cost": 0.0009425
+    },
+    {
+        "reasoning": "The trial is in Phase 1 and targets a broad category of 'advanced solid tumors' with eligibility criteria ensuring patients have adequate organ function and have received limited prior chemotherapy. The combination therapy of lurbinectedin and cisplatin is being tested, which has shown promise in preclinical and early clinical studies. The exclusion criteria are well-defined to exclude patients with certain comorbidities or conditions that could complicate the treatment outcomes. Overall, the trial appears well-designed and the drug combination has shown potential in treating solid tumors. Therefore, the prediction is success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01980667",
+        "usd_cost": 0.000499
+    },
+    {
+        "reasoning": "This phase 1 clinical trial is evaluating the safety, tolerability, pharmacokinetics, and effects of PF-05180999 in healthy adults with a focus on histamine-induced wheal. The trial is conducted on healthy male subjects without a history of atopic or dermatological disease. The inclusion and exclusion criteria are appropriate for the study. The drug being tested, PF-05180999, is the main focus of the trial. Given the targeted population and the nature of the study, there is a reasonable likelihood of success in assessing the safety and pharmacokinetics of the drug.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01981499",
+        "usd_cost": 0.00034100000000000005
+    },
+    {
+        "reasoning": "This is a phase 1/phase 2 clinical trial for diabetic macular edema using ranibizumab, a widely used drug for this condition. The eligibility criteria are stringent, focusing on patients with persistent diabetic macular edema who have already received multiple bevacizumab injections. The criteria aim to ensure the safety and efficacy evaluation of ranibizumab in this specific population. Given the known efficacy of ranibizumab in treating diabetic macular edema and the thorough selection of participants, the trial is likely to be successful.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01982435",
+        "usd_cost": 0.0005915
+    },
+    {
+        "reasoning": "The clinical trial is a phase 1/phase 2 trial focusing on pain management in patients undergoing foot or ankle surgery with a specific nerve block. The drugs being tested are clonidine and ropivacaine, which are commonly used for pain management. The eligibility criteria are well-defined, targeting patients with specific characteristics and excluding those with potential contraindications. Based on the nature of the trial, the focused patient population, and the known efficacy of the drugs for pain management, the trial has a higher likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT01986751",
+        "usd_cost": 0.00038
+    },
+    {
+        "reasoning": "The trial is focusing on hepatocellular carcinoma, a challenging and aggressive form of cancer. The eligibility criteria are strict, requiring confirmed HCC, specific disease stages, MET status evaluation, and prior treatment failure. The drug being tested, MSC2156119J, targets the c-Met pathway, showing promise in inhibiting tumor growth. However, the exclusion criteria are extensive, limiting patient selection. Overall, the trial addresses a significant unmet medical need but faces challenges due to the complexity of the disease and strict eligibility criteria.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT01988493",
+        "usd_cost": 0.0007485
+    },
+    {
+        "reasoning": "This is a phase 1/phase 2 clinical trial for post-menopausal women with estrogen receptor-positive breast cancer who have progressed on aromatase inhibitors. The trial aims to evaluate the efficacy of fulvestrant in combination with the PI3K/mTOR/Akt inhibitor AZD5363 compared to fulvestrant alone. The study includes patients with adequate organ function and performance status, limiting any confounding factors. However, the trial excludes patients with rapidly progressive visceral disease not suitable for further endocrine therapy and those with known brain metastases, ensuring a more homogenous patient population. Based on the targeted population and the rational combination therapy, the trial has a good chance of success in providing valuable insights into overcoming resistance to aromatase inhibitors in advanced breast cancer.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT01992952",
+        "usd_cost": 0.0004915
+    },
+    {
+        "reasoning": "This phase 1 clinical trial focuses on evaluating the pharmacokinetics, pharmacodynamics, and safety of Canagliflozin in older children and adolescents with Type 2 Diabetes Mellitus. The trial includes specific inclusion and exclusion criteria to ensure the safety and efficacy of the drug. Canagliflozin is known to be effective in treating Type 2 Diabetes Mellitus in adults, but its use in pediatric populations may have different pharmacokinetic and safety profiles. Considering the age group targeted in this trial and the specificity of the inclusion and exclusion criteria, the outcome could be uncertain.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT02000700",
+        "usd_cost": 0.000375
+    },
+    {
+        "reasoning": "This phase 1 clinical trial aims to investigate the treatment differences between canagliflozin and placebo in insulin secretion in subjects with type 2 diabetes mellitus. The trial has well-defined inclusion and exclusion criteria, focusing on stable T2DM patients with specific glucose levels and medical stability. Canagliflozin is a known SGLT2 inhibitor used in the management of T2DM. Based on existing knowledge of the drug and the suitability of the patient population, this trial is likely to succeed in providing valuable insights into insulin secretion with canagliflozin.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02009488",
+        "usd_cost": 0.00044150000000000005
+    },
+    {
+        "reasoning": "Phase 1/2 trial for Ublituximab in combination with Ibrutinib in patients with Mantle Cell Lymphoma. The inclusion criteria specify refractory or relapsed patients with an ECOG score of 0 to 2. Exclusion criteria exclude patients with recent major surgeries, transplants, or certain infections. Both Ublituximab and Ibrutinib are targeted therapies with promising results in B-cell malignancies. Given the focus on a specific subtype of lymphoma and the previous success of these drugs, the trial has a higher likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02013128",
+        "usd_cost": 0.0003575
+    },
+    {
+        "reasoning": "The trial is a Phase I/II clinical study of Pralatrexate in Japanese patients with relapsed or refractory peripheral T-cell lymphoma. The eligibility criteria are specific, including measurable lesions, previous treatment history, ECOG PS 0-2, and adequate organ function. Pralatrexate is a drug that has shown efficacy in relapsed or refractory peripheral T-cell lymphoma. Given the targeted patient population and the nature of the trial, the trial outcome is likely to be successful.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02013362",
+        "usd_cost": 0.000492
+    },
+    {
+        "reasoning": "Phase 1 clinical trial for lenalidomide maintenance therapy in stage IIIB/IV non-small cell lung cancer. The trial targets patients who have had a complete response, partial response, or stable disease after first-line chemotherapy. The inclusion criteria are well-defined in terms of disease stage, previous treatment, and organ function requirements. However, the exclusion criteria are strict, excluding patients with untreated brain metastasis, known genetic mutations, or specific allergies. Overall, the trial seems to have a focused patient population and clear eligibility criteria, which can indicate a higher likelihood of success in evaluating lenalidomide maintenance therapy.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02018523",
+        "usd_cost": 0.0009765
+    },
+    {
+        "reasoning": "This is a phase 1 clinical trial investigating the treatment effect of glatiramer acetate on girls with Rett Syndrome. The inclusion criteria are specific, focusing on patients with a genetically defined pathological change in the MECP2 gene and known epileptiform activity. The exclusion criteria are designed to exclude patients with contraindications to the study medication. The study aims to explore the potential of glatiramer acetate in treating Rett Syndrome, which could be beneficial if successful. However, being a phase 1 trial, it is primarily focused on safety and dosage rather than efficacy. Due to the specificity of the criteria and the novel approach to treating Rett Syndrome, the outcome is uncertain but has a potential for success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02023424",
+        "usd_cost": 0.0004995
+    },
+    {
+        "reasoning": "This phase 1 clinical trial is testing the combination of palbociclib, lenalidomide, and dexamethasone for relapsed or refractory multiple myeloma. The inclusion criteria are strict, requiring confirmation of specific protein expression, previous treatment with bortezomib, measurable disease, and specific laboratory parameters. The trial also necessitates registration into a REMS\u00ae program and adherence to strict pregnancy prevention measures. The exclusion criteria exclude patients with certain medical conditions or history of specific events. Given the complexity of the inclusion and exclusion criteria, as well as the need for adherence to REMS\u00ae program requirements, the trial may face challenges in recruitment and compliance. However, the combination of targeted therapy (palbociclib) with established myeloma treatments (lenalidomide and dexamethasone) shows promise. Considering the nature of the trial and the drug combination, the success is plausible but not guaranteed.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02030483",
+        "usd_cost": 0.000931
+    },
+    {
+        "reasoning": "This clinical trial is in phase 1/phase 2 for Prader-Willi syndrome, a rare genetic disorder with limited treatment options. The trial includes children, adolescents, and young adults with the syndrome, using a drug called Diazoxide Choline Controlled-Release Tablet (DCCR). The inclusion criteria are well-defined, focusing on patients with specific age range, BMI, and glucose levels. Additionally, the exclusion criteria aim to exclude potential confounding factors. Considering the nature of the disease, the drug mechanism, and the comprehensive criteria, the trial has a good chance of success in evaluating the safety and efficacy of DCCR for Prader-Willi syndrome.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02034071",
+        "usd_cost": 0.0003905
+    },
+    {
+        "reasoning": "The clinical trial is a phase 1 trial focusing on safety evaluation of APD-791 in combination with aspirin and/or clopidogrel for acute coronary syndrome. The eligibility criteria are stringent to ensure participant safety. The trial is designed to assess the safety profile of APD-791 in combination with standard antiplatelet agents. Due to the nature of phase 1 trials and the specific patient population targeted, the success is uncertain at this early stage.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT02034292",
+        "usd_cost": 0.0007285000000000001
+    },
+    {
+        "reasoning": "This phase 1 clinical trial focuses on healthy male volunteers aged 18 to 55 years. The trial examines the effectiveness of different doses of BI 1026706 on the overall peak-to-peak N2/P2-component amplitude of laser-evoked potentials in UVB-irradiated skin. The inclusion and exclusion criteria are stringent, ensuring that only healthy individuals are included in the study. Given the nature of the trial and the targeted population, the likelihood of success is high.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02037165",
+        "usd_cost": 0.0003845
+    },
+    {
+        "reasoning": "This phase 1/phase 2 clinical trial is testing the combination of AZD1775 and gemcitabine for unresectable adenocarcinoma of the pancreas. The inclusion criteria are well-defined, focusing on patients with specific disease characteristics and general well-being, and have limitations on prior treatments and concomitant disorders that could interfere with therapy. The exclusion criteria are stringent to ensure safety and data integrity. Given the clear criteria and the potential synergy between the two drugs, there is a reasonable likelihood of success in this trial.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02037230",
+        "usd_cost": 0.0005344999999999999
+    },
+    {
+        "reasoning": "This is a phase 1/phase 2 clinical trial targeting ALK-positive advanced non-small cell lung cancer (NSCLC) patients who have been previously treated with crizotinib. The inclusion criteria are specific in identifying patients with ALK rearrangements using FDA approved tests. The exclusion criteria are stringent, excluding patients with known hypersensitivity to the drug and those with certain medical conditions. Given the targeted patient population and the focus on ALK rearranged NSCLC, there is a reasonable chance of success in this trial.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02040870",
+        "usd_cost": 0.00038250000000000003
+    },
+    {
+        "reasoning": "The clinical trial is testing the combination of MEK inhibitor MEK162 with leucovorin calcium, fluorouracil, and oxaliplatin in patients with advanced metastatic colorectal cancer. The inclusion criteria are specific, targeting patients who have failed previous chemotherapy regimens and have measurable disease. The exclusion criteria are also stringent, excluding patients with certain comorbidities and recent treatments. Based on the eligibility criteria and the nature of the trial, the likelihood of success is moderate.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02041481",
+        "usd_cost": 0.001074
+    },
+    {
+        "reasoning": "This phase 1 clinical trial is testing Total Marrow Irradiation with high dose Melphalan prior to autologous transplant for patients with multiple myeloma. The trial targets patients with symptomatic myeloma who are at high or intermediate risk of disease progression. The inclusion and exclusion criteria are well-defined to ensure patient safety and appropriate selection. Melphalan and filgrastim (G-CSF) are known drugs used in the treatment of multiple myeloma. Given the focused nature of the trial, the established eligibility criteria, and the use of known drugs, the trial has a higher likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02043860",
+        "usd_cost": 0.00044950000000000003
+    },
+    {
+        "reasoning": "The clinical trial is testing the combination of Filgrastim, Cladribine, Cytarabine, and Mitoxantrone Hydrochloride in treating patients with newly diagnosed or relapsed/refractory Acute Myeloid Leukemia or high-risk Myelodysplastic Syndromes. The inclusion criteria are well-defined for high-risk patients with specific disease characteristics and eligibility criteria. The trial includes patients with relapsed/refractory disease and those who have previously undergone hematopoietic cell transplantation. The exclusion criteria are clear, excluding patients with concomitant illnesses likely to have a survival of less than 1 year and active systemic infections. The use of standard chemotherapy regimens and prior clinical evaluations are also part of the criteria, ensuring patient safety. Overall, the trial design appears robust and focused on high-risk patients with appropriate eligibility criteria, suggesting a higher likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02044796",
+        "usd_cost": 0.0009295
+    },
+    {
+        "reasoning": "The clinical trial is testing the safety of zileuton in combination with dasatinib in patients with chronic myelogenous leukemia who have inadequate response or resistance to TKIs. The inclusion criteria are specific in terms of patient selection based on age, performance status, laboratory values, and ability to take oral medication. The exclusion criteria are stringent, excluding patients with certain medical conditions, allergies, prohibited treatments, and other factors that could increase the risk of toxicity. Overall, the trial design appears to be focused on safety and efficacy in a specific population of CML patients with inadequate response to TKIs, which is a relevant and important patient group. However, the exclusion criteria are quite restrictive and may limit the number of eligible patients, potentially impacting recruitment and trial completion.",
+        "prediction": "failure",
+        "ground_truth": "failure",
+        "nctid": "NCT02047149",
+        "usd_cost": 0.000833
+    },
+    {
+        "reasoning": "The clinical trial focuses on testing the effects of enhanced glutamate transporter function in people with major depression. The trial targets individuals who have not responded to two adequate antidepressant trials, indicating a population with treatment-resistant depression. The eligibility criteria are strict, ensuring the participants are within the specified age range, meet DSM-IV criteria for MDD, and have a history of treatment resistance. The exclusion criteria exclude individuals with various comorbidities and conditions that could confound the results. Overall, the trial design appears sound, targeting a specific subgroup of individuals with major depression. Considering the potential therapeutic target and the selected patient population, the trial has a higher likelihood of success.",
+        "prediction": "success",
+        "ground_truth": "failure",
+        "nctid": "NCT02049385",
+        "usd_cost": 0.0006385
+    },
+    {
+        "reasoning": "The clinical trial is testing the drug MEK162 in subjects with normal hepatic function as well as those with impaired hepatic function. The inclusion and exclusion criteria are strict to ensure the safety of the participants. MEK inhibitors have shown efficacy in certain cancers, but the trial focuses on hepatic impairment, which may impact drug metabolism. Given the nature of the trial and the complexity of hepatic impairment, there is a higher likelihood of failure.",
+        "prediction": "failure",
+        "ground_truth": "success",
+        "nctid": "NCT02050815",
+        "usd_cost": 0.0006825000000000001
+    },
+    {
+        "reasoning": "The trial is targeting super-refractory status epilepticus, a condition with limited treatment options and high morbidity and mortality rates. The drug, SAGE-547, is being tested as an adjunctive therapy for patients who have failed multiple lines of treatment. The inclusion and exclusion criteria are well-defined to select appropriate candidates for the trial. Given the high unmet need in this indication and the promising mechanism of action of SAGE-547, there is a reasonable chance of success in this trial.",
+        "prediction": "success",
+        "ground_truth": "success",
+        "nctid": "NCT02052739",
+        "usd_cost": 0.00042550000000000004
+    }
+]

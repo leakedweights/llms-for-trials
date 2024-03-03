@@ -1,0 +1,116 @@
+{
+  "templates": {
+    "base": {
+      "tool_data": {
+        "description": "Provide predictions for the outcome of the clinical trial in question, and provide the reasoning behind the decision. If the success of the trial is unlikely, or you are uncertain in your decision, choose to classify it as a failure.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "prediction": { "type": "string", "enum": ["success", "failure"] }
+          },
+          "required": ["prediction"]
+        }
+      },
+      "summary_prompt": "You are an expert in clinical pharmacology, tasked with examining which clinical trials are worthy of investment, and which ones have a higher likelihood of failure."
+    },
+    "cot": {
+      "tool_data": {
+        "description": "Provide predictions for the outcome of the clinical trial in question, and provide the reasoning behind the decision.Take into account the nature of a clinical trial, the disease risk, the drug, and past knowledge about the type of trial. If the success of the trial is unlikely, or you are uncertain in your decision, choose to classify it as a failure. Provide adequate reasoning and bear the realities of clinical trials in mind at each step of reasoning.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "reasoning": {
+              "type": "string",
+              "description": "The step-by-step reasoning behind the prediction of trial success or failure, including the nature of the clinical trial, the disease risk, and the eligibility criteria."
+            },
+            "prediction": { "type": "string", "enum": ["success", "failure"] }
+          },
+          "required": ["reasoning", "prediction"]
+        }
+      },
+      "summary_prompt": "You are an expert in clinical pharmacology, tasked with examining which clinical trials are worthy of investment, and which ones have a higher likelihood of failure."
+    },
+    "cot+clinical_knowledge": {
+      "tool_data": {
+        "description": "Provide predictions for the outcome of the clinical trial in question, and provide the reasoning behind the decision.Take into account the nature of a clinical trial, the disease risk, the drug, and past knowledge about the type of trial. If the success of the trial is unlikely, or you are uncertain in your decision, choose to classify it as a failure. Provide adequate reasoning and bear the realities of clinical trials in mind at each step of reasoning.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "reasoning": {
+              "type": "string",
+              "description": "The step-by-step reasoning behind the prediction of trial success or failure, including the nature of the clinical trial, the disease risk, and the eligibility criteria."
+            },
+            "prediction": { "type": "string", "enum": ["success", "failure"] }
+          },
+          "required": ["reasoning", "prediction"]
+        }
+      },
+      "summary_prompt": "You are an expert in clinical pharmacology, tasked with examining which clinical trials are worthy of investment, and which ones have a higher likelihood of failure. In spite of time-consuming processes and high costs, the overall success rate of clinical trials is only 7.9%, which is a high risk for biopharmaceutical companies.\nThe four most important success factors according to research are the following: quality of clinical trials, speed of clinical trials, relationship type, and communication.\nPatient registration is a key factor in determining the success of clinical trials, and an analysis of clinical trials showed that 19% of clinical trials were terminated due to insufficient numbers of participants. Among the clinical trials that were terminated, many cases were found that were terminated due to failure in patient registration.\nThe speed of clinical trials is important when companies select clinical trial partners for rapid clinical trial progress.\nIn addition, it has been found that rapid patient recruitment for clinical trials affects the speed of clinical trial completion.\nIn terms of communication, Getz discovered that research sites with sufficient infrastructure for clinical trials are 41% better than sites dedicated to clinical trials in terms of patient enrollment.\nThe quality of clinical trials is an important indicator for moving clinical trials to the next stage.\nRegarding the quality of clinical trials, it was found that the adequacy of clinical trial planning and operation was the main characteristic.\nQuality in clinical trials also means the quality of GCP compliance.\nThe duration of clinical trials is a key factor in determining the financial risks and rewards of drug development projects.\nThe duration of clinical trials is 2.7 years, 3.2 years, and 3.8 years, respectively, for Phase 1, 2, and 3 trials, and the success rate from clinical trial success to new drug approval is less than 7.9%.\nRegarding the type of relationship between the sponsor and the collaborator,the success rate of clinical trials with partnerships was high.\nThe success rate of a new drug development project based on the number of non-industrial partners, not the pharmaceutical industry, and confirmed that the success rate of clinical trials increased by 11.3 percentage points when non-industrial partners participated. In many existing studies related to communication, it was found that close communication between the sponsor and the collaborator affects the success of clinical trials."
+    },
+    "subtasks+clinical_knowledge": {
+      "tool_data": {
+        "description": "Provide predictions for the outcome of the clinical trial in question, and provide the reasoning behind the decision.Take into account the nature of a clinical trial, the disease risk, the drug, and past knowledge about the type of trial. If the success of the trial is unlikely, or you are uncertain in your decision, choose to classify it as a failure. Provide adequate reasoning and bear the realities of clinical trials in mind at each step of reasoning.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "reasoning": {
+              "type": "string",
+              "description": "The step-by-step reasoning behind the prediction of trial success or failure, including the nature of the clinical trial, the disease risk, and the eligibility criteria."
+            },
+            "prediction": { "type": "string", "enum": ["success", "failure"] }
+          },
+          "required": ["reasoning", "prediction"]
+        }
+      },
+      "base_messages": [
+        {
+          "role": "user",
+          "content": "You are an expert in clinical pharmacology, tasked with examining which clinical trials are worthy of investment, and which ones have a higher likelihood of failure.\nThe four most important success factors according to research are the following: quality of clinical trials, speed of clinical trials, relationship type, and communication."
+        }
+      ],
+      "questions": [
+        {
+          "role": "user",
+          "content": "Having collaborators outside industry makes it more likely that a trial will succeed. Sponsors with a good track record are also indicative of trial success. How reputable are the sponsors and institutions coordinating the trial?"
+        },
+        {
+          "role": "user",
+          "content": "Patient registration is a key factor in determining the success of clinical trials. Based the sponsor's track record and the collaborators, could they find eligible patients?"
+        }
+      ],
+      "summary_prompt": "Let's wrap this up and assess the feasibility of the clinical trial and predict whether the trial is more likely to fail or to succeed. Provide adequate reasoning for each step of the process."
+    },
+    "subtasks+clinical_knowledge+no_eligibility_question": {
+      "tool_data": {
+        "description": "Provide predictions for the outcome of the clinical trial in question, and provide the reasoning behind the decision.Take into account the nature of a clinical trial, the disease risk, the drug, and past knowledge about the type of trial. If the success of the trial is unlikely, or you are uncertain in your decision, choose to classify it as a failure. Provide adequate reasoning and bear the realities of clinical trials in mind at each step of reasoning.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "reasoning": {
+              "type": "string",
+              "description": "The step-by-step reasoning behind the prediction of trial success or failure, including the nature of the clinical trial, the disease risk, and the eligibility criteria."
+            },
+            "prediction": { "type": "string", "enum": ["success", "failure"] }
+          },
+          "required": ["reasoning", "prediction"]
+        }
+      },
+      "base_messages": [
+        {
+          "role": "user",
+          "content": "You are an expert in clinical pharmacology, tasked with examining which clinical trials are worthy of investment, and which ones have a higher likelihood of failure. You should also keep in mind that meeting the enrollment goals is a great factor in trial success."
+        }
+      ],
+      "questions": [
+        {
+          "role": "user",
+          "content": "Having collaborators outside industry makes it more likely that a trial will succeed. Sponsors with a good track record are also indicative of trial success. How reputable are the sponsors and institutions coordinating the trial?"
+        }
+      ],
+      "summary_prompt": "Let's wrap this up and assess the feasibility of the clinical trial and predict whether the trial is more likely to fail or to succeed. Provide adequate reasoning for each step of the process."
+    }
+  },
+  "examples": {
+    "one_shot": []
+  }
+}

@@ -1,0 +1,847 @@
+[
+    {
+        "trial_id": "NCT01288573",
+        "error": "Error code: 400 - {'error': {'message': \"20000.0 is not of type 'integer' - 'max_tokens'\", 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\526960374.py\", line 34, in pipe_qa_chat\n    response = get_response(history + [summary_message], model, tool_data)\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\526960374.py\", line 57, in get_response\n    completion = client.chat.completions.create(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_utils\\_utils.py\", line 275, in wrapper\n    return func(*args, **kwargs)\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\resources\\chat\\completions.py\", line 663, in create\n    return self._post(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1200, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 889, in request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 980, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': \"20000.0 is not of type 'integer' - 'max_tokens'\", 'type': 'invalid_request_error', 'param': None, 'code': None}}\n",
+        "time": "2024-02-29T17:15:27.438984"
+    }
+][
+    {
+        "trial_id": "NCT01288573",
+        "error": "Error code: 400 - {'error': {'message': \"20000.0 is not of type 'integer' - 'max_tokens'\", 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\526960374.py\", line 34, in pipe_qa_chat\n    response = get_response(history + [summary_message], model, tool_data)\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\526960374.py\", line 57, in get_response\n    completion = client.chat.completions.create(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_utils\\_utils.py\", line 275, in wrapper\n    return func(*args, **kwargs)\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\resources\\chat\\completions.py\", line 663, in create\n    return self._post(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1200, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 889, in request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 980, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': \"20000.0 is not of type 'integer' - 'max_tokens'\", 'type': 'invalid_request_error', 'param': None, 'code': None}}\n",
+        "time": "2024-02-29T17:15:27.438984"
+    },
+    {
+        "trial_id": "NCT01288573",
+        "error": "Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, you requested 23145 tokens (2980 in the messages, 165 in the functions, and 20000 in the completion). Please reduce the length of the messages, functions, or completion.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\1328513615.py\", line 34, in pipe_qa_chat\n    response = get_response(history + [summary_message], model, tool_data)\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\1328513615.py\", line 57, in get_response\n    completion = client.chat.completions.create(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_utils\\_utils.py\", line 275, in wrapper\n    return func(*args, **kwargs)\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\resources\\chat\\completions.py\", line 663, in create\n    return self._post(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1200, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 889, in request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 980, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, you requested 23145 tokens (2980 in the messages, 165 in the functions, and 20000 in the completion). Please reduce the length of the messages, functions, or completion.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}\n",
+        "time": "2024-02-29T17:16:29.315851"
+    }
+][
+    {
+        "trial_id": "NCT01558674",
+        "error": "Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, you requested 25980 tokens (5815 in the messages, 165 in the functions, and 20000 in the completion). Please reduce the length of the messages, functions, or completion.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\1328513615.py\", line 34, in pipe_qa_chat\n    response = get_response(history + [summary_message], model, tool_data)\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\1328513615.py\", line 57, in get_response\n    completion = client.chat.completions.create(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_utils\\_utils.py\", line 275, in wrapper\n    return func(*args, **kwargs)\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\resources\\chat\\completions.py\", line 663, in create\n    return self._post(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1200, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 889, in request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 980, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, you requested 25980 tokens (5815 in the messages, 165 in the functions, and 20000 in the completion). Please reduce the length of the messages, functions, or completion.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}\n",
+        "time": "2024-02-29T17:17:04.892688"
+    }
+][
+    {
+        "trial_id": "NCT01657760",
+        "error": "Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 16539 tokens (16374 in the messages, 165 in the functions). Please reduce the length of the messages or functions.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\1808976932.py\", line 34, in pipe_qa_chat\n    response = get_response(history + [summary_message], model, tool_data)\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\1808976932.py\", line 57, in get_response\n    completion = client.chat.completions.create(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_utils\\_utils.py\", line 275, in wrapper\n    return func(*args, **kwargs)\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\resources\\chat\\completions.py\", line 663, in create\n    return self._post(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1200, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 889, in request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 980, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 16539 tokens (16374 in the messages, 165 in the functions). Please reduce the length of the messages or functions.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}\n",
+        "time": "2024-02-29T17:22:41.858242"
+    }
+][
+    {
+        "trial_id": "NCT01746784",
+        "error": "Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 16890 tokens. Please reduce the length of the messages.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\1808976932.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\1808976932.py\", line 66, in get_response\n    completion = client.chat.completions.create(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_utils\\_utils.py\", line 275, in wrapper\n    return func(*args, **kwargs)\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\resources\\chat\\completions.py\", line 663, in create\n    return self._post(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1200, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 889, in request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 980, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 16890 tokens. Please reduce the length of the messages.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}\n",
+        "time": "2024-02-29T17:22:43.047148"
+    }
+][
+    {
+        "trial_id": "NCT01799161",
+        "error": "Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 17687 tokens. Please reduce the length of the messages.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\1808976932.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\1808976932.py\", line 66, in get_response\n    completion = client.chat.completions.create(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_utils\\_utils.py\", line 275, in wrapper\n    return func(*args, **kwargs)\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\resources\\chat\\completions.py\", line 663, in create\n    return self._post(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1200, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 889, in request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 965, in _request\n    return self._retry_request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1013, in _retry_request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 980, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 17687 tokens. Please reduce the length of the messages.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}\n",
+        "time": "2024-02-29T17:22:51.024744"
+    }
+][
+    {
+        "trial_id": "NCT01852890",
+        "error": "Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 16703 tokens (16538 in the messages, 165 in the functions). Please reduce the length of the messages or functions.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2884722969.py\", line 38, in pipe_qa_chat\n    response = get_response(history, model, tool_data)\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2884722969.py\", line 57, in get_response\n    completion = client.chat.completions.create(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_utils\\_utils.py\", line 275, in wrapper\n    return func(*args, **kwargs)\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\resources\\chat\\completions.py\", line 663, in create\n    return self._post(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1200, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 889, in request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 965, in _request\n    return self._retry_request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1013, in _retry_request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 980, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 16703 tokens (16538 in the messages, 165 in the functions). Please reduce the length of the messages or functions.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}\n",
+        "time": "2024-02-29T18:08:10.925196"
+    }
+][
+    {
+        "trial_id": "NCT01889420",
+        "error": "Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 16421 tokens. Please reduce the length of the messages.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2884722969.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2884722969.py\", line 66, in get_response\n    completion = client.chat.completions.create(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_utils\\_utils.py\", line 275, in wrapper\n    return func(*args, **kwargs)\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\resources\\chat\\completions.py\", line 663, in create\n    return self._post(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1200, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 889, in request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 965, in _request\n    return self._retry_request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1013, in _retry_request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 980, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 16421 tokens. Please reduce the length of the messages.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}\n",
+        "time": "2024-02-29T18:08:28.024708"
+    }
+][
+    {
+        "trial_id": "NCT01902225",
+        "error": "Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 18113 tokens. Please reduce the length of the messages.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2884722969.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2884722969.py\", line 66, in get_response\n    completion = client.chat.completions.create(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_utils\\_utils.py\", line 275, in wrapper\n    return func(*args, **kwargs)\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\resources\\chat\\completions.py\", line 663, in create\n    return self._post(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1200, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 889, in request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 965, in _request\n    return self._retry_request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1013, in _retry_request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 980, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 18113 tokens. Please reduce the length of the messages.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}\n",
+        "time": "2024-02-29T18:08:47.974439"
+    }
+][
+    {
+        "trial_id": "NCT01904643",
+        "error": "Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 19532 tokens. Please reduce the length of the messages.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2884722969.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2884722969.py\", line 66, in get_response\n    completion = client.chat.completions.create(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_utils\\_utils.py\", line 275, in wrapper\n    return func(*args, **kwargs)\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\resources\\chat\\completions.py\", line 663, in create\n    return self._post(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1200, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 889, in request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 965, in _request\n    return self._retry_request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 1013, in _retry_request\n    return self._request(\n  File \"c:\\Users\\betonitcso\\Desktop\\Development\\School\\Thesis\\trial-outcome-prediction\\.venv\\lib\\site-packages\\openai\\_base_client.py\", line 980, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': \"This model's maximum context length is 16385 tokens. However, your messages resulted in 19532 tokens. Please reduce the length of the messages.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}\n",
+        "time": "2024-02-29T18:09:09.575921"
+    }
+][
+    {
+        "trial_id": "NCT01288573",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.685529"
+    }
+][
+    {
+        "trial_id": "NCT01558674",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.702630"
+    }
+][
+    {
+        "trial_id": "NCT01575782",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.702630"
+    }
+][
+    {
+        "trial_id": "NCT01609816",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.722960"
+    }
+][
+    {
+        "trial_id": "NCT01657760",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.722960"
+    }
+][
+    {
+        "trial_id": "NCT01746784",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.735783"
+    }
+][
+    {
+        "trial_id": "NCT01799161",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.735783"
+    }
+][
+    {
+        "trial_id": "NCT01803399",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.753022"
+    }
+][
+    {
+        "trial_id": "NCT01812616",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.753022"
+    }
+][
+    {
+        "trial_id": "NCT01836289",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.769369"
+    }
+][
+    {
+        "trial_id": "NCT01838200",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.775658"
+    }
+][
+    {
+        "trial_id": "NCT01849276",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.782088"
+    }
+][
+    {
+        "trial_id": "NCT01852890",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.785708"
+    }
+][
+    {
+        "trial_id": "NCT01889420",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.785708"
+    }
+][
+    {
+        "trial_id": "NCT01902225",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.802773"
+    }
+][
+    {
+        "trial_id": "NCT01904643",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.812690"
+    }
+][
+    {
+        "trial_id": "NCT01933594",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.827433"
+    }
+][
+    {
+        "trial_id": "NCT01940133",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.835383"
+    }
+][
+    {
+        "trial_id": "NCT01949532",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.853961"
+    }
+][
+    {
+        "trial_id": "NCT01953809",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.867920"
+    }
+][
+    {
+        "trial_id": "NCT01954732",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.875640"
+    }
+][
+    {
+        "trial_id": "NCT01965600",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.890720"
+    }
+][
+    {
+        "trial_id": "NCT01966731",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.918710"
+    }
+][
+    {
+        "trial_id": "NCT01972711",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.936564"
+    }
+][
+    {
+        "trial_id": "NCT01975688",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.956694"
+    }
+][
+    {
+        "trial_id": "NCT01980667",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.979630"
+    }
+][
+    {
+        "trial_id": "NCT01981499",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:39.990416"
+    }
+][
+    {
+        "trial_id": "NCT01982435",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.002484"
+    }
+][
+    {
+        "trial_id": "NCT01986751",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.019304"
+    }
+][
+    {
+        "trial_id": "NCT01988493",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.019304"
+    }
+][
+    {
+        "trial_id": "NCT01992952",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.037127"
+    }
+][
+    {
+        "trial_id": "NCT02000700",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.052878"
+    }
+][
+    {
+        "trial_id": "NCT02009488",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.052878"
+    }
+][
+    {
+        "trial_id": "NCT02013128",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.069848"
+    }
+][
+    {
+        "trial_id": "NCT02013362",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.085416"
+    }
+][
+    {
+        "trial_id": "NCT02018523",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.101740"
+    }
+][
+    {
+        "trial_id": "NCT02023424",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.101740"
+    }
+][
+    {
+        "trial_id": "NCT02030483",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.118822"
+    }
+][
+    {
+        "trial_id": "NCT02034071",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.142562"
+    }
+][
+    {
+        "trial_id": "NCT02034292",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.152166"
+    }
+][
+    {
+        "trial_id": "NCT02037165",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.177937"
+    }
+][
+    {
+        "trial_id": "NCT02037230",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.191654"
+    }
+][
+    {
+        "trial_id": "NCT02040870",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.209523"
+    }
+][
+    {
+        "trial_id": "NCT02041481",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.228987"
+    }
+][
+    {
+        "trial_id": "NCT02043860",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.245209"
+    }
+][
+    {
+        "trial_id": "NCT02044796",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.258483"
+    }
+][
+    {
+        "trial_id": "NCT02047149",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.274181"
+    }
+][
+    {
+        "trial_id": "NCT02049385",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.285065"
+    }
+][
+    {
+        "trial_id": "NCT02050815",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.301802"
+    }
+][
+    {
+        "trial_id": "NCT02052739",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:40.301802"
+    }
+][
+    {
+        "trial_id": "NCT01288573",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.624516"
+    }
+][
+    {
+        "trial_id": "NCT01558674",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.633360"
+    }
+][
+    {
+        "trial_id": "NCT01575782",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.643095"
+    }
+][
+    {
+        "trial_id": "NCT01609816",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.653151"
+    }
+][
+    {
+        "trial_id": "NCT01657760",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.664242"
+    }
+][
+    {
+        "trial_id": "NCT01746784",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.667051"
+    }
+][
+    {
+        "trial_id": "NCT01799161",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.667051"
+    }
+][
+    {
+        "trial_id": "NCT01803399",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.683339"
+    }
+][
+    {
+        "trial_id": "NCT01812616",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.683339"
+    }
+][
+    {
+        "trial_id": "NCT01836289",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.697848"
+    }
+][
+    {
+        "trial_id": "NCT01838200",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.704490"
+    }
+][
+    {
+        "trial_id": "NCT01849276",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.710810"
+    }
+][
+    {
+        "trial_id": "NCT01852890",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.717020"
+    }
+][
+    {
+        "trial_id": "NCT01889420",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.725303"
+    }
+][
+    {
+        "trial_id": "NCT01902225",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.734813"
+    }
+][
+    {
+        "trial_id": "NCT01904643",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.748966"
+    }
+][
+    {
+        "trial_id": "NCT01933594",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.765665"
+    }
+][
+    {
+        "trial_id": "NCT01940133",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.781508"
+    }
+][
+    {
+        "trial_id": "NCT01949532",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.783332"
+    }
+][
+    {
+        "trial_id": "NCT01953809",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.803085"
+    }
+][
+    {
+        "trial_id": "NCT01954732",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.832151"
+    }
+][
+    {
+        "trial_id": "NCT01965600",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.848924"
+    }
+][
+    {
+        "trial_id": "NCT01966731",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.868475"
+    }
+][
+    {
+        "trial_id": "NCT01972711",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.878398"
+    }
+][
+    {
+        "trial_id": "NCT01975688",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.891639"
+    }
+][
+    {
+        "trial_id": "NCT01980667",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.905748"
+    }
+][
+    {
+        "trial_id": "NCT01981499",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.922305"
+    }
+][
+    {
+        "trial_id": "NCT01982435",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.941620"
+    }
+][
+    {
+        "trial_id": "NCT01986751",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.954987"
+    }
+][
+    {
+        "trial_id": "NCT01988493",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.965627"
+    }
+][
+    {
+        "trial_id": "NCT01992952",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.970741"
+    }
+][
+    {
+        "trial_id": "NCT02000700",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:53.997638"
+    }
+][
+    {
+        "trial_id": "NCT02009488",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.003106"
+    }
+][
+    {
+        "trial_id": "NCT02013128",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.019824"
+    }
+][
+    {
+        "trial_id": "NCT02013362",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.033930"
+    }
+][
+    {
+        "trial_id": "NCT02018523",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.056368"
+    }
+][
+    {
+        "trial_id": "NCT02023424",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.076641"
+    }
+][
+    {
+        "trial_id": "NCT02030483",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.087599"
+    }
+][
+    {
+        "trial_id": "NCT02034071",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.115555"
+    }
+][
+    {
+        "trial_id": "NCT02034292",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.132369"
+    }
+][
+    {
+        "trial_id": "NCT02037165",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.148955"
+    }
+][
+    {
+        "trial_id": "NCT02037230",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.151504"
+    }
+][
+    {
+        "trial_id": "NCT02040870",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.179403"
+    }
+][
+    {
+        "trial_id": "NCT02041481",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.183553"
+    }
+][
+    {
+        "trial_id": "NCT02043860",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.199628"
+    }
+][
+    {
+        "trial_id": "NCT02044796",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.221349"
+    }
+][
+    {
+        "trial_id": "NCT02047149",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.237065"
+    }
+][
+    {
+        "trial_id": "NCT02049385",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.237065"
+    }
+][
+    {
+        "trial_id": "NCT02050815",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.256127"
+    }
+][
+    {
+        "trial_id": "NCT02052739",
+        "error": "get_length() missing 1 required positional argument: 'text'",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 24, in process_trial\n    res = pipe_qa_chat(\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 22, in pipe_qa_chat\n    response = get_assistant_msg(get_response(history, model, None))\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in get_response\n    total_msg_length = sum([get_length(str(message)) for message in messages])\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2532061698.py\", line 45, in <listcomp>\n    total_msg_length = sum([get_length(str(message)) for message in messages])\nTypeError: get_length() missing 1 required positional argument: 'text'\n",
+        "time": "2024-02-29T18:18:54.266411"
+    }
+][
+    {
+        "trial_id": "NCT01288573",
+        "error": "'NoneType' object does not support item assignment",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 28, in process_trial\n    response['ground_truth'] = \"success\" if outcome.get(\nTypeError: 'NoneType' object does not support item assignment\n",
+        "time": "2024-02-29T19:15:48.567813"
+    }
+][
+    {
+        "trial_id": "NCT01558674",
+        "error": "'NoneType' object does not support item assignment",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 28, in process_trial\n    response['ground_truth'] = \"success\" if outcome.get(\nTypeError: 'NoneType' object does not support item assignment\n",
+        "time": "2024-02-29T19:15:48.577837"
+    }
+][
+    {
+        "trial_id": "NCT01575782",
+        "error": "'NoneType' object does not support item assignment",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 28, in process_trial\n    response['ground_truth'] = \"success\" if outcome.get(\nTypeError: 'NoneType' object does not support item assignment\n",
+        "time": "2024-02-29T19:15:48.587348"
+    }
+][
+    {
+        "trial_id": "NCT01609816",
+        "error": "'NoneType' object does not support item assignment",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 28, in process_trial\n    response['ground_truth'] = \"success\" if outcome.get(\nTypeError: 'NoneType' object does not support item assignment\n",
+        "time": "2024-02-29T19:15:48.594737"
+    }
+][
+    {
+        "trial_id": "NCT01657760",
+        "error": "'NoneType' object does not support item assignment",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 28, in process_trial\n    response['ground_truth'] = \"success\" if outcome.get(\nTypeError: 'NoneType' object does not support item assignment\n",
+        "time": "2024-02-29T19:15:48.609722"
+    }
+][
+    {
+        "trial_id": "NCT01746784",
+        "error": "'NoneType' object does not support item assignment",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 28, in process_trial\n    response['ground_truth'] = \"success\" if outcome.get(\nTypeError: 'NoneType' object does not support item assignment\n",
+        "time": "2024-02-29T19:15:48.634471"
+    }
+][
+    {
+        "trial_id": "NCT01799161",
+        "error": "'NoneType' object does not support item assignment",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 28, in process_trial\n    response['ground_truth'] = \"success\" if outcome.get(\nTypeError: 'NoneType' object does not support item assignment\n",
+        "time": "2024-02-29T19:15:48.647026"
+    }
+][
+    {
+        "trial_id": "NCT01803399",
+        "error": "'NoneType' object does not support item assignment",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 28, in process_trial\n    response['ground_truth'] = \"success\" if outcome.get(\nTypeError: 'NoneType' object does not support item assignment\n",
+        "time": "2024-02-29T19:15:48.656086"
+    }
+][
+    {
+        "trial_id": "NCT01812616",
+        "error": "'NoneType' object does not support item assignment",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 28, in process_trial\n    response['ground_truth'] = \"success\" if outcome.get(\nTypeError: 'NoneType' object does not support item assignment\n",
+        "time": "2024-02-29T19:15:48.661192"
+    }
+][
+    {
+        "trial_id": "NCT01836289",
+        "error": "'NoneType' object does not support item assignment",
+        "stack_trace": "Traceback (most recent call last):\n  File \"C:\\Users\\betonitcso\\AppData\\Local\\Temp\\ipykernel_3596\\2718688724.py\", line 28, in process_trial\n    response['ground_truth'] = \"success\" if outcome.get(\nTypeError: 'NoneType' object does not support item assignment\n",
+        "time": "2024-02-29T19:15:48.684427"
+    }
+]

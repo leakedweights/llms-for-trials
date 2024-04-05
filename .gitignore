@@ -1,3 +1,8 @@
 .venv
 .env
 */demo_data
+data
+save_model
+*.pkl
+*.csv
+results

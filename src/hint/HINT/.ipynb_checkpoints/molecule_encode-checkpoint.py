@@ -15,9 +15,7 @@ torch.manual_seed(0)
 from torch import nn 
 from torch.autograd import Variable
 import torch.nn.functional as F
-from torch.utils import data  #### data.Dataset 
-# device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-from HINT.module import Highway 
+from torch.utils import data
 
 def get_drugbank_smiles_lst():
     drugfile = 'data/drugbank_drugs_info.csv'
@@ -39,7 +37,6 @@ def get_cooked_data_smiles_lst():
     from functools import reduce
     smiles_lst = list(reduce(lambda x,y:x+y, smiles_lst))
     smiles_lst = list(set(smiles_lst))
-    # print(len(smiles_lst))  
     return smiles_lst
 
 
@@ -70,6 +67,17 @@ ATOM_FDIM = len(ELEM_LIST) + 6 + 5 + 4 + 1
 BOND_FDIM = 5 + 6
 MAX_NB = 6
 
+def FeedForward(input_dim: int, hidden_dim: int, output_dim: int, num_layers: int):
+    layers = [nn.Linear(input_dim, hidden_dim), nn.ReLU()]
+    
+    for _ in range(num_layers):
+        layers += [nn.Linear(hidden_dim, hidden_dim), nn.ReLU()]
+        
+    layers.append(nn.Linear(hidden_dim, output_dim))
+    model = nn.Sequential(*layers)
+    
+    return model
+
 def onek_encoding_unk(x, allowable_set):
     if x not in allowable_set:
         x = allowable_set[-1]
@@ -90,13 +98,6 @@ def bond_features(bond):
     return torch.Tensor(fbond + fstereo)
 
 def smiles2mpnnfeature(smiles):
-    ## from mpn.py::tensorize  
-    '''
-        data-flow:   
-            data_process(): apply(smiles2mpnnfeature)
-            DBTA: train(): data.DataLoader(data_process_loader())
-            mpnn_collate_func()
-    '''
     padding = torch.zeros(ATOM_FDIM + BOND_FDIM)
     fatoms, fbonds = [], [padding] 
     in_bonds,all_bonds = [], [(-1,-1)] 
@@ -162,17 +163,11 @@ class smiles_dataset(data.Dataset):
         smiles_feature = smiles2mpnnfeature(smiles)
         return smiles_feature, label 
 
-## DTI.py --> collate 
-
-## x is a list, len(x)=batch_size, x[i] is tuple, len(x[0])=5  
 def mpnn_feature_collate_func(x): 
     return [torch.cat([x[j][i] for j in range(len(x))], 0) for i in range(len(x[0]))]
 
 def mpnn_collate_func(x):
-    #print("len(x) is ", len(x)) ## batch_size 
-    #print("len(x[0]) is ", len(x[0])) ## 3--- data_process_loader.__getitem__ 
     mpnn_feature = [i[0] for i in x]
-    #print("len(mpnn_feature)", len(mpnn_feature), "len(mpnn_feature[0])", len(mpnn_feature[0]))
     mpnn_feature = mpnn_feature_collate_func(mpnn_feature)
     from torch.utils.data.dataloader import default_collate
     x_remain = [i[1:] for i in x]
@@ -209,12 +204,7 @@ class MPNN(nn.Sequential):
     def embedding_size(self):
         return self.mpnn_hidden_size 
 
-    ### forward single molecule sequentially. 
     def feature_forward(self, feature):
-        ''' 
-            batch_size == 1 
-            feature: utils.smiles2mpnnfeature 
-        '''
         fatoms, fbonds, agraph, bgraph, atoms_bonds = feature
         agraph = agraph.long()
         bgraph = bgraph.long()
@@ -245,13 +235,6 @@ class MPNN(nn.Sequential):
             return torch.cat(embeddings, 0)
 
     def single_feature_forward(self, fatoms, fbonds, agraph, bgraph):
-        '''
-            fatoms: (x, 39)
-            fbonds: (y, 50)
-            agraph: (x, 6)
-            bgraph: (y,6)
-        '''
-        ### invalid molecule
         if fatoms.shape[0] == 0:
             return create_var(torch.zeros(1, self.mpnn_hidden_size).to(self.device))
         agraph = agraph.long()
@@ -263,7 +246,6 @@ class MPNN(nn.Sequential):
 
         binput = self.W_i(fbonds)
         message = F.relu(binput)
-        #print("shapes", fbonds.shape, binput.shape, message.shape)
         for i in range(self.mpnn_depth - 1):
             nei_message = index_select_ND(message, 0, bgraph)
             nei_message = nei_message.sum(dim=1)
@@ -295,7 +277,7 @@ class MPNN(nn.Sequential):
 
     def forward_smiles_lst_lst(self, smiles_lst_lst): 
         embed_lst = [self.forward_smiles_lst_average(smiles_lst) for smiles_lst in smiles_lst_lst]
-        embed_all = torch.cat(embed_lst, 0)  #### n,dim
+        embed_all = torch.cat(embed_lst, 0)
         return embed_all
 
 
@@ -308,7 +290,13 @@ class ADMET(nn.Sequential):
         self.molecule_encoder = molecule_encoder 
         self.embedding_size = self.molecule_encoder.embedding_size
         self.highway_num = highway_num 
-        self.highway_nn_lst = nn.ModuleList([Highway(size = self.embedding_size, num_layers = self.highway_num) for i in range(5)])
+        self.highway_nn_lst = nn.ModuleList([FeedForward(
+            input_dim=self.embedding_size,
+            hidden_dim=self.embedding_size,
+            output_dim=self.embedding_size,
+            num_layers=self.highway_num
+        ) for i in range(5)])
+        
         self.fc_output_lst = nn.ModuleList([nn.Linear(self.embedding_size, 1) for i in range(5)])
         self.f = F.relu 
         self.loss = nn.BCEWithLogitsLoss()
@@ -378,25 +366,3 @@ class ADMET(nn.Sequential):
                 best_model = deepcopy(self)
 
         self = deepcopy(best_model)
-
-
-
-
-
-if __name__ == "__main__":
-    model = MPNN(mpnn_hidden_size = 50, mpnn_depth = 3)
-    dataloader = data_loader()
-    for smiles_feature, labels in dataloader:
-        embedding = model(smiles_feature) 
-        print(embedding.shape)
-        
-
-
-
-
-
-
-
-
-
-

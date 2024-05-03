@@ -160,7 +160,7 @@ tokenizers==0.15.2
 tomli==2.0.1
 torch==1.13.1
 tornado==6.4
-tqdm==4.66.2
+tqdm==4.66.3
 traitlets==5.14.1
 transformers==4.38.1
 transtab==0.0.5

@@ -112,6 +112,3 @@ def save_sentence_bert_dict(device, filepath='data/bio_clinicalbert_embeddings.p
 def load_sentence_2_vec(filepath='data/bio_clinicalbert_embeddings.pkl'):
     with open(filepath, 'rb') as f:
         return pickle.load(f)
-
-if __name__ == "__main__":
-    save_sentence_bert_dict()

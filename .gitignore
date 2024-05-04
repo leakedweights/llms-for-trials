@@ -8,3 +8,5 @@ save_model
 results
 checkpoints
 tensorboard
+__pycache_
+.ipynb_checkpoints

@@ -6,3 +6,4 @@ save_model
 *.pkl
 *.csv
 results
+checkpoints

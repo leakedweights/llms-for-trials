@@ -1,9 +1,9 @@
 import torch.nn as nn
 import torch
 
-class MTDNN(nn.Module):
+class MultitaskToxicityModel(nn.Module):
     def __init__(self, input_shape, all_tasks, dropout_rate=0.5):
-        super(MTDNN, self).__init__()
+        super(MultitaskToxicityModel, self).__init__()
         
         self.shared_1 = nn.Linear(input_shape, 2048)
         self.batchnorm_1 = nn.BatchNorm1d(2048)
@@ -23,6 +23,8 @@ class MTDNN(nn.Module):
         
         self.output = nn.ModuleList([nn.Linear(256, 1) for task in all_tasks])
         self.leakyReLU = nn.LeakyReLU(0.05)
+        
+        self.embedding_size = len(all_tasks)
 
     def forward(self, x):
         x = self.shared_1(x)
@@ -53,3 +55,19 @@ class MTDNN(nn.Module):
         y_pred = x_task
         
         return y_pred
+    
+def save_ckp(state, is_best, checkpoint_path, best_model_path):
+    # Method from : https://gist.github.com/vsay01/45dfced69687077be53dbdd4987b6b17
+    f_path = checkpoint_path
+    torch.save(state, f_path)
+    if is_best:
+        best_fpath = best_model_path
+        shutil.copyfile(f_path, best_fpath)
+        
+def load_ckp(checkpoint_fpath, input_model, optimizer):
+    checkpoint = torch.load(checkpoint_fpath)
+    input_model.load_state_dict(checkpoint['state_dict'])
+    if optimizer is not None:
+        optimizer.load_state_dict(checkpoint['optimizer'])
+    train_loss_min = checkpoint['train_loss_min']
+    return input_model, optimizer, checkpoint['epoch'], train_loss_min.item()

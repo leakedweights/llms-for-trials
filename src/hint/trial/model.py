@@ -15,25 +15,14 @@ from copy import deepcopy
 from tqdm import tqdm
 import pickle
 
+from .layers import FeedForward
+
 from typing import Optional, Any
 
 
-torch.manual_seed(0)
-
-def FeedForward(input_dim: int, hidden_dim: int, output_dim: int, num_layers: int):
-    layers = [nn.Linear(input_dim, hidden_dim), nn.ReLU()]
-    
-    for _ in range(num_layers):
-        layers += [nn.Linear(hidden_dim, hidden_dim), nn.ReLU()]
-        
-    layers.append(nn.Linear(hidden_dim, output_dim))
-    model = nn.Sequential(*layers)
-    
-    return model
-
 class TrialModel(nn.Module):
     def __init__(self,
-                 molecule_encoder: nn.Module,
+                 toxicity_encoder: nn.Module,
                  disease_encoder: nn.Module,
                  protocol_encoder: nn.Module,
                  embedding_size: int,
@@ -44,7 +33,7 @@ class TrialModel(nn.Module):
         
         super(TrialModel, self).__init__()
         
-        self.molecule_encoder = molecule_encoder
+        self.toxicity_encoder = toxicity_encoder
         self.disease_encoder = disease_encoder
         self.protocol_encoder = protocol_encoder
         self.embedding_size = embedding_size
@@ -52,7 +41,7 @@ class TrialModel(nn.Module):
         self.model_name = name
         self.include_all = ablations["config"].get("base_model", False)
         
-        encoder_dim = molecule_encoder.embedding_size + disease_encoder.embedding_size + protocol_encoder.embedding_size
+        encoder_dim = toxicity_encoder.embedding_size + disease_encoder.embedding_size + protocol_encoder.embedding_size
         
         self.multimodal_encoder = FeedForward(
             input_dim=encoder_dim,
@@ -76,7 +65,7 @@ class TrialModel(nn.Module):
         )
         
         self.pk_encoder = FeedForward(
-            input_dim=molecule_encoder.embedding_size,
+            input_dim=toxicity_encoder.embedding_size,
             output_dim=embedding_size,
             hidden_dim=5*embedding_size,
             num_layers=2*num_ffn_layers
@@ -98,7 +87,7 @@ class TrialModel(nn.Module):
     
     def forward(self, smiles, icd, criteria):
         icd_embedding = self.disease_encoder.forward_code_lst3(icd) #TODO: change to forward
-        molecule_embedding = self.molecule_encoder.forward_smiles_lst_lst(smiles) #TODO: change to forward
+        molecule_embedding = self.toxicity_encoder.forward_smiles_lst_lst(smiles) #TODO: change to forward
         protocol_embedding = self.protocol_encoder(criteria)
         
         encoder_embedding = self.multimodal_encoder(torch.cat([

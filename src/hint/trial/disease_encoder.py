@@ -9,8 +9,6 @@ from torch import nn
 from torch.autograd import Variable
 import torch.nn.functional as F
 from torch.utils import data
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
 
 def text_2_lst_of_lst(text):
     text = text[2:-2]
@@ -22,7 +20,7 @@ def text_2_lst_of_lst(text):
     return code_sublst 
 
 def get_icdcode_lst():
-    input_file = 'data/raw_data.csv'
+    input_file = 'data/trial/raw_data.csv'
     with open(input_file, 'r') as csvfile:
         rows = list(csv.reader(csvfile, delimiter = ','))[1:]
     code_lst = []
@@ -59,7 +57,7 @@ def find_ancestor_for_icdcode(icdcode, icdcode2ancestor):
 
 
 def build_icdcode2ancestor_dict():
-    pkl_file = "data/icdcode2ancestor_dict.pkl"
+    pkl_file = "data/disease/icdcode2ancestor_dict.pkl"
     if os.path.exists(pkl_file):
         icdcode2ancestor = pickle.load(open(pkl_file, 'rb'))
         return icdcode2ancestor 
@@ -80,8 +78,8 @@ def collect_all_code_and_ancestor():
     return all_code_lst    
 
 
-class GRAM(nn.Sequential):
-    def __init__(self, embedding_dim, icdcode2ancestor, device):
+class GRAM(nn.Module):
+    def __init__(self, embedding_dim, icdcode2ancestor):
         super(GRAM, self).__init__()        
         self.icdcode2ancestor = icdcode2ancestor 
         self.all_code_lst = GRAM.codedict_2_allcode(self.icdcode2ancestor)
@@ -104,8 +102,6 @@ class GRAM(nn.Sequential):
         self.embedding = nn.Embedding(self.code_num, self.embedding_dim)
         self.attention_model = nn.Linear(2*embedding_dim, 1)
 
-        self.device = device
-        self = self.to(device)
         self.padding_matrix = self.padding_matrix.to('cpu')
         self.mask_matrix = self.mask_matrix.to('cpu')
 
@@ -124,7 +120,7 @@ class GRAM(nn.Sequential):
 
 
     def forward_single_code(self, single_code):
-        idx = self.code2index[single_code].to(self.device)
+        idx = self.code2index[single_code]
         ancestor_vec = self.padding_matrix[idx,:]
         mask_vec = self.mask_matrix[idx,:] 
 
@@ -144,10 +140,10 @@ class GRAM(nn.Sequential):
         idx_lst = [self.code2index[code] for code in code_lst if code in self.code2index]
         if idx_lst == []:
             idx_lst = [0]
-        ancestor_mat = self.padding_matrix[idx_lst,:].to(self.device)
-        mask_mat = self.mask_matrix[idx_lst,:].to(self.device)
+        ancestor_mat = self.padding_matrix[idx_lst,:]
+        mask_mat = self.mask_matrix[idx_lst,:]
         embeded = self.embedding(ancestor_mat)
-        current_vec = self.embedding(torch.Tensor(idx_lst).long().to(self.device))
+        current_vec = self.embedding(torch.Tensor(idx_lst).long())
         current_vec = current_vec.unsqueeze(1)
         current_vec = current_vec.repeat(1, self.maxlength, 1)
         attention_input = torch.cat([embeded, current_vec], 2)

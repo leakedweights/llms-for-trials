@@ -16,7 +16,7 @@ def text_2_lst_of_lst(text):
     for i in text.split('", "'):
         i = i[1:-1]
         code_sublst.append([j.strip()[1:-1] for j in i.split(',')])
-    # print(code_sublst)    
+        
     return code_sublst 
 
 def get_icdcode_lst():
@@ -102,9 +102,6 @@ class GRAM(nn.Module):
         self.embedding = nn.Embedding(self.code_num, self.embedding_dim)
         self.attention_model = nn.Linear(2*embedding_dim, 1)
 
-        self.padding_matrix = self.padding_matrix.to('cpu')
-        self.mask_matrix = self.mask_matrix.to('cpu')
-
     @property
     def embedding_size(self):
         return self.embedding_dim
@@ -162,7 +159,7 @@ class GRAM(nn.Module):
         code_embed = torch.mean(code_embed, 0).view(1,-1)
         return code_embed 
         
-    def forward_code_lst3(self, code_lst_lst_lst):
+    def forward_code_lst3(self, code_lst_lst_lst):        
         code_embed_lst = [self.forward_code_lst2(code_lst_lst) for code_lst_lst in code_lst_lst_lst]
         code_embed = torch.cat(code_embed_lst, 0)
         return code_embed 

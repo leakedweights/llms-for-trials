@@ -4,28 +4,19 @@ from transformers import AutoTokenizer, AutoModel
 from .layers import FeedForward
 
 class ProtocolEmbedding(nn.Module):
-    def __init__(self, output_dim: int, hidden_dim: int, num_layers: int, hf_model: str):
+    def __init__(self, output_dim: int, hidden_dim: int, num_layers: int, hf_model: str, device):
         super(ProtocolEmbedding, self).__init__()
         self.output_dim = output_dim
         self.num_layers = num_layers
         self.embedding_size = output_dim
         self.tokenizer = AutoTokenizer.from_pretrained(hf_model)
         self.model = AutoModel.from_pretrained(hf_model)
+        self.device = device
         
         self.ffn = FeedForward(self.model.config.hidden_size, hidden_dim, output_dim, num_layers)
         
-    def forward(self, tokens):
-        with torch.no_grad():
-            inputs = create_sliding_windows(tokens)
-            original_length = len(tokens['input_ids'])
-            results = self.model(**{k:v.to(device) for k,v in inputs.items()}).last_hidden_state
-            aggregated_results = aggregate_embeddings(results, 32, original_length)
-            
-        x = self.ffn(aggregated_results)
-        return x
-    
-    def create_sliding_windows(sefl, data, window_size=512, step_size=32):
-        if len(data['input_ids']) < window_size:
+    def create_sliding_windows(self, data, window_size=512, step_size=32):
+        if len(data['input_ids']) < 512:
             return {k:torch.tensor(v)[None] for k,v in data.items()}
         input_ids = data['input_ids']
         attention_mask = data['attention_mask']
@@ -45,9 +36,21 @@ class ProtocolEmbedding(nn.Module):
             attention_mask_windows.append(window_mask_padded)
 
         return {'input_ids': torch.tensor(input_id_windows), 'attention_mask' : torch.tensor(attention_mask_windows)}
-    
-    def aggregate_embeddings(model_outputs, step_size, original_length):
 
+    def forward(self, batch_tokens):
+        batch_results = []
+        for tokens in batch_tokens:
+            inputs = self.create_sliding_windows(tokens)
+            with torch.no_grad():
+                results = self.model(**{k: v.to(self.device) for k, v in inputs.items()}).last_hidden_state
+            aggregated_results = self.aggregate_embeddings(results, 32, len(tokens['input_ids']))
+            batch_results.append(aggregated_results)
+
+        batch_results_padded = pad_sequence(batch_results, batch_first=True)
+        return batch_results_padded
+
+    
+    def aggregate_embeddings(self, model_outputs, step_size, original_length):
         num_windows, window_size, embedding_dim = model_outputs.shape
         sequence_length = (num_windows - 1) * step_size + window_size
 

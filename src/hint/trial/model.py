@@ -87,7 +87,7 @@ class TrialModel(nn.Module):
     
     def forward(self, smiles, icd, criteria):
         icd_embedding = self.disease_encoder.forward_code_lst3(icd) #TODO: change to forward
-        molecule_embedding = self.toxicity_encoder.forward_smiles_lst_lst(smiles) #TODO: change to forward
+        molecule_embedding = self.toxicity_encoder(smiles)
         protocol_embedding = self.protocol_encoder(criteria)
         
         encoder_embedding = self.multimodal_encoder(torch.cat([
@@ -140,6 +140,9 @@ class Trainer:
             epoch_losses = []
             for nctids, labels, smiles, icdcodes, criteria in train_dataloader:
                 labels = labels.to(self.device)
+                smiles = smiles.to(self.device)
+                icdcodes = icdcodes.to(self.device)
+                criteria = criteria.to(self.device)
                 outputs = self.model(smiles, icdcodes, criteria).view(-1)
                 loss = bce_loss(outputs, labels.float())
                 epoch_losses.append(loss.item())

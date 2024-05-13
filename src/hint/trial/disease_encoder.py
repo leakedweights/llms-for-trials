@@ -79,7 +79,7 @@ def collect_all_code_and_ancestor():
 
 
 class GRAM(nn.Module):
-    def __init__(self, embedding_dim, icdcode2ancestor):
+    def __init__(self, embedding_dim, icdcode2ancestor, device):
         super(GRAM, self).__init__()        
         self.icdcode2ancestor = icdcode2ancestor 
         self.all_code_lst = GRAM.codedict_2_allcode(self.icdcode2ancestor)
@@ -89,14 +89,16 @@ class GRAM(nn.Module):
         self.index2code = {idx:code for idx,code in enumerate(self.all_code_lst)}
         self.padding_matrix = torch.zeros(self.code_num, self.maxlength).long() 
         self.mask_matrix = torch.zeros(self.code_num, self.maxlength)
+        self.device = device
+        
         for idx in range(self.code_num):
             code = self.index2code[idx]
             ancestor_code_lst = self.icdcode2ancestor[code]
             ancestor_idx_lst = [idx] + [self.code2index[code] for code in ancestor_code_lst]
             ancestor_mask_lst = [1 for i in ancestor_idx_lst] + [0] * (self.maxlength - len(ancestor_idx_lst))
             ancestor_idx_lst = ancestor_idx_lst + [0]*(self.maxlength-len(ancestor_idx_lst))
-            self.padding_matrix[idx,:] = torch.Tensor(ancestor_idx_lst)
-            self.mask_matrix[idx,:] = torch.Tensor(ancestor_mask_lst)
+            self.padding_matrix[idx,:] = torch.Tensor(ancestor_idx_lst).to(device)
+            self.mask_matrix[idx,:] = torch.Tensor(ancestor_mask_lst).to(device)
 
         self.embedding_dim = embedding_dim 
         self.embedding = nn.Embedding(self.code_num, self.embedding_dim)
@@ -122,7 +124,7 @@ class GRAM(nn.Module):
         mask_vec = self.mask_matrix[idx,:] 
 
         embeded = self.embedding(ancestor_vec)
-        current_vec = torch.cat([self.embedding(torch.Tensor([idx]).long()).view(1,-1) for i in range(self.maxlength)], 0)
+        current_vec = torch.cat([self.embedding(torch.Tensor([idx]).long().to(self.device)).view(1,-1) for i in range(self.maxlength)], 0)
         attention_input = torch.cat([embeded, current_vec], 1)
         attention_weight = self.attention_model(attention_input)
         attention_weight = torch.exp(attention_weight)
@@ -137,10 +139,11 @@ class GRAM(nn.Module):
         idx_lst = [self.code2index[code] for code in code_lst if code in self.code2index]
         if idx_lst == []:
             idx_lst = [0]
-        ancestor_mat = self.padding_matrix[idx_lst,:]
-        mask_mat = self.mask_matrix[idx_lst,:]
+        ancestor_mat = self.padding_matrix[idx_lst,:].to(self.device)
+        mask_mat = self.mask_matrix[idx_lst,:].to(self.device).to(self.device)
         embeded = self.embedding(ancestor_mat)
-        current_vec = self.embedding(torch.Tensor(idx_lst).long())
+
+        current_vec = self.embedding(torch.Tensor(idx_lst).long().to(self.device))
         current_vec = current_vec.unsqueeze(1)
         current_vec = current_vec.repeat(1, self.maxlength, 1)
         attention_input = torch.cat([embeded, current_vec], 2)

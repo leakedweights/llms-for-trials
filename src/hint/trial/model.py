@@ -24,10 +24,12 @@ class TrialModel(nn.Module):
     def __init__(self,
                  toxicity_encoder: nn.Module,
                  disease_encoder: nn.Module,
-                 protocol_encoder: nn.Module,
+                 protocol_embedding_size: int,
                  embedding_size: int,
                  num_ffn_layers: int,
                  num_pred_layers: int,
+                 phase_dim: int,
+                 device: Any,
                  ablations: dict = {"config": {"base_model": True}},
                  name: str = "trial_model"):
         
@@ -35,14 +37,21 @@ class TrialModel(nn.Module):
         
         self.toxicity_encoder = toxicity_encoder
         self.disease_encoder = disease_encoder
-        self.protocol_encoder = protocol_encoder
         self.embedding_size = embedding_size
         self.ablations = ablations
         self.model_name = name
         self.include_all = ablations["config"].get("base_model", False)
-        
-        encoder_dim = toxicity_encoder.embedding_size + disease_encoder.embedding_size + protocol_encoder.embedding_size
-        
+        self.device = device
+                
+        encoder_dim = toxicity_encoder.embedding_size + disease_encoder.embedding_size + protocol_embedding_size + embedding_size
+                
+        self.phase_encoder = FeedForward(
+            input_dim=phase_dim,
+            hidden_dim=embedding_size,
+            output_dim=embedding_size,
+            num_layers=num_ffn_layers
+        )
+            
         self.multimodal_encoder = FeedForward(
             input_dim=encoder_dim,
             hidden_dim=embedding_size,
@@ -85,15 +94,16 @@ class TrialModel(nn.Module):
                         num_layers=num_pred_layers)
         )
     
-    def forward(self, smiles, icd, criteria):
-        icd_embedding = self.disease_encoder.forward_code_lst3(icd) #TODO: change to forward
-        molecule_embedding = self.toxicity_encoder(smiles)
-        protocol_embedding = self.protocol_encoder(criteria)
-        
+    def forward(self, smiles, icd, protocol_embedding, phase):
+        icd_embedding = self.disease_encoder.forward_code_lst3(icd)
+        molecule_embedding = self.toxicity_encoder(smiles.to(self.device)).squeeze()                
+        phase_embedding = self.phase_encoder(phase)
+                
         encoder_embedding = self.multimodal_encoder(torch.cat([
             molecule_embedding,
             icd_embedding,
-            protocol_embedding
+            protocol_embedding,
+            phase_embedding
         ], 1)) 
         
         disease_risk_embedding = self.disease_risk_encoder(icd_embedding)
@@ -136,14 +146,14 @@ class Trainer:
         train_losses = []
         valid_losses = [valid_loss]
 
-        for epoch in tqdm(range(epochs)):
+        for epoch in range(epochs):
             epoch_losses = []
-            for nctids, labels, smiles, icdcodes, criteria in train_dataloader:
+            for nctids, labels, smiles, icdcodes, criteria, phase in tqdm(train_dataloader):
                 labels = labels.to(self.device)
                 smiles = smiles.to(self.device)
-                icdcodes = icdcodes.to(self.device)
+                phase = phase.to(self.device)
                 criteria = criteria.to(self.device)
-                outputs = self.model(smiles, icdcodes, criteria).view(-1)
+                outputs = self.model.forward(smiles, icdcodes, criteria, phase).view(-1)
                 loss = bce_loss(outputs, labels.float())
                 epoch_losses.append(loss.item())
 
@@ -171,9 +181,13 @@ class Trainer:
             all_predictions = []
             all_labels = []
             total_loss = 0
-            for nctids, labels, smiles, icdcodes, criteria in dataloader:
+            for nctids, labels, smiles, icdcodes, criteria, phase in dataloader:
                 labels = labels.to(self.device)
-                outputs = self.model(smiles, icdcodes, criteria).view(-1)
+                smiles = smiles.to(self.device)
+                phase = phase.to(self.device)
+                criteria = criteria.to(self.device)
+                
+                outputs = self.model.forward(smiles, icdcodes, criteria, phase).view(-1)
 
                 if return_loss:
                     loss = bce_loss(outputs, labels.float())
@@ -204,73 +218,85 @@ class Trainer:
     def test(self, test_dataloader: DataLoader):
         self.model.eval()
         with torch.no_grad():
-            all_predictions = []
-            all_labels = []
-            for nctids, labels, smiles, icdcodes, criteria in test_dataloader:
+            phase_metrics = defaultdict(list)
+
+            for nctids, labels, smiles, icdcodes, criteria, phase in test_dataloader:
                 labels = labels.to(self.device)
-                outputs = self.model(smiles, icdcodes, criteria).view(-1)
+                smiles = smiles.to(self.device)
+                phase = phase.to(self.device)
+                criteria = criteria.to(self.device)
+
+                outputs = self.model.forward(smiles, icdcodes, criteria, phase).view(-1)
                 predictions = (outputs > 0.5).float()
-                
-                all_labels.extend(labels.cpu().numpy())
-                all_predictions.extend(predictions.cpu().numpy())
-            
-            tn, fp, fn, tp = confusion_matrix(all_labels, all_predictions).ravel()
-            f1 = f1_score(all_labels, all_predictions)
-            
-            precision, recall, _ = precision_recall_curve(all_labels, all_predictions)
-            pr_auc = auc(recall, precision)
-            
-            roc_auc = roc_auc_score(all_labels, all_predictions)
-            
-            print("-"*50)
-            print(f"Accuracy: {(tp+tn)/(tp+tn+fp+fn):.3f}, TP: {tp}, FP:{fp}, TN:{tn}, FN:{fn}")
-            print(f"F1-Score: {f1:.3f}")
-            print(f"ROC-AUC: {roc_auc:.3f}")
-            print(f"PR-AUC: {pr_auc:.3f}")
-            print("-"*50)
-            
-            self.model.train()
-            
-            return {'tp': tp, 'fp': fp, 'tn': tn, 'fn': fn, 'f1': f1, 'pr_auc': pr_auc, 'roc_auc': roc_auc}
+
+                for ph, lbl, pred in zip(phase.cpu().numpy(), labels.cpu().numpy(), predictions.cpu().numpy()):
+                    phase_metrics[ph].append((lbl, pred))
+
+            for ph, results in phase_metrics.items():
+                labels, predictions = zip(*results)
+                tn, fp, fn, tp = confusion_matrix(labels, predictions).ravel()
+                f1 = f1_score(labels, predictions)
+                precision, recall, _ = precision_recall_curve(labels, predictions)
+                pr_auc = auc(recall, precision)
+                roc_auc = roc_auc_score(labels, predictions)
+
+                print(f"--- Phase {ph} Metrics ---")
+                print(f"Accuracy: {(tp+tn)/(tp+tn+fp+fn):.3f}, TP: {tp}, FP:{fp}, TN:{tn}, FN:{fn}")
+                print(f"F1-Score: {f1:.3f}")
+                print(f"ROC-AUC: {roc_auc:.3f}")
+                print(f"PR-AUC: {pr_auc:.3f}")
+                print("-"*50)
+
+        self.model.train()
         
     def bootstrap_test(self, test_dataloader: DataLoader, sample_num: int = 20):
         self.model.eval()
+        phase_metrics = defaultdict(list)
+
         with torch.no_grad():
-            all_predictions = []
-            all_labels = []
-            for _, labels, smiles, icdcodes, criteria in test_dataloader:
+            for _, labels, smiles, icdcodes, criteria, phase in test_dataloader:
                 labels = labels.to(self.device)
-                outputs = self.model(smiles, icdcodes, criteria).view(-1)
-                predictions = outputs.sigmoid()
-                
-                all_labels.extend(labels.cpu().numpy())
-                all_predictions.extend(predictions.cpu().numpy())
+                smiles = smiles.to(self.device)
+                phase = phase.to(self.device)
+                criteria = criteria.to(self.device)
 
-        all_labels = np.array(all_labels)
-        all_predictions = np.array(all_predictions)
+                outputs = self.model.forward(smiles, icdcodes, criteria, phase).view(-1)
+                predictions = outputs.sigmoid().cpu().numpy()
+                labels = labels.cpu().numpy()
+                phases = phase.cpu().numpy()
 
-        bootstrap_results = {'pr_auc': [], 'f1': [], 'roc_auc': [], 'accuracy': []}
+                for ph, lbl, pred in zip(phases, labels, predictions):
+                    phase_metrics[ph].append((lbl, pred))
 
-        for _ in range(sample_num):
-            bs_labels, bs_predictions = resample(all_labels, all_predictions)
+        bootstrap_results = defaultdict(lambda: defaultdict(list))
 
-            precision, recall, _ = precision_recall_curve(bs_labels, bs_predictions)
-            pr_auc = auc(recall, precision)
-            roc_auc = roc_auc_score(bs_labels, bs_predictions)
+        for ph, results in phase_metrics.items():
+            labels, predictions = zip(*results)
+            labels = np.array(labels)
+            predictions = np.array(predictions)
 
-            bs_predictions_binary = (bs_predictions > 0.5).astype(int)
-            f1 = f1_score(bs_labels, bs_predictions_binary)
-            accuracy = np.mean(bs_labels == bs_predictions_binary)
+            for _ in range(sample_num):
+                bs_labels, bs_predictions = resample(labels, predictions)
 
+                precision, recall, _ = precision_recall_curve(bs_labels, bs_predictions)
+                pr_auc = auc(recall, precision)
+                roc_auc = roc_auc_score(bs_labels, bs_predictions)
 
-            bootstrap_results['pr_auc'].append(pr_auc)
-            bootstrap_results['f1'].append(f1)
-            bootstrap_results['roc_auc'].append(roc_auc)
-            bootstrap_results['accuracy'].append(accuracy)
+                bs_predictions_binary = (bs_predictions > 0.5).astype(int)
+                f1 = f1_score(bs_labels, bs_predictions_binary)
+                accuracy = np.mean(bs_labels == bs_predictions_binary)
+
+                bootstrap_results[ph]['pr_auc'].append(pr_auc)
+                bootstrap_results[ph]['f1'].append(f1)
+                bootstrap_results[ph]['roc_auc'].append(roc_auc)
+                bootstrap_results[ph]['accuracy'].append(accuracy)
 
         self.model.train()
 
-        for metric, values in bootstrap_results.items():
-            print(f"{metric.upper()} - mean: {np.mean(values):.4f}, std: {np.std(values):.4f}")
+        for ph, metrics in bootstrap_results.items():
+            print(f"--- Phase {ph} Metrics ---")
+            for metric, values in metrics.items():
+                print(f"{metric.upper()} - mean: {np.mean(values):.4f}, std: {np.std(values):.4f}")
+            print("-"*50)
 
         return bootstrap_results

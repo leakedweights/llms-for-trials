@@ -1,20 +1,16 @@
 import torch
 import torch.nn as nn
+from torch.nn.utils.rnn import pad_sequence
 from transformers import AutoTokenizer, AutoModel
-from .layers import FeedForward
 
 class ProtocolEmbedding(nn.Module):
-    def __init__(self, output_dim: int, hidden_dim: int, num_layers: int, hf_model: str, device):
+    def __init__(self, hf_model: str, device):
         super(ProtocolEmbedding, self).__init__()
-        self.output_dim = output_dim
-        self.num_layers = num_layers
-        self.embedding_size = output_dim
         self.tokenizer = AutoTokenizer.from_pretrained(hf_model)
         self.model = AutoModel.from_pretrained(hf_model)
+        self.embedding_size = self.model.config.hidden_size
         self.device = device
-        
-        self.ffn = FeedForward(self.model.config.hidden_size, hidden_dim, output_dim, num_layers)
-        
+                
     def create_sliding_windows(self, data, window_size=512, step_size=32):
         if len(data['input_ids']) < 512:
             return {k:torch.tensor(v)[None] for k,v in data.items()}

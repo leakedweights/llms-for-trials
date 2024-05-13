@@ -53,7 +53,8 @@ class MultitaskToxicityModel(nn.Module):
             x_task[task] = torch.sigmoid(x_task[task])
         
         y_pred = x_task
-        
+        y_pred = torch.stack(y_pred, dim=0)
+        y_pred = y_pred.permute(1, 0, 2)
         return y_pred
     
 def save_ckp(state, is_best, checkpoint_path, best_model_path):

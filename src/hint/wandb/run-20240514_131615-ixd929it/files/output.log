@@ -1,0 +1,334 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████| 255/255 [00:43<00:00,  5.90it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████| 255/255 [00:46<00:00,  5.51it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████| 255/255 [00:49<00:00,  5.14it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████| 255/255 [00:49<00:00,  5.18it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████| 255/255 [00:49<00:00,  5.16it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████| 255/255 [00:47<00:00,  5.38it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████| 255/255 [00:46<00:00,  5.51it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████| 255/255 [00:46<00:00,  5.53it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████| 255/255 [00:46<00:00,  5.53it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████| 255/255 [00:46<00:00,  5.48it/s]
+Test results
+--- phase 1/phase 2 ---
+Accuracy: 0.541, TP: 94, FP:40, TN:102, FN:126
+F1-Score: 0.531
+ROC-AUC: 0.573
+PR-AUC: 0.738
+--------------------------------------------------
+--- phase 1 ---
+Accuracy: 0.558, TP: 96, FP:55, TN:135, FN:128
+F1-Score: 0.512
+ROC-AUC: 0.570
+PR-AUC: 0.687
+--------------------------------------------------
+--- early phase 1 ---
+Accuracy: 0.469, TP: 1, FP:5, TN:14, FN:12
+F1-Score: 0.105
+ROC-AUC: 0.407
+PR-AUC: 0.309
+--------------------------------------------------
+--- phase 2 ---
+Accuracy: 0.586, TP: 335, FP:153, TN:481, FN:423
+F1-Score: 0.538
+ROC-AUC: 0.600
+PR-AUC: 0.716
+--------------------------------------------------
+--- phase 2/phase 3 ---
+Accuracy: 0.617, TP: 62, FP:24, TN:38, FN:38
+F1-Score: 0.667
+ROC-AUC: 0.616
+PR-AUC: 0.788
+--------------------------------------------------
+--- phase 3 ---
+Accuracy: 0.680, TP: 570, FP:102, TN:154, FN:239
+F1-Score: 0.770
+ROC-AUC: 0.653
+PR-AUC: 0.889
+--------------------------------------------------
+Bootstrap test results
+[autoreload of trial.model failed: Traceback (most recent call last):
+  File "/home/varadi_kristof/miniconda3/envs/trial/lib/python3.7/site-packages/IPython/extensions/autoreload.py", line 245, in check
+    superreload(m, reload, self.old_objects)
+  File "/home/varadi_kristof/miniconda3/envs/trial/lib/python3.7/site-packages/IPython/extensions/autoreload.py", line 394, in superreload
+    module = reload(module)
+  File "/home/varadi_kristof/miniconda3/envs/trial/lib/python3.7/imp.py", line 314, in reload
+    return importlib.reload(module)
+  File "/home/varadi_kristof/miniconda3/envs/trial/lib/python3.7/importlib/__init__.py", line 169, in reload
+    _bootstrap._exec(spec, module)
+  File "<frozen importlib._bootstrap>", line 630, in _exec
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/varadi_kristof/llms-for-trials/src/hint/trial/model.py", line 121
+    pk_embedding = self.pk_encoder(molecule_embedding)
+               ^
+SyntaxError: invalid syntax
+]
+--- phase 1/phase 2 ---
+PR_AUC - mean: 0.6445, std: 0.0383
+F1 - mean: 0.5750, std: 0.0365
+ROC_AUC - mean: 0.5457, std: 0.0373
+ACCURACY - mean: 0.5268, std: 0.0307
+--------------------------------------------------
+--- phase 1 ---
+PR_AUC - mean: 0.6261, std: 0.0259
+F1 - mean: 0.6255, std: 0.0188
+ROC_AUC - mean: 0.5976, std: 0.0216
+ACCURACY - mean: 0.5904, std: 0.0177
+--------------------------------------------------
+--- early phase 1 ---
+PR_AUC - mean: 0.3797, std: 0.1344
+F1 - mean: 0.2949, std: 0.1184
+ROC_AUC - mean: 0.3803, std: 0.1008
+ACCURACY - mean: 0.4219, std: 0.0838
+--------------------------------------------------
+--- phase 2 ---
+PR_AUC - mean: 0.6853, std: 0.0167
+F1 - mean: 0.6287, std: 0.0157
+ROC_AUC - mean: 0.6368, std: 0.0123
+ACCURACY - mean: 0.6029, std: 0.0139
+--------------------------------------------------
+--- phase 2/phase 3 ---
+PR_AUC - mean: 0.7345, std: 0.0542
+F1 - mean: 0.7817, std: 0.0282
+ROC_AUC - mean: 0.6539, std: 0.0523
+ACCURACY - mean: 0.7088, std: 0.0300
+--------------------------------------------------
+--- phase 3 ---
+PR_AUC - mean: 0.8523, std: 0.0151
+F1 - mean: 0.8054, std: 0.0107
+ROC_AUC - mean: 0.6853, std: 0.0188
+ACCURACY - mean: 0.7126, std: 0.0137
+--------------------------------------------------

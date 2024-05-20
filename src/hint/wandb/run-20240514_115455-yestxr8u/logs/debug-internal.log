@@ -1,0 +1,453 @@
+2024-05-14 11:54:59,892 INFO    StreamThr :25212 [internal.py:wandb_internal():88] W&B internal server running at pid: 25212, started at: 2024-05-14 11:54:59.888616
+2024-05-14 11:54:59,894 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status
+2024-05-14 11:54:59,898 INFO    WriterThread:25212 [datastore.py:open_for_write():87] open: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/run-yestxr8u.wandb
+2024-05-14 11:54:59,899 DEBUG   SenderThread:25212 [sender.py:send():378] send: header
+2024-05-14 11:54:59,899 DEBUG   SenderThread:25212 [sender.py:send():378] send: run
+2024-05-14 11:55:00,263 INFO    SenderThread:25212 [dir_watcher.py:__init__():211] watching files in: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files
+2024-05-14 11:55:00,263 INFO    SenderThread:25212 [sender.py:_start_run_threads():1126] run started: yestxr8u with start time 1715687699.001978
+2024-05-14 11:55:00,286 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: check_version
+2024-05-14 11:55:00,286 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: check_version
+2024-05-14 11:55:00,351 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: run_start
+2024-05-14 11:55:00,353 DEBUG   HandlerThread:25212 [system_info.py:__init__():26] System info init
+2024-05-14 11:55:00,353 DEBUG   HandlerThread:25212 [system_info.py:__init__():41] System info init done
+2024-05-14 11:55:00,353 INFO    HandlerThread:25212 [system_monitor.py:start():194] Starting system monitor
+2024-05-14 11:55:00,354 INFO    SystemMonitor:25212 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-14 11:55:00,354 INFO    HandlerThread:25212 [system_monitor.py:probe():214] Collecting system info
+2024-05-14 11:55:00,355 INFO    SystemMonitor:25212 [interfaces.py:start():188] Started cpu monitoring
+2024-05-14 11:55:00,355 INFO    SystemMonitor:25212 [interfaces.py:start():188] Started disk monitoring
+2024-05-14 11:55:00,357 INFO    SystemMonitor:25212 [interfaces.py:start():188] Started gpu monitoring
+2024-05-14 11:55:00,358 INFO    SystemMonitor:25212 [interfaces.py:start():188] Started memory monitoring
+2024-05-14 11:55:00,359 INFO    SystemMonitor:25212 [interfaces.py:start():188] Started network monitoring
+2024-05-14 11:55:00,423 DEBUG   HandlerThread:25212 [system_info.py:probe():150] Probing system
+2024-05-14 11:55:00,425 DEBUG   HandlerThread:25212 [system_info.py:_probe_git():135] Probing git
+2024-05-14 11:55:00,446 DEBUG   HandlerThread:25212 [system_info.py:_probe_git():143] Probing git done
+2024-05-14 11:55:00,446 DEBUG   HandlerThread:25212 [system_info.py:probe():198] Probing system done
+2024-05-14 11:55:00,446 DEBUG   HandlerThread:25212 [system_monitor.py:probe():223] {'os': 'Linux-4.15.0-197-generic-x86_64-with-debian-buster-sid', 'python': '3.7.16', 'heartbeatAt': '2024-05-14T11:55:00.423939', 'startedAt': '2024-05-14T11:54:55.198008', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/leakedweights/llms-for-trials.git', 'commit': 'acbb9fb6823265fdc597dca481ecd66b2cf4d251'}, 'email': 'vkristof20@protonmail.com', 'root': '/home/varadi_kristof/llms-for-trials', 'host': 'tars', 'username': 'varadi_kristof', 'executable': '/home/varadi_kristof/miniconda3/envs/trial/bin/python', 'cpu_count': 40, 'cpu_count_logical': 80, 'cpu_freq': {'current': 2.5205375000000005, 'min': 1000.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 2.188, 'min': 1000.0, 'max': 3900.0}, {'current': 1.0, 'min': 1000.0, 'max': 3900.0}, {'current': 1.63, 'min': 1000.0, 'max': 3900.0}, {'current': 1.814, 'min': 1000.0, 'max': 3900.0}, {'current': 3.42, 'min': 1000.0, 'max': 3900.0}, {'current': 1.0, 'min': 1000.0, 'max': 3900.0}, {'current': 1.52, 'min': 1000.0, 'max': 3900.0}, {'current': 1.0, 'min': 1000.0, 'max': 3900.0}, {'current': 1.472, 'min': 1000.0, 'max': 3900.0}, {'current': 3.423, 'min': 1000.0, 'max': 3900.0}, {'current': 1.466, 'min': 1000.0, 'max': 3900.0}, {'current': 2.208, 'min': 1000.0, 'max': 3900.0}, {'current': 1.826, 'min': 1000.0, 'max': 3900.0}, {'current': 3.441, 'min': 1000.0, 'max': 3900.0}, {'current': 1.0, 'min': 1000.0, 'max': 3900.0}, {'current': 2.169, 'min': 1000.0, 'max': 3900.0}, {'current': 3.203, 'min': 1000.0, 'max': 3900.0}, {'current': 1.043, 'min': 1000.0, 'max': 3900.0}, {'current': 1.605, 'min': 1000.0, 'max': 3900.0}, {'current': 2.228, 'min': 1000.0, 'max': 3900.0}, {'current': 2.537, 'min': 1000.0, 'max': 3900.0}, {'current': 3.335, 'min': 1000.0, 'max': 3900.0}, {'current': 1.0, 'min': 1000.0, 'max': 3900.0}, {'current': 3.305, 'min': 1000.0, 'max': 3900.0}, {'current': 3.305, 'min': 1000.0, 'max': 3900.0}, {'current': 3.305, 'min': 1000.0, 'max': 3900.0}, {'current': 3.306, 'min': 1000.0, 'max': 3900.0}, {'current': 3.306, 'min': 1000.0, 'max': 3900.0}, {'current': 3.306, 'min': 1000.0, 'max': 3900.0}, {'current': 3.148, 'min': 1000.0, 'max': 3900.0}, {'current': 2.377, 'min': 1000.0, 'max': 3900.0}, {'current': 3.308, 'min': 1000.0, 'max': 3900.0}, {'current': 3.202, 'min': 1000.0, 'max': 3900.0}, {'current': 1.588, 'min': 1000.0, 'max': 3900.0}, {'current': 2.672, 'min': 1000.0, 'max': 3900.0}, {'current': 3.2, 'min': 1000.0, 'max': 3900.0}, {'current': 3.2, 'min': 1000.0, 'max': 3900.0}, {'current': 2.676, 'min': 1000.0, 'max': 3900.0}, {'current': 3.199, 'min': 1000.0, 'max': 3900.0}, {'current': 3.199, 'min': 1000.0, 'max': 3900.0}, {'current': 2.273, 'min': 1000.0, 'max': 3900.0}, {'current': 0.999, 'min': 1000.0, 'max': 3900.0}, {'current': 1.462, 'min': 1000.0, 'max': 3900.0}, {'current': 2.037, 'min': 1000.0, 'max': 3900.0}, {'current': 3.397, 'min': 1000.0, 'max': 3900.0}, {'current': 1.0, 'min': 1000.0, 'max': 3900.0}, {'current': 1.734, 'min': 1000.0, 'max': 3900.0}, {'current': 1.0, 'min': 1000.0, 'max': 3900.0}, {'current': 1.461, 'min': 1000.0, 'max': 3900.0}, {'current': 3.284, 'min': 1000.0, 'max': 3900.0}, {'current': 1.464, 'min': 1000.0, 'max': 3900.0}, {'current': 1.977, 'min': 1000.0, 'max': 3900.0}, {'current': 1.537, 'min': 1000.0, 'max': 3900.0}, {'current': 3.433, 'min': 1000.0, 'max': 3900.0}, {'current': 1.0, 'min': 1000.0, 'max': 3900.0}, {'current': 1.941, 'min': 1000.0, 'max': 3900.0}, {'current': 3.43, 'min': 1000.0, 'max': 3900.0}, {'current': 1.075, 'min': 1000.0, 'max': 3900.0}, {'current': 1.313, 'min': 1000.0, 'max': 3900.0}, {'current': 1.812, 'min': 1000.0, 'max': 3900.0}, {'current': 2.051, 'min': 1000.0, 'max': 3900.0}, {'current': 3.319, 'min': 1000.0, 'max': 3900.0}, {'current': 1.0, 'min': 1000.0, 'max': 3900.0}, {'current': 3.274, 'min': 1000.0, 'max': 3900.0}, {'current': 3.383, 'min': 1000.0, 'max': 3900.0}, {'current': 3.258, 'min': 1000.0, 'max': 3900.0}, {'current': 3.208, 'min': 1000.0, 'max': 3900.0}, {'current': 3.255, 'min': 1000.0, 'max': 3900.0}, {'current': 3.28, 'min': 1000.0, 'max': 3900.0}, {'current': 2.951, 'min': 1000.0, 'max': 3900.0}, {'current': 1.631, 'min': 1000.0, 'max': 3900.0}, {'current': 3.197, 'min': 1000.0, 'max': 3900.0}, {'current': 3.325, 'min': 1000.0, 'max': 3900.0}, {'current': 1.721, 'min': 1000.0, 'max': 3900.0}, {'current': 2.542, 'min': 1000.0, 'max': 3900.0}, {'current': 3.325, 'min': 1000.0, 'max': 3900.0}, {'current': 3.325, 'min': 1000.0, 'max': 3900.0}, {'current': 2.545, 'min': 1000.0, 'max': 3900.0}, {'current': 3.325, 'min': 1000.0, 'max': 3900.0}, {'current': 3.325, 'min': 1000.0, 'max': 3900.0}], 'disk': {'/': {'total': 438.4229278564453, 'used': 236.0708122253418}}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 2, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34089730048}, {'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34089730048}], 'memory': {'total': 755.5648040771484}}
+2024-05-14 11:55:00,446 INFO    HandlerThread:25212 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-14 11:55:00,446 INFO    HandlerThread:25212 [system_monitor.py:probe():227] Publishing system info
+2024-05-14 11:55:00,446 DEBUG   HandlerThread:25212 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-05-14 11:55:01,265 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_created():271] file/dir created: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/conda-environment.yaml
+2024-05-14 11:55:04,265 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/conda-environment.yaml
+2024-05-14 11:55:04,276 DEBUG   HandlerThread:25212 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-14 11:55:04,277 INFO    HandlerThread:25212 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-14 11:55:04,278 DEBUG   SenderThread:25212 [sender.py:send():378] send: files
+2024-05-14 11:55:04,278 INFO    SenderThread:25212 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-05-14 11:55:04,397 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: python_packages
+2024-05-14 11:55:04,398 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: python_packages
+2024-05-14 11:55:04,398 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:55:04,399 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:55:04,618 DEBUG   SenderThread:25212 [sender.py:send():378] send: telemetry
+2024-05-14 11:55:04,880 INFO    wandb-upload_0:25212 [upload_job.py:push():130] Uploaded file /tmp/tmpzcf2vbhuwandb/hif2ebew-wandb-metadata.json
+2024-05-14 11:55:05,265 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_created():271] file/dir created: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/wandb-metadata.json
+2024-05-14 11:55:05,266 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_created():271] file/dir created: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/requirements.txt
+2024-05-14 11:55:05,619 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:55:06,266 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_created():271] file/dir created: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:08,267 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:10,269 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:10,747 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:55:12,270 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:14,271 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:15,847 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:55:16,271 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:18,272 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:19,399 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:55:19,400 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:55:20,273 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:20,961 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:55:22,274 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:24,276 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:25,983 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:55:26,277 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:28,278 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:30,279 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:31,596 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:55:32,279 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:32,280 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/config.yaml
+2024-05-14 11:55:34,280 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:34,398 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:55:34,399 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:55:36,281 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:37,149 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:55:38,282 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:40,283 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:42,284 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:42,777 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:55:44,285 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:46,285 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:48,286 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:48,340 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:55:49,398 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:55:49,399 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:55:50,287 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:52,290 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:53,874 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-14 11:55:53,877 DEBUG   SenderThread:25212 [sender.py:send():378] send: history
+2024-05-14 11:55:53,877 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: summary_record
+2024-05-14 11:55:53,878 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:55:53,879 INFO    SenderThread:25212 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-14 11:55:54,292 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_created():271] file/dir created: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/wandb-summary.json
+2024-05-14 11:55:55,291 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:57,292 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:55:59,009 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:55:59,294 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:00,364 DEBUG   SystemMonitor:25212 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-14 11:56:00,369 DEBUG   SenderThread:25212 [sender.py:send():378] send: stats
+2024-05-14 11:56:01,295 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:03,295 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:04,035 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:56:04,399 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:56:04,399 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:56:05,297 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:07,298 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:09,104 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:56:09,299 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:11,299 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:13,300 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:14,176 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:56:15,301 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:17,302 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:19,302 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:19,399 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:56:19,400 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:56:19,634 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:56:21,303 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:23,304 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:25,165 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:56:25,305 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:27,306 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:29,307 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:30,375 DEBUG   SenderThread:25212 [sender.py:send():378] send: stats
+2024-05-14 11:56:30,376 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:56:31,308 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:33,310 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:34,399 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:56:34,400 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:56:35,311 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:35,418 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:56:37,312 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:39,313 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:40,819 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-14 11:56:40,821 DEBUG   SenderThread:25212 [sender.py:send():378] send: history
+2024-05-14 11:56:40,821 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: summary_record
+2024-05-14 11:56:40,821 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:56:40,822 INFO    SenderThread:25212 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-14 11:56:41,314 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:41,314 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/wandb-summary.json
+2024-05-14 11:56:43,315 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:45,316 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:45,877 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:56:47,317 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:49,318 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:49,399 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:56:49,400 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:56:50,993 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:56:51,319 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:53,320 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:55,321 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:56,040 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:56:57,322 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:56:59,323 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:00,378 DEBUG   SenderThread:25212 [sender.py:send():378] send: stats
+2024-05-14 11:57:01,324 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:01,465 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:57:03,324 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:04,399 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:57:04,400 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:57:05,325 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:06,931 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:57:07,326 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:09,327 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:11,328 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:12,287 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:57:13,328 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:15,329 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:17,330 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:17,481 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:57:19,331 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:19,400 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:57:19,401 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:57:21,332 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:22,619 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:57:23,333 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:25,334 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:27,336 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:27,406 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-14 11:57:27,407 DEBUG   SenderThread:25212 [sender.py:send():378] send: history
+2024-05-14 11:57:27,408 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: summary_record
+2024-05-14 11:57:27,408 INFO    SenderThread:25212 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-14 11:57:27,732 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:57:28,336 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/wandb-summary.json
+2024-05-14 11:57:29,337 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:30,380 DEBUG   SenderThread:25212 [sender.py:send():378] send: stats
+2024-05-14 11:57:31,338 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:32,949 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:57:33,338 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:34,408 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:57:34,409 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:57:35,340 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:37,341 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:38,020 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:57:39,342 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:41,342 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:43,057 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:57:43,343 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:45,343 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:47,344 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:48,496 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:57:49,345 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:49,399 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:57:49,400 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:57:51,346 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:53,347 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:54,052 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:57:55,347 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:57,348 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:59,349 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:57:59,606 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:00,383 DEBUG   SenderThread:25212 [sender.py:send():378] send: stats
+2024-05-14 11:58:01,350 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:03,351 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:04,400 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:58:04,401 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:58:05,100 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:05,352 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:07,353 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:09,354 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:10,246 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:11,355 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:13,356 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:14,440 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-14 11:58:14,442 DEBUG   SenderThread:25212 [sender.py:send():378] send: history
+2024-05-14 11:58:14,442 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: summary_record
+2024-05-14 11:58:14,443 INFO    SenderThread:25212 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-14 11:58:15,356 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:15,357 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:15,358 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/wandb-summary.json
+2024-05-14 11:58:17,358 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:19,359 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:19,400 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:58:19,401 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:58:20,367 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:21,360 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:23,361 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:25,361 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:25,720 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:27,362 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:29,363 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:30,387 DEBUG   SenderThread:25212 [sender.py:send():378] send: stats
+2024-05-14 11:58:31,158 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:31,364 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:33,365 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:34,400 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:58:34,401 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:58:35,365 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:36,612 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:37,366 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:39,367 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:41,368 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:42,031 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:43,368 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:45,369 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:47,371 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:47,393 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:49,371 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:49,400 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:58:49,401 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:58:51,372 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:52,409 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:53,373 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:55,374 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:57,375 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:58:57,510 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:58:59,377 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:59:00,391 DEBUG   SenderThread:25212 [sender.py:send():378] send: stats
+2024-05-14 11:59:00,954 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-14 11:59:00,956 DEBUG   SenderThread:25212 [sender.py:send():378] send: history
+2024-05-14 11:59:00,956 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: summary_record
+2024-05-14 11:59:00,957 INFO    SenderThread:25212 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-14 11:59:01,378 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:59:01,379 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/wandb-summary.json
+2024-05-14 11:59:02,958 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:59:04,401 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:59:04,402 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:59:07,380 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:59:08,148 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:59:13,261 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:59:13,383 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:59:18,262 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:59:19,401 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:59:19,402 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:59:23,580 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:59:28,581 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:59:30,392 DEBUG   SenderThread:25212 [sender.py:send():378] send: stats
+2024-05-14 11:59:34,394 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:59:34,401 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:59:34,401 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:59:39,649 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:59:41,393 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 11:59:44,684 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:59:49,401 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 11:59:49,402 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 11:59:50,658 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 11:59:55,659 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:00,396 DEBUG   SenderThread:25212 [sender.py:send():378] send: stats
+2024-05-14 12:00:01,397 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:04,401 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 12:00:04,402 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 12:00:06,619 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:12,603 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:13,409 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 12:00:17,604 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:19,402 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 12:00:19,402 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 12:00:22,646 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:27,416 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 12:00:28,133 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:30,399 DEBUG   SenderThread:25212 [sender.py:send():378] send: stats
+2024-05-14 12:00:33,401 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:34,402 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 12:00:34,403 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 12:00:38,607 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:43,608 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:48,609 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:49,402 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-14 12:00:49,402 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: stop_status
+2024-05-14 12:00:54,604 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:57,401 DEBUG   SenderThread:25212 [sender.py:send():378] send: telemetry
+2024-05-14 12:00:57,402 DEBUG   SenderThread:25212 [sender.py:send():378] send: exit
+2024-05-14 12:00:57,402 INFO    SenderThread:25212 [sender.py:send_exit():585] handling exit code: 0
+2024-05-14 12:00:57,402 INFO    SenderThread:25212 [sender.py:send_exit():587] handling runtime: 357
+2024-05-14 12:00:57,404 INFO    SenderThread:25212 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-14 12:00:57,404 INFO    SenderThread:25212 [sender.py:send_exit():593] send defer
+2024-05-14 12:00:57,405 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:00:57,405 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 0
+2024-05-14 12:00:57,405 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:00:57,405 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-05-14 12:00:57,405 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 1
+2024-05-14 12:00:57,405 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:00:57,405 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 1
+2024-05-14 12:00:57,406 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:00:57,406 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-05-14 12:00:57,406 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 2
+2024-05-14 12:00:57,406 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:00:57,406 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 2
+2024-05-14 12:00:57,406 INFO    HandlerThread:25212 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-14 12:00:57,406 INFO    HandlerThread:25212 [interfaces.py:finish():200] Joined cpu monitor
+2024-05-14 12:00:57,406 DEBUG   SystemMonitor:25212 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-14 12:00:57,407 INFO    HandlerThread:25212 [interfaces.py:finish():200] Joined disk monitor
+2024-05-14 12:00:57,407 DEBUG   SystemMonitor:25212 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-14 12:00:57,428 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/wandb-summary.json
+2024-05-14 12:00:57,882 INFO    HandlerThread:25212 [interfaces.py:finish():200] Joined gpu monitor
+2024-05-14 12:00:57,882 INFO    HandlerThread:25212 [interfaces.py:finish():200] Joined memory monitor
+2024-05-14 12:00:57,883 INFO    HandlerThread:25212 [interfaces.py:finish():200] Joined network monitor
+2024-05-14 12:00:57,884 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:00:57,884 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-05-14 12:00:57,884 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 3
+2024-05-14 12:00:57,884 DEBUG   SenderThread:25212 [sender.py:send():378] send: stats
+2024-05-14 12:00:57,884 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:00:57,885 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 3
+2024-05-14 12:00:57,886 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:00:57,886 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-05-14 12:00:57,886 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 4
+2024-05-14 12:00:57,886 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:00:57,886 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 4
+2024-05-14 12:00:57,886 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:00:57,886 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-05-14 12:00:57,886 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 5
+2024-05-14 12:00:57,887 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:00:57,887 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 5
+2024-05-14 12:00:57,887 DEBUG   SenderThread:25212 [sender.py:send():378] send: summary
+2024-05-14 12:00:57,888 INFO    SenderThread:25212 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-14 12:00:57,888 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:00:57,888 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-05-14 12:00:57,888 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 6
+2024-05-14 12:00:57,888 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:00:57,889 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 6
+2024-05-14 12:00:57,889 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:00:57,889 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-05-14 12:00:57,894 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 12:00:58,069 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 7
+2024-05-14 12:00:58,070 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:00:58,070 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 7
+2024-05-14 12:00:58,070 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:00:58,070 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-05-14 12:00:58,402 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-14 12:00:58,428 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/wandb-summary.json
+2024-05-14 12:00:58,429 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/config.yaml
+2024-05-14 12:00:59,294 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 8
+2024-05-14 12:00:59,294 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 12:00:59,295 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:00:59,296 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 8
+2024-05-14 12:00:59,296 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:00:59,296 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-05-14 12:00:59,297 INFO    SenderThread:25212 [job_builder.py:build():432] Attempting to build job artifact
+2024-05-14 12:00:59,298 INFO    SenderThread:25212 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-05-14 12:00:59,298 INFO    SenderThread:25212 [job_builder.py:_get_program_relpath():583] run is notebook based run
+2024-05-14 12:00:59,298 WARNING SenderThread:25212 [job_builder.py:_log_if_verbose():267] Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
+2024-05-14 12:00:59,298 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 9
+2024-05-14 12:00:59,298 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:00:59,298 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 9
+2024-05-14 12:00:59,299 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:00:59,299 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-05-14 12:00:59,299 INFO    SenderThread:25212 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-14 12:00:59,403 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-14 12:00:59,429 INFO    Thread-24 :25212 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 12:00:59,430 INFO    SenderThread:25212 [dir_watcher.py:finish():388] scan: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files
+2024-05-14 12:00:59,430 INFO    SenderThread:25212 [dir_watcher.py:finish():402] scan save: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log output.log
+2024-05-14 12:00:59,431 INFO    SenderThread:25212 [dir_watcher.py:finish():402] scan save: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/wandb-summary.json wandb-summary.json
+2024-05-14 12:00:59,431 INFO    SenderThread:25212 [dir_watcher.py:finish():402] scan save: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/requirements.txt requirements.txt
+2024-05-14 12:00:59,437 INFO    SenderThread:25212 [dir_watcher.py:finish():402] scan save: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/wandb-metadata.json wandb-metadata.json
+2024-05-14 12:00:59,438 INFO    SenderThread:25212 [dir_watcher.py:finish():402] scan save: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/conda-environment.yaml conda-environment.yaml
+2024-05-14 12:00:59,439 INFO    SenderThread:25212 [dir_watcher.py:finish():402] scan save: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/config.yaml config.yaml
+2024-05-14 12:00:59,439 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 10
+2024-05-14 12:00:59,443 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 12:00:59,443 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:00:59,449 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 10
+2024-05-14 12:00:59,450 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:00:59,450 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-05-14 12:00:59,450 INFO    SenderThread:25212 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-14 12:00:59,885 INFO    wandb-upload_2:25212 [upload_job.py:push():130] Uploaded file /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/wandb-summary.json
+2024-05-14 12:00:59,968 INFO    wandb-upload_3:25212 [upload_job.py:push():130] Uploaded file /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/config.yaml
+2024-05-14 12:01:00,007 INFO    wandb-upload_4:25212 [upload_job.py:push():130] Uploaded file /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/conda-environment.yaml
+2024-05-14 12:01:00,021 INFO    wandb-upload_0:25212 [upload_job.py:push():130] Uploaded file /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/output.log
+2024-05-14 12:01:00,061 INFO    wandb-upload_1:25212 [upload_job.py:push():130] Uploaded file /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/files/requirements.txt
+2024-05-14 12:01:00,261 INFO    Thread-23 :25212 [sender.py:transition_state():613] send defer: 11
+2024-05-14 12:01:00,262 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:01:00,262 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 11
+2024-05-14 12:01:00,263 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:01:00,263 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-05-14 12:01:00,263 INFO    SenderThread:25212 [file_pusher.py:join():175] waiting for file pusher
+2024-05-14 12:01:00,263 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 12
+2024-05-14 12:01:00,264 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:01:00,264 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 12
+2024-05-14 12:01:00,264 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:01:00,264 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-05-14 12:01:00,264 INFO    SenderThread:25212 [file_stream.py:finish():601] file stream finish called
+2024-05-14 12:01:00,405 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-14 12:01:00,777 INFO    SenderThread:25212 [file_stream.py:finish():605] file stream finish is done
+2024-05-14 12:01:00,777 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 13
+2024-05-14 12:01:00,778 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 12:01:00,778 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:01:00,778 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 13
+2024-05-14 12:01:00,779 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:01:00,779 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-05-14 12:01:00,779 INFO    SenderThread:25212 [sender.py:transition_state():613] send defer: 14
+2024-05-14 12:01:00,780 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 12:01:00,780 INFO    HandlerThread:25212 [handler.py:handle_request_defer():184] handle defer: 14
+2024-05-14 12:01:00,780 DEBUG   SenderThread:25212 [sender.py:send():378] send: final
+2024-05-14 12:01:00,780 DEBUG   SenderThread:25212 [sender.py:send():378] send: footer
+2024-05-14 12:01:00,780 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: defer
+2024-05-14 12:01:00,781 INFO    SenderThread:25212 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-05-14 12:01:00,782 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-14 12:01:00,782 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 12:01:00,785 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: internal_messages
+2024-05-14 12:01:00,786 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: server_info
+2024-05-14 12:01:00,786 DEBUG   SenderThread:25212 [sender.py:send_request():405] send_request: server_info
+2024-05-14 12:01:00,827 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: get_summary
+2024-05-14 12:01:00,827 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: sampled_history
+2024-05-14 12:01:00,938 DEBUG   HandlerThread:25212 [handler.py:handle_request():158] handle_request: shutdown
+2024-05-14 12:01:00,939 INFO    HandlerThread:25212 [handler.py:finish():882] shutting down handler
+2024-05-14 12:01:01,787 INFO    WriterThread:25212 [datastore.py:close():296] close: /home/varadi_kristof/llms-for-trials/src/hint/wandb/run-20240514_115455-yestxr8u/run-yestxr8u.wandb
+2024-05-14 12:01:01,937 INFO    SenderThread:25212 [sender.py:finish():1545] shutting down sender
+2024-05-14 12:01:01,937 INFO    SenderThread:25212 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-14 12:01:01,937 INFO    SenderThread:25212 [file_pusher.py:join():175] waiting for file pusher

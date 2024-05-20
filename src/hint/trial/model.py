@@ -11,6 +11,7 @@ from sklearn.metrics import f1_score, auc, precision_recall_curve, roc_auc_score
 import numpy as np
 from sklearn.utils import resample
 
+from collections import defaultdict
 from copy import deepcopy 
 from tqdm import tqdm
 import pickle
@@ -19,6 +20,15 @@ from .layers import FeedForward
 
 from typing import Optional, Any
 
+import wandb
+from torch.optim import Adam
+from torch.utils.data import DataLoader
+from tqdm import tqdm
+from sklearn.metrics import confusion_matrix, f1_score, precision_recall_curve, auc, roc_auc_score
+from collections import defaultdict
+from copy import deepcopy
+import numpy as np
+from sklearn.utils import resample
 
 class TrialModel(nn.Module):
     def __init__(self,
@@ -29,6 +39,7 @@ class TrialModel(nn.Module):
                  num_ffn_layers: int,
                  num_pred_layers: int,
                  phase_dim: int,
+                 dropout: float,
                  device: Any,
                  ablations: dict = {"config": {"base_model": True}},
                  name: str = "trial_model"):
@@ -49,14 +60,16 @@ class TrialModel(nn.Module):
             input_dim=phase_dim,
             hidden_dim=embedding_size,
             output_dim=embedding_size,
-            num_layers=num_ffn_layers
+            num_layers=num_ffn_layers,
+            dropout=dropout
         )
             
         self.multimodal_encoder = FeedForward(
             input_dim=encoder_dim,
             hidden_dim=embedding_size,
             output_dim=embedding_size,
-            num_layers=num_ffn_layers
+            num_layers=num_ffn_layers,
+            dropout=dropout
         )
         
         self.disease_risk_encoder = FeedForward(
@@ -67,29 +80,32 @@ class TrialModel(nn.Module):
         )
         
         self.interaction_encoder = FeedForward(
-                        input_dim=2*embedding_size,
-                        hidden_dim=embedding_size,
-                        output_dim=embedding_size,
-                        num_layers=num_ffn_layers
+            input_dim=2*embedding_size,
+            hidden_dim=embedding_size,
+            output_dim=embedding_size,
+            num_layers=num_ffn_layers,
+            dropout=dropout
         )
         
         self.pk_encoder = FeedForward(
             input_dim=toxicity_encoder.embedding_size,
             output_dim=embedding_size,
-            hidden_dim=5*embedding_size,
-            num_layers=2*num_ffn_layers
+            hidden_dim=10*embedding_size,
+            num_layers=num_ffn_layers,
+            dropout=dropout
         )
         
         self.trial_encoder = FeedForward(
             input_dim=2*embedding_size,
             output_dim=embedding_size,
             hidden_dim=embedding_size,
-            num_layers=num_ffn_layers
+            num_layers=num_ffn_layers,
+            dropout=dropout
         )
         
         self.pred = nn.Sequential(
             FeedForward(input_dim=embedding_size,
-                        hidden_dim=embedding_size,
+                        hidden_dim=1*embedding_size,
                         output_dim=1,
                         num_layers=num_pred_layers)
         )
@@ -104,7 +120,7 @@ class TrialModel(nn.Module):
             icd_embedding,
             protocol_embedding,
             phase_embedding
-        ], 1)) 
+        ], 1))
         
         disease_risk_embedding = self.disease_risk_encoder(icd_embedding)
         interaction_embedding  = self.interaction_encoder(torch.cat([encoder_embedding, disease_risk_embedding], 1))
@@ -129,14 +145,16 @@ class TrialModel(nn.Module):
         output = self.pred(x)
             
         return output
-    
+
 class Trainer:
     def __init__(self, model: TrialModel, weight_decay: float, lr: float, device: Any):
         self.model = model
         self.device = device
         self.optimizer = Adam(self.model.parameters(), weight_decay=weight_decay, lr=lr)
+        wandb.init(project="trial_outcome_prediction")
 
     def train(self, epochs: int, train_dataloader: DataLoader, valid_dataloader: DataLoader, test_dataloader: DataLoader):
+        self.model.train()
         self.model.to(self.device)
 
         valid_loss, _ = self.evaluate(valid_dataloader, return_loss=True)
@@ -156,24 +174,31 @@ class Trainer:
                 outputs = self.model.forward(smiles, icdcodes, criteria, phase).view(-1)
                 loss = bce_loss(outputs, labels.float())
                 epoch_losses.append(loss.item())
-
+                
                 self.optimizer.zero_grad()
                 loss.backward()
                 self.optimizer.step()
-
+            
             avg_epoch_loss = sum(epoch_losses) / len(epoch_losses)
             train_losses.append(avg_epoch_loss)
 
             valid_loss, _ = self.evaluate(valid_dataloader, return_loss=True)
             valid_losses.append(valid_loss)
-            if valid_loss < best_valid_loss:
-                best_valid_loss = valid_loss
+            if avg_epoch_loss < best_valid_loss:
+                best_valid_loss = avg_epoch_loss
                 best_model = deepcopy(self.model)
+
+            wandb.log({"train_loss": avg_epoch_loss, "valid_loss": valid_loss})
 
         self.model = deepcopy(best_model)
         eval_metrics = self.evaluate(test_dataloader, return_loss=False)
 
         return eval_metrics
+
+    
+    def decode_phase(self, phase_categories, phase_tensor):
+        phase_idx = phase_tensor.argmax().item()
+        return phase_categories[phase_idx]
     
     def evaluate(self, dataloader: DataLoader, return_loss: bool = False):
         self.model.eval()
@@ -215,7 +240,7 @@ class Trainer:
             else:
                 return metrics
             
-    def test(self, test_dataloader: DataLoader):
+    def test(self, test_dataloader: DataLoader, phase_categories):
         self.model.eval()
         with torch.no_grad():
             phase_metrics = defaultdict(list)
@@ -230,7 +255,7 @@ class Trainer:
                 predictions = (outputs > 0.5).float()
 
                 for ph, lbl, pred in zip(phase.cpu().numpy(), labels.cpu().numpy(), predictions.cpu().numpy()):
-                    phase_metrics[ph].append((lbl, pred))
+                    phase_metrics[self.decode_phase(phase_categories, ph)].append((lbl, pred))
 
             for ph, results in phase_metrics.items():
                 labels, predictions = zip(*results)
@@ -240,7 +265,7 @@ class Trainer:
                 pr_auc = auc(recall, precision)
                 roc_auc = roc_auc_score(labels, predictions)
 
-                print(f"--- Phase {ph} Metrics ---")
+                print(f"--- {ph} ---")
                 print(f"Accuracy: {(tp+tn)/(tp+tn+fp+fn):.3f}, TP: {tp}, FP:{fp}, TN:{tn}, FN:{fn}")
                 print(f"F1-Score: {f1:.3f}")
                 print(f"ROC-AUC: {roc_auc:.3f}")
@@ -248,8 +273,8 @@ class Trainer:
                 print("-"*50)
 
         self.model.train()
-        
-    def bootstrap_test(self, test_dataloader: DataLoader, sample_num: int = 20):
+
+    def bootstrap_test(self, test_dataloader: DataLoader, phase_categories, sample_num: int = 30):
         self.model.eval()
         phase_metrics = defaultdict(list)
 
@@ -266,7 +291,8 @@ class Trainer:
                 phases = phase.cpu().numpy()
 
                 for ph, lbl, pred in zip(phases, labels, predictions):
-                    phase_metrics[ph].append((lbl, pred))
+                    phase_name = self.decode_phase(phase_categories, torch.tensor(ph))
+                    phase_metrics[phase_name].append((lbl, pred))
 
         bootstrap_results = defaultdict(lambda: defaultdict(list))
 
@@ -277,6 +303,9 @@ class Trainer:
 
             for _ in range(sample_num):
                 bs_labels, bs_predictions = resample(labels, predictions)
+                
+                if len(np.unique(bs_labels)) < 2:
+                    continue
 
                 precision, recall, _ = precision_recall_curve(bs_labels, bs_predictions)
                 pr_auc = auc(recall, precision)
@@ -294,7 +323,7 @@ class Trainer:
         self.model.train()
 
         for ph, metrics in bootstrap_results.items():
-            print(f"--- Phase {ph} Metrics ---")
+            print(f"--- {ph} ---")
             for metric, values in metrics.items():
                 print(f"{metric.upper()} - mean: {np.mean(values):.4f}, std: {np.std(values):.4f}")
             print("-"*50)
